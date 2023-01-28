@@ -1,2 +1,16 @@
+// modern-normalize
 @import './common';
-@import './example';
+
+// Utilities & Base
+@import './abstracts/_main';
+@import './base/_main';
+@import './components/_main';
+@import './layout/_main';
+
+// Pages
+@import './pages/hotel/';
+@import './pages/main_page/';
+@import './pages/restaraunt/';
+@import './pages/room/';
+
+
