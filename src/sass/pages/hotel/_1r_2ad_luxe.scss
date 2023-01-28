@@ -1,0 +1,64 @@
+.section__lux {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 414px;
+}
+.lux__upper-text {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+  line-height: calc(23 / 20);
+
+  color: #b4b4b4;
+}
+.lux__brand-name {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+
+  color: #494848;
+}
+.lux__title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+.lux__text {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+}
+.lux__photo {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 32px;
+  width: 244px;
+  height: 322px;
+  background-color: grey;
+}
+.lux__slider {
+  margin-bottom: 20px;
+  width: 284px;
+  height: 246px;
+  background-color: aquamarine;
+}
+.lux__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+}
+.button__form {
+  display: flex;
+  margin-bottom: 16px;
+}
