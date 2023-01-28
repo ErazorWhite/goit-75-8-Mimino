@@ -39,6 +39,7 @@
 }
 .lux__brand-name {
   font-family: 'Film P3';
+  text-transform: uppercase;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 40px;
@@ -68,7 +69,7 @@
 .lux__text {
   margin-bottom: 32px;
 
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
@@ -77,6 +78,7 @@
   color: #7a7a7a;
   @media screen and (min-width: $bp-tablet) {
     display: block;
+    padding-right: 26px;
     width: 439px;
     font-size: 16px;
   }
@@ -98,14 +100,14 @@
   @media screen and (min-width: $bp-tablet) {
   }
 }
-.lux__slider > .swiper {
+.lux__slider {
+  height: 246px;
   @media screen and (max-width: $bp-mobile) {
     margin-bottom: 20px;
     width: 284px;
-    height: 246px;
   }
   background-color: aquamarine;
-  @media screen and (min-width: $bp-mobile) {
+  @media screen and (min-width: $bp-tablet) {
     width: 438px;
     height: 258px;
   }
@@ -116,16 +118,11 @@
   align-items: center;
   justify-content: center;
   height: 112px;
-  @media screen and (min-width: $bp-mobile) {
+  @media screen and (min-width: $bp-tablet) {
     align-items: end;
   }
 }
 .button__form {
   display: flex;
   margin-bottom: 16px;
-}
-.swiper-slide {
-  width: 194px;
-  height: 194px;
-  background-color: #494848;
 }
