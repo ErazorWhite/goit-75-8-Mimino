@@ -1,0 +1,9 @@
+@mixin desctiption-block($color-value) {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+
+    color: $color-value;
+}
