@@ -2,6 +2,22 @@
     max-width: 414px;
     padding-top: 32px;
     padding-bottom: 32px;
+     position: relative;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+        padding-top: 64px;
+        padding-bottom: 40px;
+    
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 72px;
+
+    }
+    &__container {
+
+    }
 
     &__logo {
         text-transform: uppercase;
@@ -12,15 +28,24 @@
         font-size: 40px;
         line-height: 1.08;
         letter-spacing: 0.3em;
+         @media screen and (min-width: 1024px) {
+            margin-bottom: 62px;
+            font-size: 64px;
     }
+     }
 
     &__subtitle {
         color: #B4B4B4;
         font-weight: 400;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.16;
         margin-bottom: 8px;
+         @media screen and (min-width: 1024px) {
+            margin-bottom: 4px;
+            font-size: 32px;
+        }
     }
+   
 
     &__title {
         font-family: 'Times New Roman';
@@ -29,22 +54,38 @@
         line-height: 1.17;
         letter-spacing: 0.05em;
         margin-bottom: 12px;
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 16px;
+            font-size: 30px;
+            line-height: 1.14;
+        }
     }
     
     &__text {
-        max-width: 242px;
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
         letter-spacing: 0.02em;
         margin-bottom: 32px;
-    
+        margin-right: 141px;
         color: #7A7A7A;
+         @media screen and (min-width: 1024px) {
+            margin-bottom: 4px;
+            margin-right: 538px;
+            font-size: 16px;
+            font-weight: 700;
+        }
     }
     &__image-interior {
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
         margin-bottom: 32px;
+        margin-left: auto;
+         @media screen and (min-width: 1024px) {
+            position: absolute;
+            top: -32px;
+            right: 112px;
+        }
     }
 }
