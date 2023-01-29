@@ -1,34 +1,121 @@
 .contacts__section {
     list-style-type: none;
 }
+.visually--hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.address {
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        max-width: 1023px;
+          display: flex;
+    flex-direction: column;
+       }
+       @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        max-width: 1279px;
+        display: flex;
+        flex-direction: row;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+            display: flex;
+            flex-direction: row;
+            }
+}
+
+.address__list {
+    // display: flex;
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+    //     max-width: 1023px;
+    //       display: flex;
+    // flex-direction: column;
+
+       }
+       @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        // max-width: 1279px;
+        // display: flex;
+        // flex-direction: row;
+        margin-right: 100px;
+       width: 294px;
+        }   
+        @media screen and (min-width: 1280px) {
+            width: 368px;
+           margin-right: 108px;
+            }  
+
+}
 
 .contacts__container {
 
-// 414px
-// 1024 px;
-// 1280px
-// @extend %container;
-//         @extend %container;
-       padding-left: 15px;
+        padding-left: 15px;
         padding-right: 15px;
         padding-top: 36px;
         padding-bottom: 32px;
         margin: 0 auto;
-        @media screen and  (max-width: 414px) {
-        max-width: 767px;    
-     
-    }
         
-        @media screen and  (min-width: 1024px) {
-            display: flex;
-            width: 768px;
+    @media screen and (max-width: 413px) {
+    max-width: 413px;
+   }
+
+    // @media screen and (min-width: 414px) and (max-width: 1023px) {
+    //  max-width: 1023px;
+
+    // }
+
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    max-width: 1279px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 56px;
+    padding-bottom: 44px;
+    margin: 0 auto;
+    // display: flex;
+    flex-direction: column;
+    // width: 294px;
+
+    }
+
+
+   @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 64px;
+    padding-bottom: 74px;
+    margin: 0 auto;
+    // display: flex;
+    flex-direction: column;
+    // width: 294px
+
+
+
+   }
+    //     @media screen and  (max-width: 414px) {
+    //     max-width: 767px;    
+     
+    // }
+        
+    //     @media screen and  (min-width: 1024px) {
+    //         display: flex;
+    //         width: 768px;
          
-        }
-        @media screen and  (min-width: 1200px){
-        display: flex;
-        width: 1200px;
-        margin: 0 auto;
-    }  
+    //     }
+    //     @media screen and  (min-width: 1200px){
+    //     display: flex;
+    //     width: 1200px;
+    //     margin: 0 auto;
+    // }  
       
     }    
     .contacts__list {
@@ -37,34 +124,105 @@
 
     }
     .contacts__brand {
-        font-family: 'Film P3';
+    font-family: 'Film P3';
     font-style: normal;
+    color: #494848;
+
+ 
+
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.07;
     letter-spacing: 0.3em;
-    color: #494848;
-
     margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px)  {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        margin-bottom: 8px;
+    }
+
+    @media screen  and (min-width: 1280px)  {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        margin-bottom: 16px;
+    }
+
+
     }
 .contacts__title {
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
-line-height: 1.66;
+
 letter-spacing: 0.02em;
+margin-bottom: 16px;
+color: #5F5F5F;
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+    margin-bottom: 16px;
+    line-height: 1.66;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px)  {
+    margin-bottom: 52px;
+    line-height: 1.25;
+}
+@media screen  and (min-width: 1280px)  {
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+}
 
 /* серый1 */
 
-color: #5F5F5F;
-}
-.contacts__name {
+
+
+.contacts__block {
     display: flex;
-   
     align-items: center;
-    justify-content: space-between;
+    
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        margin-bottom: 16px;
+        justify-content: flex-start; 
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+   @media screen and (min-width: 1024px) and (max-width: 1279px)  {
+        margin-bottom: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    @media screen and (min-width: 1280px)  {
+        margin-bottom: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    &--hotel {
+        justify-content: space-between;
+        @media screen and (min-width: 1024px) and (max-width: 1279px)  {
+            margin-bottom: 48px;
+            
+        }
+        @media screen and (min-width: 1280px)  {
+            margin-bottom: 48px;
+        }
+    }
+   
+    
+   
 }
+
+
 // .contacts__name--restaurant {
 
 // }
@@ -84,29 +242,131 @@ background: #FFFFFF;
 border: 0.5px solid #F3C653;
 border-radius: 2px;
 }
+
+
 .contacts__link {
-    font-family: 'Montserrat';
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 12px 8px 11px;
+height: 40px;
+
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 17px;
-width: 144px;
-height: 40px;
-/* identical to box height */
+line-height: 1.21;
+
+
 
 letter-spacing: 0.02em;
 text-decoration: none;
 color: #494848;
+&:nth-child(2) {
+    padding-left: 0;
 }
-.contacts__name--restaurant {
+
+&--map {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1.25;
+
+    }
+
+}
+
+.contacts__name {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color:#C79002;
 
-/* Brown */
-
-color: #C79002;
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+     margin-right: 22px;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px)  {
+    margin-bottom: 8px;}
+    @media screen and (min-width: 1280px)  {
+        margin-bottom: 8px;}
+}
+
+
+.contacts__icon{
+color: #C79002;
+flex-shrink: 0;
+margin-right: 10px;
+}
+
+
+
+.contacts__maps {
+    display: flex;
+
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        width: 100%;
+        height:220px;
+    
+    flex-direction: column;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        min-width: 535px;
+        height: 412px;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 634px;
+        height: 412px;
+        flex-direction: column;
+    }
+
+
+}
+.contacts__item--map{ 
+    display: flex;
+    width: 260px;
+    height: 76px;
+background: #FFFFFF;
+
+border: 0.5px solid #F3C653;
+border-radius: 2px;
+align-items: center;
+flex-direction: row;
+flex-wrap: nowrap;
+margin-right: 0px;
+justify-content: space-around;
+
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+margin-bottom: 32px;
+width: 260px;
+height: 76px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    margin-bottom: 0px;
+    width: 285px;
+    height: 56px;
+}
+
+}
+
+.contacts__list--maps{
+    display: flex;
+   
+
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        justify-content: flex-end;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+            justify-content: flex-start;
+        }
+@media screen and (min-width: 1280px) {
+            justify-content: flex-start;
+        }
+}
+
