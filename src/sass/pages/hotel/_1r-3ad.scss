@@ -1,0 +1,40 @@
+.rooms {
+    background-color: $secondaryLight;
+    
+    &__logo {
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+       
+        color: #494848;
+
+        font-family: 'Film P3', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+    }
+    
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+    }
+}
