@@ -29,121 +29,128 @@
             flex-direction: column;
         }
     }
-}
-
-
-.amenities__list {
-    @extend %list;
-    margin-top: 32px;
-}
-.amenities__subtitle {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    margin-bottom: 32px;
-    
-}
-.amenities__part {
-    @media (min-width: 1024px) and (max-width: 1279px) {
-        display: flex;
-        flex-direction: row;
-        gap: 80px;
-    }
-    @media screen and (min-width: 1280px) {
-        display: flex;
-        flex-direction: row;
-        gap: 159px;
-    }
-}
-.amenities__paragraph {
-    font-family: 'Montserrat';
-    font-style: normal;
-
-    color: #7A7A7A;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    margin-top: 16px;
-
-    @media screen and (min-width: 1024px) {
-        width: 400px;
-        display: flex;
-        flex-direction: row;
-        
-        &--current {
-        width: 757px;
-        }
-    }
-}
-
-.amenities__box {
-    @media screen and (min-width: 1024px) {
-        margin-left: auto;
-    }
-}
-.amenities__button {
-    font-family: 'Montserrat';
-    font-style: normal;
-
-    background-color: $primaryDark;
-    border: 1px solid $brandColor;
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #FFFFFF;
-    height: 64px;
-
-    &:hover,
-    &:focus {
-        background-color: $brandColor;
-        color: $primaryDark;
-    }
-    
-    @media screen and (max-width: 1023px) {
-        max-width: 384px;
-        width: 100%;
-    }
-    @media screen and (min-width: 1024px) {
-        width: 434px;
-        // width: 100%;
-        font-size: 24px;
-        line-height: 1.20;
-    }
-   
-}
-.amenities__link {
-    font-family: 'Montserrat';
-    font-style: normal;
-
-    @extend %link;
-    color: #C79002;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    display: flex;
-    margin-top: 20px;
-
-    &:hover,
-    &:focus,
-    &:hover .amenities__icon,
-    &:focus .amenities__icon  {
-        color: $brandColor;
-        fill: $brandColor;
-    }
-
-    @media screen and (max-width: 1023px) {
-        justify-content: center;
-    }
-    @media screen and (min-width: 1024px) {
-        font-size: 20px;
-        line-height: 1.2;
+    &__list {
+        @extend %list;
         margin-top: 32px;
     }
-}
-.amenities__icon {
-    fill: #C79002;
-    margin-left: 13px;
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        margin-bottom: 32px;
+        
+    }
+    &__part {
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+        }
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            flex-direction: row;
+            gap: 159px;
+        }
+    }
+    &__paragraph {
+        font-family: 'Montserrat';
+        font-style: normal;
+    
+        color: #7A7A7A;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-top: 16px;
+    
+        @media screen and (min-width: 1024px) {
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            
+            &--current {
+            width: 757px;
+            }
+        }
+    }
+    &__box {
+        @media screen and (min-width: 1024px) {
+            margin-left: auto;
+        }
+    }
+    &__button {
+        font-family: 'Montserrat';
+        background-color: $primaryDark;
+        border: 1px solid $brandColor;
+        border-radius: 25px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #FFFFFF;
+        height: 64px;
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: $cubic;
+    
+        &:hover,
+        &:focus {
+            background-color: $brandColor;
+            color: $primaryDark;
+        }
+        
+        @media screen and (max-width: 1023px) {
+            max-width: 384px;
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 434px;
+            font-size: 24px;
+            line-height: 1.20;
+        }
+    }
+    &__link {
+        @extend %link;
+        position: relative;
+        font-family: 'Montserrat';
+        font-style: normal;
+        color: #C79002;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        display: flex;
+        margin-top: 20px;
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: $cubic;
+    
+        &:hover,
+        &:focus,
+        &:hover .amenities__icon,
+        &:focus .amenities__icon  {
+            color: $brandColor;
+            fill: $brandColor;
+        }
+    
+        @media screen and (max-width: 1023px) {
+            justify-content: center;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-top: 32px;
+        }
+    }
+    &__icon {
+        fill: #C79002;
+        margin-left: 13px;
+        bottom: -2px;
+        right: 2px;
+    
+        @media screen and (max-width: 414px) {
+            position: absolute;
+            bottom: 10px;
+            right: 2px;
+        }
+    }
 }
