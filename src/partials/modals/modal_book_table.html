@@ -1,0 +1,67 @@
+<div class="backdrop">
+  <div class="modal">
+    <button class="modal__close-btn" type="button">
+      <svg width="24" height="24">
+        <use href="#">close</use>
+      </svg>
+    </button>
+    <h3 class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</h3>
+    <form name="book-table-form">
+      <ul class="form-field">
+        <div class="form-field__box">
+          <li class="form-field__item">
+            <input
+              class="form-field__input"
+              id="client-name"
+              type="text"
+              name="client-name"
+              placeholder="Ваше ім’я"
+            />
+            <label class="form-field__label" for="client-name"
+              >На кого забронювати столик?</label
+            >
+          </li>
+          <li class="form-field__item">
+            <input
+              class="form-field__input"
+              id="client-tel"
+              type="tel"
+              name="client-tel"
+              placeholder="+38 (___) ___-__-__"
+            />
+            <label class="form-field__label" for="client-tel"
+              >Номер телефону</label
+            >
+          </li>
+        </div>
+        <div class="form-field__box">
+          <li class="form-field__item">
+            <input
+              class="form-field__input"
+              id="client-total-person"
+              type="text"
+              name="client-total-person"
+              placeholder="2"
+            />
+            <label class="form-field__label" for="client-total-person"
+              >Столик на яку кількість осіб?</label
+            >
+          </li>
+          <li class="form-field__item">
+            <input
+              class="form-field__input"
+              id="client-book-time"
+              type="text"
+              name="client-book-time"
+              placeholder="time"
+            />
+            <label class="form-field__label" for="client-book-time"
+              >На яку дату бронювати?</label
+            >
+          </li>
+        </div>
+      </ul>
+      <button class="book-btn" type="button">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>
