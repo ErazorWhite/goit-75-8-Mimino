@@ -1,0 +1,120 @@
+.header {
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        @extend %link;
+
+        @media (min-width: $bp-tablet) {
+            padding-left: 47px;
+            padding-right: 47px;
+        }
+        @media (min-width: $bp-desktop) {
+            padding-left: 85px;
+            padding-right: 85px;
+        }
+}
+    &__logo {
+        margin-top: 16px;
+        margin-bottom: 9px;
+        color: #ffffff;
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        text-decoration: none;
+
+        @media (min-width: $bp-tablet) {
+            margin-top: 24px;
+            margin-bottom: 33px;
+            font-size: 40px;
+        }
+        }
+    
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        margin-bottom: 12px;
+        gap: 20px;
+        list-style-type: none;
+
+        @media (min-width: $bp-tablet) {
+            gap: 72px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    &__pages {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.20;
+        letter-spacing: 0.02em;
+        color: $brandColor;
+        text-decoration: none;
+
+        @media (min-width: $bp-tablet) {
+            font-size: 20px;
+        }
+    }
+    &__nav-item {
+        @extend %link;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        @media (min-width: $bp-tablet) {
+            gap: 32px;
+        }
+    }
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        text-decoration: none;
+        list-style-type: none;
+        
+
+        @media (min-width: $bp-tablet) {
+            width: 146px;
+            padding: 12px 8px;
+            border-radius: 2px;
+            border: 1px solid $brandColor;
+        }
+    }
+    &__contact-number {
+        display: none;
+        color: #ffffff;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+
+        @media (min-width: $bp-tablet) {
+            display: flex;
+        }
+
+    }
+    &__social-list {
+        display: none;
+        list-style-type: none;
+        margin-top: 38px;
+        margin-bottom: 38px;
+        gap: 20px;
+        
+        @media (min-width: $bp-desktop) {
+            display: flex;
+        }
+    }
+    &__icon {
+        fill: $brandColor;
+    }
+    
+}
