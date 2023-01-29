@@ -8,10 +8,11 @@
     @include for-tablet-up {
         width: $bp-tablet;
         max-width: $bp-desktop;
-
+        padding: 0px 47px;
     }
 
     @include for-desktop-up {
         width: $bp-desktop;
+        padding: 0px 85px;
     }
 }
