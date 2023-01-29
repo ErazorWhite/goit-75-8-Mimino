@@ -1,0 +1,112 @@
+.contacts__section {
+    list-style-type: none;
+}
+
+.contacts__container {
+
+// 414px
+// 1024 px;
+// 1280px
+// @extend %container;
+//         @extend %container;
+       padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 36px;
+        padding-bottom: 32px;
+        margin: 0 auto;
+        @media screen and  (max-width: 414px) {
+        max-width: 767px;    
+     
+    }
+        
+        @media screen and  (min-width: 1024px) {
+            display: flex;
+            width: 768px;
+         
+        }
+        @media screen and  (min-width: 1200px){
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+    }  
+      
+    }    
+    .contacts__list {
+        display: flex;
+        list-style-type:none;
+
+    }
+    .contacts__brand {
+        font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #494848;
+
+    margin-bottom: 12px;
+    }
+.contacts__title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.66;
+letter-spacing: 0.02em;
+
+/* серый1 */
+
+color: #5F5F5F;
+}
+.contacts__name {
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+}
+// .contacts__name--restaurant {
+
+// }
+.contacts__item {
+    display: flex;
+    box-sizing: border-box;
+
+// position: absolute;
+// width: 144px;
+// height: 40px;
+// left: 139px;
+// top: 127px;
+
+background: #FFFFFF;
+/* Akzent yellow */
+
+border: 0.5px solid #F3C653;
+border-radius: 2px;
+}
+.contacts__link {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+width: 144px;
+height: 40px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #494848;
+}
+.contacts__name--restaurant {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+/* Brown */
+
+color: #C79002;
+}
