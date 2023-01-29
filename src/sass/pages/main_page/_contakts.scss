@@ -11,7 +11,7 @@
 //         @extend %container;
        padding-left: 15px;
         padding-right: 15px;
-        padding-top: 32px;
+        padding-top: 36px;
         padding-bottom: 32px;
         margin: 0 auto;
         @media screen and  (max-width: 414px) {
@@ -90,9 +90,23 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 17px;
+width: 144px;
+height: 40px;
 /* identical to box height */
 
 letter-spacing: 0.02em;
 text-decoration: none;
 color: #494848;
+}
+.contacts__name--restaurant {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+/* Brown */
+
+color: #C79002;
 }
