@@ -81,4 +81,8 @@ img {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+}
+
+.menu {
+  border: 1px solid red;
 }/*# sourceMappingURL=index.css.map */
