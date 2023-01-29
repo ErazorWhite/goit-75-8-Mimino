@@ -1,0 +1,60 @@
+<div class="backdrop">
+  <div class="modal">
+    <button class="modal__close-btn" type="button">
+      <svg width="24" height="24">
+        <use href="#">close</use>
+      </svg>
+    </button>
+    <h3 class="modal__title">ЦІНИ НА НОМЕР</h3>
+    <form name="book-price">
+      <ul class="form-field">
+        <li class="form-field__item">
+          <select
+            name="room-type"
+            class="form-field__input form-field__input-one js-select"
+            id="room-type"
+          >
+            <option value="Двохмісний">Двохмісний</option>
+            <option value="Одномісний">Одномісний</option>
+            <option value="Напів Люкс">Напів Люкс</option>
+            <option value="Люкс">Люкс</option>
+            <option value="Президентський">Президентський</option>
+          </select>
+          <label class="form-field__label" for="room-type"
+            >Категорія номеру</label
+          >
+        </li>
+        <div class="form-field__box">
+          <li class="form-field__item">
+            <select
+              name="book-time"
+              class="form-field__input js-select"
+              id="book-time"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <label class="form-field__label" for="book-time"
+              >Кількість ночей</label
+            >
+          </li>
+
+          <li class="form-field__item">
+            <input
+              class="form-field__input"
+              id="book-price"
+              type="text"
+              name="book-price"
+              placeholder="1000"
+            />
+            <label class="form-field__label" for="book-price">грн</label>
+          </li>
+        </div>
+      </ul>
+      <button class="book-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>
