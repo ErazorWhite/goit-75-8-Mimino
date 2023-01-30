@@ -1,0 +1,176 @@
+.section {
+background: #FFFDEE;
+list-style: none;
+    margin: 0;
+    @media screen and (max-width: 1023px) {
+        padding: 16px 15px 20px 15px;
+       }
+
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        padding: 0px 60px 32px 47px;
+       }
+
+
+    @media screen and (min-width: 1280px) {
+     padding: 0px 85px 20px 85px;
+        }
+    
+    
+}
+    
+.kitchen__container {
+    @media screen and (max-width: 413px) {
+    max-width: 413px;
+
+    }
+    
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+     max-width: 1023px;
+    }
+    
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    max-width: 1279px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+    width: 1280px;
+    }
+    
+       
+    }
+    
+
+.kitchen__block {
+    display: flex;
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            }
+    
+    &--under {
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            }
+    display: flex;
+    }
+    }
+
+
+
+    .kitchen__opus {
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            flex-direction: column;
+           margin-right: 37px;
+           list-style: none;
+            }  
+    
+    }
+
+    .kitchen__span {
+    font-family: 'Times New Roman';
+    @media screen and (min-width: 1280px) {
+
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+    line-height: 37px;   
+    color: #B4B4B4;
+    margin-top: 120px;}
+    }
+    
+    .kitchen__title {
+    font-family: 'Film P3';
+    font-style: normal;
+
+    @media screen and (min-width: 1280px) {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin: 0;
+    margin-top: 4px;}
+    }
+    
+    .kitchen__text {
+    font-family: 'Montserrat';
+    color: #7A7A7A;
+
+    @media screen and (min-width: 1280px) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0.02em;
+ 
+  
+    
+    width: 518px;
+    height: 60px;
+    margin-top: 24px;}
+    
+    }
+    
+    .kitchen__foto {
+        @media screen and (min-width: 1024px) and (max-width: 1279px){
+            margin-top: -32px;
+            }
+
+        @media screen and (min-width: 1024px) and (min-width: 1280px) {
+        margin-top: -33px;
+    }
+    &--beff {
+        @media screen and (min-width: 1024px) and (max-width: 1279px){
+            margin-top: 0px;
+            }
+            @media screen and (min-width: 1024px) and (min-width: 1280px) {
+                margin-top: 0px;}
+    }
+}
+    
+    .kitchen__textbeef {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #C79002;
+    list-style: none;
+    }
+    
+    .images {
+    width: 400px;
+    height: 524px;
+    left: 0px;
+    top: 0px;
+    background: #DADADA;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    
+    }
+    
+    .kitchen__beef {
+    display: flex;
+    // margin-top: 162px;
+    align-items: center
+    }
+    
+    .kitchen__list{
+    display: flex;
+    }
+    
+    .images__list {
+    
+    position: absolute;
+        width: 194px;
+        height: 194px;
+        left: 536px;
+        top: 948px;
+    
+        background: #DADADA;
+        /* shadow_little */
+    
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);}
+    
+    
