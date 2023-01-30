@@ -105,8 +105,8 @@
     margin-left: auto;
     margin-bottom: 32px;
   }
-  @media screen and (min-width: $bp-mobile) {
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: $bp-mobile) {
+    height: 280px;
   }
   @media screen and (min-width: $bp-tablet) {
     width: 400px;
@@ -122,6 +122,10 @@
   position: absolute;
   left: 0;
   bottom: 0;
+
+  @media screen and (max-width: $bp-mobile) {
+    overflow: hidden;
+  }
 }
 .lux__slider {
   height: 246px;
