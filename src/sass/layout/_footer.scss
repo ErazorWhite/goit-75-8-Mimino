@@ -6,129 +6,77 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
-}
-.footer__container {
-    @media (min-width: 320px) and (max-width: 1023px) {
+    &__container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-wrap: nowrap;
         justify-content: center;
+        @media (min-width: 414px) and (max-width: 1023px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
     }
-}
-.footer__part {
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    &__part {
+        margin: auto;
+        @media (min-width: 414px) and (max-width: 1023px) {
+            margin-left: 85px;
+        }
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 137px;
+            margin-left: 163px;
+        }
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 199px;
+            margin-left: 231px;
+        }
+    }
+    &__list {
+        @media (min-width: 320px) and (max-width: 1023px) {
+            margin-bottom: 33px;
+        }
+    }
+    &__link {
+        color: $brandColor;
+        font-family: 'Montserrat';
+        @extend %link;
+    
+        @media (min-width: 320px) and (max-width: 1023px) {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+        }
+       
+    }
+    &__logo {
+        color: $brandColor;
+        font-family: 'Film P3';
+        @extend %link;
         display: flex;
-        flex-wrap: nowrap;
-        gap: 137px;
-        margin-left: 163px;
-    }
-    @media screen and (min-width: 1280px) {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 199px;
-        margin-left: 231px;
-    }
-}
-.footer__list {
-    @media (min-width: 320px) and (max-width: 1023px) {
-        margin-bottom: 33px;
+        align-items: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        justify-content: center;
+        
+        @media screen and (min-width: 1024px) {
+            font-size: 64px;
+        }
     }
 }
+
 .footer__item {
     @extend %list;
     &:not(:last-child) {
         margin-bottom: 16px;
     }
-}
-
-.footer__link {
-    color: $brandColor;
-    font-family: 'Montserrat';
-    @extend %link;
-
-    @media (min-width: 320px) and (max-width: 1023px) {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-   
-}
-.footer__logo {
-    color: $brandColor;
-    font-family: 'Film P3';
-    @extend %link;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    
-    @media (min-width: 320px) and (max-width: 1023px) {
-        font-size: 40px;
-        line-height: 1.07;
-        letter-spacing: 0.3em;
-        margin-left: auto;
-        margin-right: auto;
-        // margin-right: 85px;
-    }
-    @media screen and (min-width: 1024px) {
-        font-size: 64px;
-        line-height: 1.07;
-        letter-spacing: 0.3em;
-    }
-}
-
-
-.footer-social {
-    display: flex;
-    justify-content: space-between;
-
-    @media screen and (min-width: 1024px) {
-        flex-direction: column-reverse;
-        gap: 10px;
-    }
-}
-.footer-social__item{
-    @extend %list;
-    color: $brandColor;
-    @media (min-width: 320px) and (max-width: 1023px) {
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        font-family: 'Montserrat';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.02em;
-        border: 0.5px solid $brandColor;
-        border-radius: 2px;
-        width: 144px;
-        height: 40px;
-        padding-left: 12px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        position: relative;
-       
-    }
-}
-.footer-social__link {
-    @extend %link;
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        position: absolute;
-        right: 10px;
-    }
-}
-.footer-social__icon {
-    fill: $brandColor;
-    
 }
