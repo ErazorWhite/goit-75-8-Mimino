@@ -2,10 +2,11 @@
     background-color: $secondaryDark;
     padding-top: 40px;
     padding-bottom: 40px;
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    @media screen and (min-width: 1024px) {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
 }
 .footer__container {
     @media (min-width: 320px) and (max-width: 1023px) {
@@ -13,7 +14,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -25,6 +26,12 @@
         flex-wrap: nowrap;
         gap: 137px;
         margin-left: 163px;
+    }
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 199px;
+        margin-left: 231px;
     }
 }
 .footer__list {
@@ -58,9 +65,9 @@
     @extend %link;
     display: flex;
     align-items: center;
+    font-weight: 700;
     
     @media (min-width: 320px) and (max-width: 1023px) {
-        font-weight: 700;
         font-size: 40px;
         line-height: 1.07;
         letter-spacing: 0.3em;
@@ -68,8 +75,7 @@
         margin-right: auto;
         // margin-right: 85px;
     }
-    @media (min-width: 1024px) and (max-width: 1279px) {
-        font-weight: 700;
+    @media screen and (min-width: 1024px) {
         font-size: 64px;
         line-height: 1.07;
         letter-spacing: 0.3em;
@@ -81,7 +87,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    @media screen and (min-width: 1024px) {
         flex-direction: column-reverse;
         gap: 10px;
     }
@@ -95,7 +101,7 @@
         }
     }
 
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    @media screen and (min-width: 1024px) {
         font-family: 'Montserrat';
         font-weight: 400;
         font-size: 16px;
@@ -110,15 +116,16 @@
         padding-left: 12px;
         padding-top: 10px;
         padding-bottom: 10px;
+        position: relative;
        
     }
 }
 .footer-social__link {
     @extend %link;
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
-        // margin-left: auto;
-        // margin-right: auto;
+        position: absolute;
+        right: 10px;
     }
 }
 .footer-social__icon {
