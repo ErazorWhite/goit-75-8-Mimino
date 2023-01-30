@@ -53,39 +53,39 @@
     color: #C79002;
 }
 
-.about-restaurant__swiper {
-    max-width: 330px;
-    margin-left: auto;
-}
+// .about-restaurant__swiper {
+//     max-width: 330px;
+//     margin-left: auto;
+// }
 
-.about-restaurant__swiper-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    .about-restaurant__second {
-        max-width: 60px !important;
-        overflow: hidden !important;
-    }
-}
+// .about-restaurant__swiper-wrapper {
+//     display: flex;
+//     align-items: center;
+//     gap: 25px;
+//     .about-restaurant__second {
+//         max-width: 60px !important;
+//         overflow: hidden !important;
+//     }
+// }
 
-.about-restaurant__second picture{
-    object-fit: cover;
-    display: block;
-    height: 245px;
-    width: 245px;
-    & img{
-        object-fit: cover;
-        width: 245px;
-    }
-}
+// .about-restaurant__second picture{
+//     object-fit: cover;
+//     display: block;
+//     height: 245px;
+//     width: 245px;
+//     & img{
+//         object-fit: cover;
+//         width: 245px;
+//     }
+// }
 
-.about-restaurant__swiper-slide {
-    width: 245px;
-}
+// .about-restaurant__swiper-slide {
+//     width: 245px;
+// }
 
-.about-restaurant__buttons {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    justify-content: flex-end;
-}
+// .about-restaurant__buttons {
+//     display: flex;
+//     align-items: center;
+//     gap: 32px;
+//     justify-content: flex-end;
+// }
