@@ -144,12 +144,14 @@
     &__icon {
         fill: #C79002;
         margin-left: 13px;
-        bottom: -2px;
-        right: 2px;
-    
-        @media screen and (max-width: 414px) {
+        
+        @media screen and (min-width: 414px) {
+            display: flex;
+            justify-content: flex-end;
+        }
+        @media screen and (min-width: 1024px) {
             position: absolute;
-            bottom: 10px;
+            top: 2px;
             right: 2px;
         }
     }
