@@ -20,21 +20,21 @@ list-style: none;
 }
     
 .kitchen__container {
-    @media screen and (max-width: 413px) {
-    max-width: 413px;
+    // @media screen and (max-width: 413px) {
+    // min-width: 413px;
 
-    }
+    // }
     
     @media screen and (min-width: 414px) and (max-width: 1023px) {
-     max-width: 1023px;
+     width: 414px;
     }
     
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    max-width: 1279px;
+     width: 1024px;
     }
     
     @media screen and (min-width: 1280px) {
-    width: 1280px;
+     width: 1280px;
     }
     
        
@@ -44,75 +44,178 @@ list-style: none;
 .kitchen__block {
     display: flex;
         @media screen and (min-width: 1280px) {
-            display: flex;
+            // display: flex;
             }
+        @media screen and (min-width: 1024px) {
+                // display: flex;
+                }    
+ @media screen and (max-width: 1023px) {
+                // display: flex;
+                flex-wrap: wrap
+                }    
+
+
     
     &--under {
-        @media screen and (min-width: 1280px) {
-            display: flex;
+      display: flex;    
+        @media screen and (min-width: 1024px) {
+            // display: flex;
             }
-    display: flex;
+  
     }
     }
 
 
 
     .kitchen__opus {
+              list-style: none;
+
         @media screen and (min-width: 1280px) {
-            display: flex;
-            flex-direction: column;
+           display: flex;
+           flex-direction: column;
            margin-right: 37px;
-           list-style: none;
+     
             }  
     
     }
 
     .kitchen__span {
     font-family: 'Times New Roman';
-    @media screen and (min-width: 1280px) {
+    color: #B4B4B4;
+
+    @media screen  and (max-width: 1023px) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15; }  
+
+
+
+
+    @media screen and (min-width: 1024px) {
 
     font-weight: 400;
     font-size: 32px;
-    font-style: normal;
-    line-height: 37px;   
-    color: #B4B4B4;
-    margin-top: 120px;}
+    line-height: 1.18;   
+    
+    margin-top: 120px;
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        font-weight: 400;
+        font-size: 32px;
+        font-style: normal;
+        line-height: 37px;   
+        color: #B4B4B4;
+        margin-top: 120px;
+        }
+
     }
     
     .kitchen__title {
-    font-family: 'Film P3';
-    font-style: normal;
+        font-family: 'Film P3';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+       letter-spacing: 0.3em;
+        color: #494848;
 
-    @media screen and (min-width: 1280px) {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    color: #494848;
-    margin: 0;
-    margin-top: 4px;}
+    @media screen  and (max-width: 1023px) {
+        font-size: 40px;
+        line-height: 43px;
+        letter-spacing: 0.3em;
+        }  
+
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        margin: 0;
+        margin-top: 4px;}
+
+    // @media screen and (max-width: 413px) {
+    //     font-size: 40px;
+    //     line-height: 43px;      
+     
+    // //     }
+        
+      
+        
+    //     @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    //      min-width: 1024px;
+    //     }        
+
+
+
     }
     
     .kitchen__text {
     font-family: 'Montserrat';
-    color: #7A7A7A;
-
-    @media screen and (min-width: 1280px) {
+    color: #5F5F5F;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
     font-style: normal;
     letter-spacing: 0.02em;
- 
-  
     
-    width: 518px;
-    height: 60px;
-    margin-top: 24px;}
+
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        font-size: 12px;
+        line-height: 15px;
+        width: 258px;
+        height: 106px;
+      
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1279px){
+        width: 439px;
+        height: 80px;
+        }
+
+        @media screen and (min-width: 1280px) {
+        width: 518px;
+        height: 60px;
+        margin-top: 24px;
+         }
+    
+    &--beef {
+
+        @media screen and (min-width: 1280px) {
+            color: $brandAccent;
+            list-style: none;
+            margin-left: 32px;
+            width: 163px;
+            height: 120px;
+    
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        color: $brandAccent;
+        list-style: none;
+        margin-left: 50px;
+        width: 163px;
+        height: 120px;
+
+
+    }
+
+
+        @media screen and (max-width: 1023px) {
+        color: $brandAccent;
+        list-style: none;
+        margin-left: 20px;
+        width: 312px;
+        height: 122px;
+    }
+
+
+    }
+
+    
+        
     
     }
     
     .kitchen__foto {
+        list-style: none;
         @media screen and (min-width: 1024px) and (max-width: 1279px){
             margin-top: -32px;
             }
@@ -120,12 +223,24 @@ list-style: none;
         @media screen and (min-width: 1024px) and (min-width: 1280px) {
         margin-top: -33px;
     }
+    @media screen and (max-width: 1023px) {
+        margin-top: 28px;
+        margin-left: 140px;
+
+    }
+
     &--beff {
         @media screen and (min-width: 1024px) and (max-width: 1279px){
             margin-top: 0px;
             }
-            @media screen and (min-width: 1024px) and (min-width: 1280px) {
-                margin-top: 0px;}
+        @media screen and (min-width: 1024px) and (min-width: 1280px) {
+                margin-top: 0px;
+            }
+    
+        @media screen and (max-width: 1023px) {
+        margin-top: 32px;
+        margin-left: 0px;
+        }
     }
 }
     
@@ -138,11 +253,12 @@ list-style: none;
     letter-spacing: 0.02em;
     color: #C79002;
     list-style: none;
+    width: 312px;
     }
     
     .images {
-    width: 400px;
-    height: 524px;
+    // width: 400px;
+    // height: 524px;
     left: 0px;
     top: 0px;
     background: #DADADA;
@@ -153,20 +269,58 @@ list-style: none;
     .kitchen__beef {
     display: flex;
     // margin-top: 162px;
-    align-items: center
+    align-items: center;
+
+        @media screen and (max-width: 1023px) {
+        margin-top: 28px;
+        margin-bottom: 23px;
+    }
+
+
     }
     
+    .kitchen__slider {
+    display: flex;
+
+    }
+
+
     .kitchen__list{
     display: flex;
+    @media screen and (max-width: 1023px) {
+        width: 245px;
+        margin-left: 72px;
+        &:nth-child(2) {
+            margin-left: 25px; 
+        }
+
+        // height: 245px;
+    }
+    display: flex;
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        width: 194px;
+        &:nth-child(2) {
+            margin-left: 25px; 
+        }
+        // height: 194px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 254px;
+        &:nth-child(2) {
+            margin-left: 25px; 
+        }
+        // height: 254px;
+    }
     }
     
     .images__list {
     
-    position: absolute;
-        width: 194px;
-        height: 194px;
-        left: 536px;
-        top: 948px;
+    // position: absolute;
+    //     width: 194px;
+    //     height: 194px;
+    //     left: 536px;
+    //     top: 948px;
     
         background: #DADADA;
         /* shadow_little */
@@ -174,3 +328,26 @@ list-style: none;
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);}
     
     
+
+        // слайдер
+
+
+        .slider-section {
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 245px;
+                color: #fff;
+                font-size: 32px;
+                // background-color: red;
+                transition: ease-in-out 0.5s;
+        
+                &.swiper-slide-next {
+                    // краще виставляти у %
+                    // зараз 17.3%  дорівнює 200px
+                    //width: 200px !important;
+                    width: 17.3% !important;
+                }
+            }
+        }
