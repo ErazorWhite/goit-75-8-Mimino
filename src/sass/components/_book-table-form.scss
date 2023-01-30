@@ -42,7 +42,7 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
 
-    color: #c79002;
+    color: $brandAccent;
 
     @media (min-width: $bp-tablet) {
       font-size: 16px;
@@ -59,7 +59,7 @@
     margin-bottom: 8px;
 
     background-color: inherit;
-    border: 1px solid #c79002;
+    border: 1px solid $brandAccent;
     border-radius: 2px;
 
     outline: none;
@@ -90,7 +90,7 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 20px;
+    top: 20%;
     right: 20px;
     z-index: 1;
 

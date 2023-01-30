@@ -3,8 +3,6 @@
 
   @media (min-width: $bp-tablet) {
     display: block;
-
-    // gap: 16px;
   }
 
   &__item {
@@ -12,12 +10,16 @@
     position: relative;
 
     @media (min-width: $bp-tablet) {
-      margin-bottom: 28px;
+      margin-bottom: 0;
       min-width: 288px;
     }
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &--changed {
+      margin-bottom: 20px;
     }
   }
 
@@ -45,11 +47,15 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
 
-    color: #c79002;
+    color: $brandAccent;
 
     @media (min-width: $bp-tablet) {
       font-size: 16px;
       line-height: 1.25;
+    }
+
+    &--changed {
+      margin-left: 0;
     }
   }
 
@@ -63,7 +69,7 @@
     margin-bottom: 8px;
 
     background-color: inherit;
-    border: 1px solid #c79002;
+    border: 1px solid $brandAccent;
     border-radius: 2px;
 
     outline: none;
@@ -98,7 +104,7 @@
       width: 24px;
       height: 24px;
       position: absolute;
-      top: 20px;
+      top: 20%;
       right: 20px;
       z-index: 1;
 
@@ -108,6 +114,10 @@
 
   &--no-frame {
     border: none;
+    padding: 0;
+    margin-bottom: 28px;
+    font-size: 24px;
+    height: auto;
   }
 }
 

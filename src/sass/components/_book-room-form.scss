@@ -3,8 +3,6 @@
 
   @media (min-width: $bp-tablet) {
     display: block;
-
-    // gap: 16px;
   }
 
   &__item {
@@ -29,8 +27,8 @@
 
     @media (min-width: $bp-tablet) {
       display: flex;
-      gap: 16px;
       margin-bottom: 0;
+      gap: 16px;
     }
   }
 
@@ -44,11 +42,17 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
 
-    color: #c79002;
+    color: $brandAccent;
 
     @media (min-width: $bp-tablet) {
       font-size: 16px;
       line-height: 1.25;
+    }
+
+    &--right-side {
+      @media (min-width: $bp-tablet) {
+        margin-left: 312px;
+      }
     }
   }
 
@@ -61,7 +65,7 @@
     margin-bottom: 8px;
 
     background-color: inherit;
-    border: 1px solid #c79002;
+    border: 1px solid $brandAccent;
     border-radius: 2px;
 
     outline: none;
@@ -77,12 +81,19 @@
     appearance: none;
 
     @media (min-width: $bp-tablet) {
+      width: 288px;
       height: 64px;
       padding-top: 18px;
       padding-bottom: 18px;
 
       font-size: 24px;
       line-height: 1.16;
+    }
+
+    &--right-side {
+      @media (min-width: $bp-tablet) {
+        margin-left: 304px;
+      }
     }
   }
 
@@ -92,7 +103,7 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 20px;
+    top: 20%;
     right: 20px;
     z-index: 1;
 

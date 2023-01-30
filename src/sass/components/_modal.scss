@@ -10,7 +10,7 @@
   min-height: 572px;
   padding: 60px 15px;
 
-  background-color: #fffdee;
+  background-color: $primaryLight;
   border-radius: 2px;
 
   visibility: hidden;
@@ -36,7 +36,7 @@
     justify-content: center;
     top: 16px;
     right: 16px;
-    fill: black;
+    fill: $primaryDark;
     background-color: inherit;
     border: transparent;
     cursor: pointer;
@@ -45,7 +45,7 @@
   &__title {
     margin-bottom: 40px;
 
-    color: black;
+    color: $primaryDark;
 
     font-weight: 700;
     font-size: 24px;
