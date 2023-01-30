@@ -1,0 +1,101 @@
+// для коричневих кнопок
+.btn{
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    width: 258px;
+        height: 48px;
+        background: rgba(0, 0, 0, 0.4);
+        &:hover,
+        &:focus{
+                background: #FFFFFF;
+                border: 2px solid #F3C653;
+                border-radius: 25px;
+
+        }
+}
+.btn-txt{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #F3C653;
+}
+// для чорних заокруглених
+.btn-type{
+    width: 236px;
+    height: 48px;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+        &:hover,
+        &:focus{
+        background: #FFFFFF;
+        border: 2px solid #F3C653;
+        border-radius: 25px;
+    }
+}
+// оформити бронювання
+.btn-make-reserv{
+    background: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    width: 298px;
+    height: 24px;
+        &:hover,
+        &:focus{
+        background: #F3C653;
+        }
+
+}
+.btn-make-reserv-txt{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    &:hover,
+    &:focus {
+        color: #000000;}
+                @media screen and (min-width: 768px) {
+                    width: 434px;
+                    height: 65px;
+                }
+        
+}
+// оформити бронювання модалка
+.btn-reserv-modal{
+    width: 384px;
+    height: 64px;
+    background: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    &:hover,
+    &:focus {
+            background: #F3C653;
+        }
+                @media screen and (min-width: 768px) {
+                    width: 592px;
+                    height: 64px;         
+                }
+}
+.btn-reserv-modal-txt {
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    &:hover,
+        &:focus {
+            color: #000000;
+        }
+    
+        @media screen and (min-width: 768px) {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+        }
+}
