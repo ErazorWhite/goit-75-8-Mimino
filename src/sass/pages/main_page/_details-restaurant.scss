@@ -1,0 +1,52 @@
+.details-restaurant {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-color: #C4C4C4;
+    background-image: url(../images/homepage/homepage5-mobile.jpg);
+         @include retina { 
+       background-image: url(../images/homepage/homepage5-mobile@2x.jpg);
+    };
+    @media  screen and (min-width: 414px) {
+       width: 414px;
+       background-image: url(../images/homepage/homepage5-tablet.jpg);
+         @include retina { 
+       background-image: url(../images/homepage/homepage5-tablet@2x.jpg);
+    }
+}
+}
+
+.details-restaurant__description {
+    width: 259px;
+    margin-left: auto;
+}
+
+.logo-min-white {
+    font-family: "Film P3";
+    font-size: 40px;
+    color: white;
+    margin-bottom: 12PX;
+}
+
+.details-restaurant__title {
+letter-spacing: 0.02em;
+@include desctiption-block(white, 700, 20px, 1.2);
+margin-bottom: 20PX;
+}
+
+.details-restaurant__text {
+letter-spacing: 0.02em;
+    @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
+}
+
+.details-restaurant__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
