@@ -1,0 +1,61 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 414px;
+  // height: 100%;
+  //   max-height: 668px;
+  min-height: 572px;
+  padding: 60px 15px;
+
+  background-color: #fffdee;
+  border-radius: 2px;
+
+  visibility: hidden;
+  z-index: 30;
+  opacity: 0;
+  transition: opacity 250ms $cubic, visibility 250ms $cubic;
+
+  @media (min-width: $bp-tablet) {
+    max-width: 712px;
+    min-height: 489px;
+    padding: 60px;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 16px;
+    right: 16px;
+    fill: black;
+    background-color: inherit;
+    border: transparent;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    color: black;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    @media (min-width: $bp-tablet) {
+      font-size: 40px;
+      line-height: 1.15;
+    }
+  }
+}
