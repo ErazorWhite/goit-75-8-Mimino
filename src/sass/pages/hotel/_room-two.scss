@@ -13,6 +13,7 @@
 
     @media screen and (min-width: 1280px) {
         padding-top: 72px;
+        
 
     }
     &__container {
@@ -88,4 +89,31 @@
             right: 112px;
         }
     }
+     &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        @media screen and (min-width: 1024px) {
+        margin-top: 41px;
+           
+    }
+        }
+   
+    &__button {
+        font-family: 'Montserrat';
+        color: #F3C653;
+        border: 2px solid $secondaryLight;
+        width: 246px;
+        height: 46px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        padding: 0;
+        cursor: pointer;
+        text-align: center;
+        background-color: $primaryDark;
+        border-radius: 25px;
+    }  
 }
