@@ -7,16 +7,16 @@
 
   background-color: $backdropBg;
 
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   overflow-y: scroll;
 
   transition: opacity 250ms $cubic, visibility 250ms $cubic;
+  z-index: 20;
 
-  &--is-hidden {
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
+  &.active {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
