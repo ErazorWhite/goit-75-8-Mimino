@@ -133,7 +133,6 @@
     margin-bottom: 20px;
     width: 284px;
   }
-  background-color: aquamarine;
   @media screen and (min-width: $bp-tablet) {
     width: 438px;
     height: 258px;
@@ -153,6 +152,25 @@
   display: flex;
   margin-bottom: 16px;
 }
+.lux__slider {
+  position: relative;
+}
+
 .swiper-slide {
   min-height: 192px;
+}
+.swiper-buttons__thumb {
+  position: absolute;
+  right: 10;
+  bottom: 0;
+  width: 98px;
+  height: 32px;
+}
+.swiper-button {
+  color: #000000;
+}
+.swiper__icon {
+  fill: currentColor;
+  width: 100%;
+  height: 100%;
 }
