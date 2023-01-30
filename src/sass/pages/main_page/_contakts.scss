@@ -16,7 +16,7 @@
 }
 
 .address {
-    @media screen and (min-width: 414px) and (max-width: 1023px) {
+    @media screen  and (max-width: 1023px) {
         max-width: 1023px;
           display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@
 
  
 
-    @media screen and (min-width: 414px) and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.07;
@@ -229,12 +229,9 @@ color: #5F5F5F;
 .contacts__item {
     display: flex;
     box-sizing: border-box;
-
-// position: absolute;
-// width: 144px;
-// height: 40px;
-// left: 139px;
-// top: 127px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
 background: #FFFFFF;
 /* Akzent yellow */
