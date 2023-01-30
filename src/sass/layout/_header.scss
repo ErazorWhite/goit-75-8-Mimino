@@ -1,5 +1,7 @@
 .header {
+    background-color: grey;
     &__nav {
+        @extend .container;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -9,14 +11,14 @@
         padding-right: 15px;
         @extend %link;
 
-        @media (min-width: $bp-tablet) {
-            padding-left: 47px;
-            padding-right: 47px;
-        }
-        @media (min-width: $bp-desktop) {
-            padding-left: 85px;
-            padding-right: 85px;
-        }
+        // @media (min-width: $bp-tablet) {
+        //     padding-left: 47px;
+        //     padding-right: 47px;
+        // }
+        // @media (min-width: $bp-desktop) {
+        //     padding-left: 85px;
+        //     padding-right: 85px;
+        // }
 }
     &__logo {
         margin-top: 16px;
