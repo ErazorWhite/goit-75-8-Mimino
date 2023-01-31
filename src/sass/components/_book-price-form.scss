@@ -66,14 +66,13 @@
     border: 1px solid $brandAccent;
     border-radius: 2px;
 
+    appearance: none;
     outline: none;
     cursor: pointer;
 
     @include desctiption-block($modulTextColor, 700, 20px, 1.15);
     font-family: 'Times New Roman', serif;
     letter-spacing: 0.05em;
-
-    appearance: none;
 
     @media (min-width: $bp-tablet) {
       height: 64px;
