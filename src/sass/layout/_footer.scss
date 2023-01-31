@@ -7,21 +7,21 @@
         padding-bottom: 80px;
     }
     &__container {
+        @extend .container;
         display: flex;
         justify-content: center;
+        @media (max-width: 413px) {
+            justify-content: space-between;
+        }
         @media (min-width: 414px) and (max-width: 1023px) {
-            display: flex;
             flex-wrap: wrap;
-            justify-content: center;
         }
         @media screen and (min-width: 1024px) {
-            display: flex;
             flex-wrap: nowrap;
-            justify-content: center;
         }
     }
     &__part {
-        margin: auto;
+        
         @media (min-width: 414px) and (max-width: 1023px) {
             margin-left: 85px;
         }
@@ -45,16 +45,8 @@
     }
     &__link {
         color: $brandColor;
-        font-family: 'Montserrat';
         @extend %link;
-    
-        @media (min-width: 320px) and (max-width: 1023px) {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 1.2;
-            letter-spacing: 0.02em;
-        }
-       
+        @include desctiption-block($brandColor, 500, 20px, 1.2);
     }
     &__logo {
         color: $brandColor;

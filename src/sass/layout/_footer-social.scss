@@ -16,10 +16,6 @@
         }
     
         @media screen and (min-width: 1024px) {
-            font-family: 'Montserrat';
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
             display: flex;
             align-items: center;
             letter-spacing: 0.02em;
@@ -27,10 +23,8 @@
             border-radius: 2px;
             width: 144px;
             height: 40px;
-            padding-left: 12px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            position: relative;
+            
+            
         }
     }
     &__text { 
@@ -41,12 +35,19 @@
     &__link {
         @extend %link;
         @media screen and (min-width: 1024px) {
-            display: flex;
-            position: absolute;
-            right: 10px;
+            position: relative;
+            padding-left: 12px;
+            @include desctiption-block($brandColor, 400, 16px, 1.25);
         }
     }
     &__icon {
         fill: $brandColor;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            position: absolute;
+            bottom: -2px;
+            left: 110px;
+        }
+        
     }
 }
