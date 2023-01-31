@@ -3,21 +3,27 @@ function swiperSlider() {
     //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
     if (teamMain) {
         teamMain.forEach(slider => {
-            //
+            // кнопки вперед та назад
             let arrowLeft = slider.querySelector('.swiper-button-prev');
             let arrowRight = slider.querySelector('.swiper-button-next');
-            //
 
+            //коментуємо чи видаляемо якщо не потрібно
             // let pagination = slider.querySelector('.swiper-pagination');
-            swiper = new Swiper(slider.querySelector('.swiper'), {
+            //коментуємо чи видаляемо якщо не потрібно
+
+            let swiper = new Swiper(slider.querySelector('.swiper'), {
                 speed: 1500,
+                // автоплей
                 //centeredSlides: true,
                 // autoplay: {
                 //     delay: 3000,
                 //     disableOnInteraction: false,
                 // },
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 3, // кількість слайдерів для показу
+                spaceBetween: 20, // відстань між слайдерами
+
+
+                // крапки пагінації
                 // pagination: {
                 //     el: pagination,
                 //     clickable: true,
@@ -25,12 +31,14 @@ function swiperSlider() {
                 //         return '<li class="' + className + '"></li>';
                 //     },
                 // },
-                //
+                // кнопки навігації
                 navigation: {
                     nextEl: arrowRight,
                     prevEl: arrowLeft,
                 },
-                //
+
+                // додаємо додатковий клас
+                // можна використовувати для додаткових анімацій
                 on: {
                     transitionStart: function () {
                         let previousIndex = this.previousIndex;
@@ -47,18 +55,19 @@ function swiperSlider() {
                         activeSlide.classList.add('is-play');
                     },
                 },
+                // адаптив
                 breakpoints: {
                     // when window width is >= 320px
                     320: {
                         slidesPerView: 1,
                         spaceBetween: 20,
                     },
-                    // when window width is >= 480px
+                    // when window width is >= 768px
                     768: {
                         slidesPerView: 2,
                         spaceBetween: 30
                     },
-                    // when window width is >= 640px
+                    // when window width is >= 1200px
                     1200: {
                         slidesPerView: 3,
                         spaceBetween: 40
