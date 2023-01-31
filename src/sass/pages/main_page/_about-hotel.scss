@@ -1,6 +1,8 @@
 .about-hotel {
     padding: 18px 0px;
-    padding-top: 120px;
+    @include for-tablet-up {
+        padding-top: 120px;
+    }
 
     &__label {
         font-size: 20px;
@@ -9,6 +11,11 @@
         text-align: end;
 
         color: $cornerTextColor;
+
+        @include for-tablet-up {
+            font-size: 32px;
+            margin-bottom: 4px;
+        }
     }
 
     &__logo {
@@ -23,20 +30,26 @@
 
         @include for-tablet-up {
             margin-bottom: 24px;
+            font-size: 64px;
         }
     }
 }
 
 .apartments {
+    &__text-box {
+        max-width: 419px;
+    }
+
     &__description {
         margin-bottom: 28px;
         margin-left: auto;
         width: 242px;
 
-        // @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
+        @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
 
         @include for-tablet-up {
             margin-left: unset;
+            font-size: 16px;
             width: 419px;
         }
     }
@@ -49,7 +62,7 @@
         @include for-tablet-up {
             display: flex;
             flex-direction: row-reverse;
-            align-items: start;
+            align-items: flex-start;
             gap: 46px;
         }
     }
@@ -57,21 +70,39 @@
     &__picture {
         @include for-tablet-up {
             width: 400px;
+            transform: translateY(-168px);
         }
     }
 }
 
 .relaxation {
     &__description {
-        // @include desctiption-block($brandAccent, 600, 12px, 1.25);
+        @include desctiption-block($brandAccent, 600, 12px, 1.25);
+
+        @include for-tablet-up {
+            font-size: 16px;
+            max-width: 312px;
+        }
     }
 
     &__thumb {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: end;
         gap: 21px;
         margin-bottom: 32px;
         color: $brandAccent;
+
+        @include for-tablet-up {
+            align-items: start;
+            gap: 48px;
+        }
+    }
+
+    &__picture {
+        @include for-tablet-up {
+            width: 400px;
+            transform: translateY(-224px);
+        }
     }
 }
