@@ -18,7 +18,7 @@
             <img srcset="./images/homepage/homepage1-mobile.jpg 1x,./images/homepage/homepage1-mobile@2x.jpg 2x" alt="">
         </picture>
         </div>
-    
+
         <div class="about-restaurant__details">
             <div class="about-restaurant__image-thumb">
             <picture>
@@ -31,7 +31,8 @@
         <p class="about-restaurant__details-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
 
-        <div class="swiper about-restaurant__swiper" data-slider="team-slider">
+        <div class="slider about-restaurant__slider" data-slider="team-slider">
+        <div class="swiper about-restaurant__swiper">
 
                <!-- Additional required wrapper -->
              <div class="swiper-wrapper about-restaurant__swiper-wrapper">
@@ -52,24 +53,33 @@
                     <img src="./images/homepage/homepage4-mobile.jpg" alt="">
                 </picture>
                </div> 
+               <div class="swiper-slide">
+        <picture>
+                    <source srcset="./images/homepage/homepage5-desktop.jpg 1x,./images/homepage/homepage5-desktop@2x.jpg 2x" media="(min-width:1280px)"/>
+                    <source srcset="./images/homepage/homepage5-tablet.jpg 1x,./images/homepage/homepage5-tablet@2x.jpg 2x" media="(min-width:1024px)"/>
+                    <source srcset="./images/homepage/homepage4-mobile.jpg 1x,./images/homepage/homepage4-mobile@2x.jpg 2x" media="(min-width:414px)"/>
+                    <img src="./images/homepage/homepage4-mobile.jpg" alt="">
+                </picture>
+    </div>
      
              </div>
              
  
              <!-- If we need navigation buttons -->
-             <div class="about-restaurant__buttons">
-             <div class="swiper-button-prev">
+             <div class="about-restaurant__buttons swiper-btns">
+             <div class="swiper-button-prev swiper-btn about-restaurant__btn">
                 <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-arrow-left"></use>
                 </svg>
              </div>
-             <div class="swiper-button-next">
+             <div class="swiper-button-next swiper-btn about-restaurant__btn">
                 <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
              </div>
             </div>
 
+        </div>
         </div>
 
     </div>

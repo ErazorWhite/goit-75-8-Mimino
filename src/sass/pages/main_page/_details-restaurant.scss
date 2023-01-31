@@ -12,18 +12,47 @@
          @include retina { 
        background-image: url(../images/homepage/homepage5-mobile@2x.jpg);
     };
-    @media  screen and (min-width: 414px) {
-       width: 414px;
+     @media  screen and (min-width: 414px) {
+        width: 414px;
+background-image: url(../images/homepage/homepage5-mobile.jpg);
+         @include retina { 
+       background-image: url(../images/homepage/homepage5-mobile@2x.jpg);
+     }
+    };
+ @media  screen and (min-width: 1024px) {
+       width: 1024px;
+       opacity: 1.76;
        background-image: url(../images/homepage/homepage5-tablet.jpg);
          @include retina { 
-       background-image: url(../images/homepage/homepage5-tablet@2x.jpg);
+       background-image:  url(../images/homepage/homepage5-tablet@2x.jpg);
     }
-}
+};
+ @media  screen and (min-width: 1280px) {
+       width: 1280px;
+       background-image: url(../images/homepage/homepage5-desktop.jpg);
+         @include retina { 
+       background-image: url(../images/homepage/homepage5-desktop@2x.jpg);
+    }
+};
+@media screen and (min-width: 1280px) {
+        padding-top: 48px;
+        padding-bottom: 40px;
+    } 
 }
 
 .details-restaurant__description {
     width: 259px;
     margin-left: auto;
+    @media screen and (min-width: 1024px) {
+        width: 610px;
+        margin-left: 231px;
+        margin-bottom: 40px;
+    }
+     @media screen and (min-width: 1280px) {
+        width: 610px;
+        margin-left: 253px;
+
+    }
 }
 
 .logo-min-white {
@@ -31,17 +60,29 @@
     font-size: 40px;
     color: white;
     margin-bottom: 12PX;
+     @media screen and (min-width: 1024px) {
+      font-size: 69px;  
+      margin-bottom: 16px;
+    }
+
 }
 
 .details-restaurant__title {
 letter-spacing: 0.02em;
 @include desctiption-block(white, 700, 20px, 1.2);
 margin-bottom: 20PX;
+@media screen and (min-width: 1024px) {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
 }
 
 .details-restaurant__text {
 letter-spacing: 0.02em;
     @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
+    @media screen  and (min-width: 1024px) {
+        font-size: 16px;
+    }
 }
 
 .details-restaurant__btn {
@@ -49,4 +90,15 @@ letter-spacing: 0.02em;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+}
+
+.details-restaurant__slider {
+    width: 330px;
+        @media screen  and (min-width: 1024px) {
+width: 662px;
+        }
+    @media screen  and (min-width: 1280px) {
+width: 875px;
+    }
+    
 }
