@@ -1,0 +1,77 @@
+.about-hotel {
+    padding: 18px 0px;
+    padding-top: 120px;
+
+    &__label {
+        font-size: 20px;
+        line-height: 1.15;
+        margin-bottom: 6px;
+        text-align: end;
+
+        color: $cornerTextColor;
+    }
+
+    &__logo {
+        font-family: "Film P3";
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;
+        margin-bottom: 16px;
+        text-align: end;
+
+        color: $sectionLogoColor;
+
+        @include for-tablet-up {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.apartments {
+    &__description {
+        margin-bottom: 28px;
+        margin-left: auto;
+        width: 242px;
+
+        // @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
+
+        @include for-tablet-up {
+            margin-left: unset;
+            width: 419px;
+        }
+    }
+
+    &__thumb {
+        align-items: center;
+        color: $brandAccent;
+        margin-bottom: 32px;
+
+        @include for-tablet-up {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: start;
+            gap: 46px;
+        }
+    }
+
+    &__picture {
+        @include for-tablet-up {
+            width: 400px;
+        }
+    }
+}
+
+.relaxation {
+    &__description {
+        // @include desctiption-block($brandAccent, 600, 12px, 1.25);
+    }
+
+    &__thumb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 21px;
+        margin-bottom: 32px;
+        color: $brandAccent;
+    }
+}
