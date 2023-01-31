@@ -1,102 +1,77 @@
-// для коричневих кнопок
 .btn{
     border: 2px solid #FFFFFF;
     border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
     min-width: 258px;
     min-height: 48px;
-    background: rgba(0, 0, 0, 0.4);
-        &:hover,
-        &:focus{
+    
+    &:hover,
+    &:focus{
                 background: #FFFFFF;
                 border: 2px solid #F3C653;
-                
+            }
+}
+.btn--black{
+            background: #000000;
+            min-width: 236px;
+            
+            &:hover,
+            &:focus{
+            background: #FFFFFF;
+            border: 2px solid #F3C653;
         }
+        }           
+            
         
-        &-txt{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        color: #F3C653;
-}
-}
-
-// для чорних заокруглених
-.btn-black{
-    min-width: 236px;
-    min-height: 48px;
-    background: #000000;
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
-        &:hover,
-        &:focus{
-        background: #FFFFFF;
-        border: 2px solid #F3C653;
-    }
-}
-// оформити бронювання
-.btn-make-reserv{
-    background: #000000;
-    border: 1px solid #F3C653;
-    border-radius: 25px;
-    min-width: 298px;
-    min-height: 24px;
-        &:hover,
-        &:focus{
-        background: #F3C653;
+        .btn--make-reserv{
+                background: #000000;
+                border: 1px solid #F3C653;
+                min-width: 298px;
+                min-height: 24px;
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 1.2;
+                &:hover,
+                &:focus{
+                    background: #F3C653;
+                    color: #000000;
         }
-    &-txt{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        color: #FFFFFF;
-    &:hover,
-    &:focus {
-        color: #000000;}
-                @media screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                     min-width: 434px;
                     min-height: 65px;
                 }
+            }
         
-}
-}
-
-// оформити бронювання модалка
-.btn-reserv-modal{
-    min-width: 384px;
-    min-height: 64px;
-    background: #000000;
-    border: 1px solid #F3C653;
-    border-radius: 2px;
-    &:hover,
-    &:focus {
-            background: #F3C653;
-        }
+                .btn--reserv-modal{
+                    min-width: 384px;
+                    min-height: 64px;
+                    background: #000000;
+                    border: 1px solid #F3C653;
+                    border-radius: 2px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    color: #FFFFFF;
+                        &:hover,
+                        &:focus {
+                            background: #F3C653;
+                            color: #000000;
+                        }
                 @media screen and (min-width: 768px) {
                     min-width: 592px;
-                    min-height: 64px;         
+                    min-height: 64px;     
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 1.2;    
                 }
                 
-    &-txt {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #FFFFFF;
-        &:hover,
-        &:focus {
-            color: #000000;
-        }
-    
-        @media screen and (min-width: 768px) {
-                font-weight: 500;
-                font-size: 24px;
-                line-height: 1.2;
-        }
-}
-}
+            }
+        
