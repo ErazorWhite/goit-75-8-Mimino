@@ -16,14 +16,12 @@
         line-height: 1.15;
     }
     &__container {
+        @extend .container;
         @media (min-width: 1024px) and (max-width: 1279px) {
-            padding-left: 47px;
-            padding-right: 47px;
             display: flex;
             flex-direction: column;
         }
         @media screen and (min-width: 1280px) {
-            padding-left: 85px;
             padding-right: 198px;
             display: flex;
             flex-direction: column;
@@ -37,10 +35,12 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 1.16;
-        margin-bottom: 32px;
-        
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
     }
     &__part {
+        margin-top: 16px;
         @media (min-width: 1024px) and (max-width: 1279px) {
             display: flex;
             flex-direction: row;
@@ -53,15 +53,7 @@
         }
     }
     &__paragraph {
-        font-family: 'Montserrat';
-        font-style: normal;
-    
-        color: #7A7A7A;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        margin-top: 16px;
+        @include desctiption-block($sectionDescriptionColor, 700, 16px, 1.25);
     
         @media screen and (min-width: 1024px) {
             width: 400px;
@@ -74,19 +66,17 @@
         }
     }
     &__box {
+        margin-top: 32px;
         @media screen and (min-width: 1024px) {
             margin-left: auto;
+            margin-top: 40px;
         }
     }
     &__button {
-        font-family: 'Montserrat';
         background-color: $primaryDark;
         border: 1px solid $brandColor;
+        @include desctiption-block(#FFFFFF, 500, 20px, 1.2);
         border-radius: 25px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        color: #FFFFFF;
         height: 64px;
         transition-property: background-color, color;
         transition-duration: 250ms;
@@ -111,13 +101,7 @@
     &__link {
         @extend %link;
         position: relative;
-        font-family: 'Montserrat';
-        font-style: normal;
-        color: #C79002;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
+        @include desctiption-block($brandAccent, 500, 16px, 1.25);
         display: flex;
         margin-top: 20px;
         transition-property: color, fill;
@@ -142,7 +126,7 @@
         }
     }
     &__icon {
-        fill: #C79002;
+        fill: $brandAccent;
         margin-left: 13px;
         
         @media screen and (min-width: 414px) {
