@@ -36,13 +36,7 @@
     display: block;
     margin-left: 12px;
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.02em;
-
-    color: $brandAccent;
+    @include desctiption-block($brandAccent, 500, 14px, 1.21);
 
     @media (min-width: $bp-tablet) {
       font-size: 16px;
@@ -71,12 +65,9 @@
     outline: none;
     cursor: pointer;
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include desctiption-block($modulTextColor, 700, 20px, 1.15);
+    font-family: 'Times New Roman', serif;
     letter-spacing: 0.05em;
-
-    color: $modulTextColor;
 
     appearance: none;
 

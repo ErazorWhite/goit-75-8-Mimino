@@ -43,11 +43,8 @@
   &__title {
     margin-bottom: 40px;
 
-    color: $primaryDark;
-
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.166;
+    @include desctiption-block($primaryDark, 700, 24px, 1.166);
+    font-family: 'Times New Roman', serif;
     text-align: center;
     letter-spacing: 0.05em;
 
