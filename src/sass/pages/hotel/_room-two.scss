@@ -10,15 +10,11 @@
         padding-bottom: 40px;
     
     }
-
     @media screen and (min-width: 1280px) {
         padding-top: 72px;
-        
-
+        max-width: 1280px;
     }
-    &__container {
-
-    }
+   
 
     &__logo {
         text-transform: uppercase;
@@ -33,6 +29,10 @@
             margin-bottom: 62px;
             font-size: 64px;
     }
+     @media screen and (min-width: 1280px) {
+            margin-bottom: 72px;
+           
+        }
      }
 
     &__subtitle {
@@ -60,6 +60,10 @@
             font-size: 30px;
             line-height: 1.14;
         }
+         @media screen and (min-width: 1280px) {
+            margin-bottom: 24px;
+           
+         }
     }
     
     &__text {
@@ -72,12 +76,17 @@
         margin-right: 141px;
         color: #7A7A7A;
          @media screen and (min-width: 1024px) {
-            margin-bottom: 4px;
+            margin-bottom: 174px;
             margin-right: 491px;
             font-size: 16px;
             font-weight: 700;
         }
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 188px;
+            margin-right: 710px;
+        }
     }
+
     &__image-interior {
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
@@ -88,6 +97,9 @@
             top: -32px;
             right: 112px;
         }
+        @media screen and (min-width: 1280px) {
+            right: 180px;
+        }
     }
      &__buttons {
         display: flex;
@@ -96,6 +108,10 @@
         gap: 16px;
         @media screen and (min-width: 1024px) {
         margin-top: 41px;
+        
+        }
+        @media screen and (min-width: 1280px) {
+        margin-top: 72px;
            
     }
         }
@@ -116,4 +132,61 @@
         background-color: $primaryDark;
         border-radius: 25px;
     }  
+
+&__icons {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    // margin-bottom: 40px;
+    margin-top: 40px;
+    
+    display: flex;
+    gap: 32px;
+    width: 98px;
+        margin-left: 455px;
+        @media screen and (min-width: 1024px) {
+        margin-left: 335px;
+           
+    }
+        @media screen and (min-width: 1280px) {
+        margin-left: 455px;
+           
+    }
+
 }
+    &__icon {
+    letter-spacing: .02em;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #0000;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+
+    }
+
+    &__absolut {
+        max-width: 1280px;
+        
+    }
+    &__swiper {
+        display: flex;
+        gap: 40px;
+        position: relative;
+    }
+    &__room {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    &__photo {
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+
