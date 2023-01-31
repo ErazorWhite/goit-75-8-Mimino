@@ -2,30 +2,31 @@
 .btn{
     border: 2px solid #FFFFFF;
     border-radius: 25px;
-    width: 258px;
-        height: 48px;
-        background: rgba(0, 0, 0, 0.4);
+    min-width: 258px;
+    min-height: 48px;
+    background: rgba(0, 0, 0, 0.4);
         &:hover,
         &:focus{
                 background: #FFFFFF;
                 border: 2px solid #F3C653;
-                border-radius: 25px;
-
+                
         }
-}
-.btn-txt{
+        
+        &-txt{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         letter-spacing: 0.02em;
         color: #F3C653;
 }
+}
+
 // для чорних заокруглених
-.btn-type{
-    width: 236px;
-    height: 48px;
+.btn-black{
+    min-width: 236px;
+    min-height: 48px;
     background: #000000;
     border: 2px solid #FFFFFF;
     border-radius: 25px;
@@ -33,7 +34,6 @@
         &:focus{
         background: #FFFFFF;
         border: 2px solid #F3C653;
-        border-radius: 25px;
     }
 }
 // оформити бронювання
@@ -41,34 +41,34 @@
     background: #000000;
     border: 1px solid #F3C653;
     border-radius: 25px;
-    width: 298px;
-    height: 24px;
+    min-width: 298px;
+    min-height: 24px;
         &:hover,
         &:focus{
         background: #F3C653;
         }
-
-}
-.btn-make-reserv-txt{
-    font-family: 'Montserrat';
+    &-txt{
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.2;
         color: #FFFFFF;
     &:hover,
     &:focus {
         color: #000000;}
                 @media screen and (min-width: 768px) {
-                    width: 434px;
-                    height: 65px;
+                    min-width: 434px;
+                    min-height: 65px;
                 }
         
 }
+}
+
 // оформити бронювання модалка
 .btn-reserv-modal{
-    width: 384px;
-    height: 64px;
+    min-width: 384px;
+    min-height: 64px;
     background: #000000;
     border: 1px solid #F3C653;
     border-radius: 2px;
@@ -77,18 +77,18 @@
             background: #F3C653;
         }
                 @media screen and (min-width: 768px) {
-                    width: 592px;
-                    height: 64px;         
+                    min-width: 592px;
+                    min-height: 64px;         
                 }
-}
-.btn-reserv-modal-txt {
-font-family: 'Montserrat';
+                
+    &-txt {
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     color: #FFFFFF;
-    &:hover,
+        &:hover,
         &:focus {
             color: #000000;
         }
@@ -96,6 +96,7 @@ font-family: 'Montserrat';
         @media screen and (min-width: 768px) {
                 font-weight: 500;
                 font-size: 24px;
-                line-height: 29px;
+                line-height: 1.2;
         }
+}
 }
