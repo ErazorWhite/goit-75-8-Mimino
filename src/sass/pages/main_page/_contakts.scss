@@ -1,6 +1,4 @@
-.contacts__section {
-    list-style-type: none;
-}
+
 .visually--hidden {
     position: absolute;
     white-space: nowrap;
@@ -15,130 +13,101 @@
     margin: -1px;
 }
 
-.address {
-    @media screen  and (max-width: 1023px) {
-        max-width: 1023px;
-        display: flex;
-        flex-direction: column;
-       }
+
+.contacts {
+
+// @extend.section;    
+
+&__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 36px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 413px) {
+        max-width: 413px;
+    }
+
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
         max-width: 1279px;
-        display: flex;
-        flex-direction: row;
-        }
-    @media screen and (min-width: 1280px) {
-        max-width: 1280px;
-        display: flex;
-        flex-direction: row;
-        }
-}
-
-.address__list {
-       @media screen and (min-width: 1024px) and (max-width: 1279px) { 
-        margin-right: 100px;
-       width: 294px;
-        }   
-        @media screen and (min-width: 1280px) {
-        width: 368px;
-        margin-right: 108px;
-        }  
-
-}
-
-.contacts__container {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 36px;
-        padding-bottom: 32px;
+        padding-left: 47px;
+        padding-right: 47px;
+        padding-top: 56px;
+        padding-bottom: 44px;
         margin: 0 auto;
-        
-    @media screen and (max-width: 413px) {
-    max-width: 413px;
-   }
-
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    max-width: 1279px;
-    padding-left: 47px;
-    padding-right: 47px;
-    padding-top: 56px;
-    padding-bottom: 44px;
-    margin: 0 auto;
-    flex-direction: column;
- 
+        flex-direction: column;
     }
 
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        padding-left: 85px;
+        padding-right: 85px;
+        padding-top: 64px;
+        padding-bottom: 74px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
 
-   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding-left: 85px;
-    padding-right: 85px;
-    padding-top: 64px;
-    padding-bottom: 74px;
-    margin: 0 auto;
-    flex-direction: column;
-   }
-   
-    }    
-    .contacts__list {
-        display: flex;
-        list-style-type:none;
-        margin-right: 114px;
-        &--hotel{
+&__list {
+    display: flex;
+    list-style-type: none;
+    margin-right: 114px;
+    &--hotel {
         margin-right: 0px;
-        }
     }
-    .contacts__brand {
-    font-family: 'Film P3';
+}
+
+&__brand {
+    font-family: "Film P3";
     font-style: normal;
     color: $secondarybrandColor;
 
- 
-
     @media screen and (max-width: 1023px) {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        margin-bottom: 12px;
     }
 
-    @media screen and (min-width: 1024px) and (max-width: 1279px)  {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    margin-bottom: 8px;
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        margin-bottom: 8px;
     }
 
-    @media screen  and (min-width: 1280px)  {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    margin-bottom: 16px;
+    @media screen and (min-width: 1280px) {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        margin-bottom: 16px;
     }
+}
 
-
-    }
-.contacts__title {
-    font-family: 'Montserrat';
+&__title {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
 
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    color: #5F5F5F;
+    color: #5f5f5f;
     @media screen and (min-width: 414px) and (max-width: 1023px) {
         margin-bottom: 16px;
         line-height: 1.66;
     }
 
-    @media screen and (min-width: 1024px) and (max-width: 1279px)  {
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
         margin-bottom: 52px;
         line-height: 1.25;
     }
-    @media screen  and (min-width: 1280px)  {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 40px;
         line-height: 1.2;
     }
@@ -146,139 +115,125 @@
 
 /* серый1 */
 
-
-
-.contacts__block {
+&__block {
     display: flex;
     align-items: center;
-    
+
     @media screen and (max-width: 1023px) {
         margin-bottom: 16px;
-        justify-content: space-between; 
+        justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
     }
-   @media screen and (min-width: 1024px) and (max-width: 1279px)  {
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
         margin-bottom: 24px;
         flex-direction: column;
         align-items: flex-start;
-        
     }
-    @media screen and (min-width: 1280px)  {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 24px;
         flex-direction: column;
         align-items: flex-start;
-        
     }
 
     &--hotel {
         justify-content: space-between;
-        @media screen and (min-width: 1024px) and (max-width: 1279px)  {
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
             margin-bottom: 48px;
-            
         }
-        @media screen and (min-width: 1280px)  {
+        @media screen and (min-width: 1280px) {
             margin-bottom: 48px;
         }
     }
-   
-    
-   
 }
 
-.contacts__item {
+&__item {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-background: $primaryLight;
-/* Akzent yellow */
+    background: $primaryLight;
+    /* Akzent yellow */
 
-border: 0.5px solid $brandColor;
-border-radius: 2px;
+    border: 0.5px solid $brandColor;
+    border-radius: 2px;
 }
 
+&__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 9px 8px;
+    height: 40px;
 
-.contacts__link {
-display: flex;
-align-items: center;
-justify-content: space-around;
-padding: 8px 9px 8px;
-height: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.21;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $secondarybrandColor;
 
-letter-spacing: 0.02em;
-text-decoration: none;
-color: $secondarybrandColor;
-
-&--hotel {
-    &:nth-child(2) {
-    padding-left: 0;
-
+    &--hotel {
+        &:nth-child(2) {
+            padding-left: 0;
+        }
     }
-}
 
-&--hotel {
-    &:nth-child(1) {
-    padding-right: 12px;
-           
+    &--hotel {
+        &:nth-child(1) {
+            padding-right: 12px;
         }
     }
 
     &--map {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    padding-right: 33px;
-    font-size: 16px;
-    line-height: 1.25;
-
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        padding-right: 33px;
+        font-size: 16px;
+        line-height: 1.25;
     }
-
 }
 
-.contacts__name {
-    font-family: 'Montserrat';
+&__name {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color:$brandAccent;
+    color: $brandAccent;
 
-@media screen and (min-width: 414px) and (max-width: 1023px) {
-     margin-right: 22px;
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        margin-right: 22px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 8px;
+    }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px)  {
-    margin-bottom: 8px;}
-    @media screen and (min-width: 1280px)  {
-        margin-bottom: 8px;}
+&__icon {
+    fill: $brandAccent;
+    flex-shrink: 0;
+    margin-right: 10px;
 }
 
-
-.contacts__icon{
-fill:$brandAccent;
-flex-shrink: 0;
-margin-right: 10px;
-}
-
-
-
-.contacts__maps {
+&__maps {
     display: flex;
 
     @media screen and (min-width: 414px) and (max-width: 1023px) {
         width: 100%;
-        height:220px;
-    
-    flex-direction: column;
+        height: 220px;
+
+        flex-direction: column;
     }
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
         min-width: 535px;
@@ -290,49 +245,78 @@ margin-right: 10px;
         height: 412px;
         flex-direction: column;
     }
-
-
 }
-.contacts__item--map{ 
+&__item--map {
     display: flex;
     width: 260px;
     height: 76px;
-background: $primaryLight;
+    background: $primaryLight;
 
-border: 0.5px solid $brandColor;
-border-radius: 2px;
-align-items: center;
-flex-direction: row;
-flex-wrap: nowrap;
-margin-right: 0px;
-justify-content: space-around;
+    border: 0.5px solid $brandColor;
+    border-radius: 2px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 0px;
+    justify-content: space-around;
 
-@media screen and (max-width: 1023px) {
-margin-bottom: 32px;
-width: 260px;
-height: 76px;
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 32px;
+        width: 260px;
+        height: 76px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        margin-bottom: 0px;
+        width: 285px;
+        height: 56px;
+    }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-    margin-bottom: 0px;
-    width: 285px;
-    height: 56px;
-}
 
-}
-
-.contacts__list--maps{
+&__list--maps {
     display: flex;
-   
 
     @media screen and (min-width: 414px) and (max-width: 1023px) {
         justify-content: flex-end;
-        }
+    }
 
-        @media screen and (min-width: 1024px) and (max-width: 1279px) {
-            justify-content: flex-start;
-        }
-@media screen and (min-width: 1280px) {
-            justify-content: flex-start;
-        }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        justify-content: flex-start;
+    }
+    @media screen and (min-width: 1280px) {
+        justify-content: flex-start;
+    }
 }
+}
+
+
+.address {
+    @media screen and (max-width: 1023px) {
+        max-width: 1023px;
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        max-width: 1279px;
+        display: flex;
+        flex-direction: row;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__list {
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        margin-right: 100px;
+        width: 294px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 368px;
+        margin-right: 108px;
+    }
+}
+
+}
+
 
