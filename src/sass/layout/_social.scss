@@ -1,4 +1,4 @@
-.footer-social {
+.social {
     display: flex;
     justify-content: space-between;
 
@@ -19,10 +19,7 @@
             display: flex;
             align-items: center;
             letter-spacing: 0.02em;
-            border: 0.5px solid $brandColor;
-            border-radius: 2px;
-            width: 144px;
-            height: 40px;
+            
             
             
         }
@@ -37,6 +34,12 @@
         @media screen and (min-width: 1024px) {
             position: relative;
             padding-left: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 0.5px solid $brandColor;
+            border-radius: 2px;
+            width: 144px;
+            height: 40px;
             @include desctiption-block($brandColor, 400, 16px, 1.25);
         }
     }
@@ -45,7 +48,7 @@
         @media screen and (min-width: 1024px) {
             display: flex;
             position: absolute;
-            bottom: -2px;
+            bottom: 7px;
             left: 110px;
         }
         
