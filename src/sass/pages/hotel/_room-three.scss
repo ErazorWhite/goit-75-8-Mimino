@@ -151,13 +151,7 @@
         display: flex;
         left: 280px;
         bottom: 158px;
-        width: 98px;
-
-    //     @media screen and (max-width: 1023px) {
-    //         max-width: ;
-    
-   
-    
+        width: 98px; 
 @media screen and (min-width: 1024px) {
         margin-left: 500px;
         position: relative;
@@ -169,13 +163,11 @@
         width: 98px;
         left: 0;
         bottom: 0;
-    }
+}
         @media screen and (min-width: 1280px) {
         margin-left: 558px;
        
         }
-    
-
 }
     &__icon {
     letter-spacing: .02em;
