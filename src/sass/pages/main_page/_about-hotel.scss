@@ -1,13 +1,20 @@
 .about-hotel {
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+    @include for-tablet-up {
+        padding-top: 120px;
+        padding-bottom: 32px;
+    }
+
     &__container {
         @extend .container;
         @include for-tablet-up {
             margin-bottom: -224px;
         }
-    }
-    padding: 18px 0px;
-    @include for-tablet-up {
-        padding-top: 120px;
+        @include for-desktop-up {
+            margin-bottom: -384px;
+        }
     }
 
     &__label {
@@ -44,6 +51,9 @@
 .apartments {
     &__text-box {
         max-width: 419px;
+        @include for-desktop-up {
+            min-width: 488px;
+        }
     }
 
     &__description {
@@ -57,7 +67,10 @@
             margin-left: unset;
             margin-bottom: unset;
             font-size: 16px;
-            width: 419px;
+            min-width: 419px;
+        }
+        @include for-desktop-up {
+            min-width: 488px;
         }
     }
 
@@ -73,6 +86,9 @@
             gap: 46px;
             margin-bottom: unset;
         }
+        @include for-desktop-up {
+            gap: 67px;
+        }
     }
 
     &__picture {
@@ -80,6 +96,9 @@
         @include for-tablet-up {
             width: 400px;
             transform: translateY(-168px);
+        }
+        @include for-desktop-up {
+            width: 460px;
         }
     }
 }
@@ -106,6 +125,9 @@
             align-items: start;
             gap: 48px;
         }
+        @include for-desktop-up {
+            gap: 45px;
+        }
     }
 
     &__picture {
@@ -113,6 +135,9 @@
         @include for-tablet-up {
             width: 400px;
             transform: translateY(-224px);
+        }
+        @include for-desktop-up {
+            width: 460px;
         }
     }
 }
