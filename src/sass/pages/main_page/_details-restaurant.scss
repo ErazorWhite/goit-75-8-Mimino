@@ -8,41 +8,48 @@
     margin-right: auto;
     background-size: cover;
     background-color: #C4C4C4;
-    background-image: url(../images/homepage/homepage5-mobile.jpg);
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+     url(../images/homepage/homepage5-mobile.jpg);
          @include retina { 
-       background-image: url(../images/homepage/homepage5-mobile@2x.jpg);
+       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/homepage5-mobile@2x.jpg);
     };
      @media  screen and (min-width: 414px) {
         width: 414px;
-background-image: url(../images/homepage/homepage5-mobile.jpg);
+background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+ url(../images/homepage/homepage5-mobile.jpg);
          @include retina { 
-       background-image: url(../images/homepage/homepage5-mobile@2x.jpg);
+       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/homepage5-mobile@2x.jpg);
      }
     };
  @media  screen and (min-width: 1024px) {
        width: 1024px;
        opacity: 1.76;
-       background-image: url(../images/homepage/homepage5-tablet.jpg);
+       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/homepage5-tablet.jpg);
          @include retina { 
-       background-image:  url(../images/homepage/homepage5-tablet@2x.jpg);
+       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/homepage5-tablet@2x.jpg);
     }
 };
  @media  screen and (min-width: 1280px) {
        width: 1280px;
-       background-image: url(../images/homepage/homepage5-desktop.jpg);
-         @include retina { 
-       background-image: url(../images/homepage/homepage5-desktop@2x.jpg);
-    }
-};
-@media screen and (min-width: 1280px) {
         padding-top: 48px;
         padding-bottom: 40px;
-    } 
+       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/homepage5-desktop.jpg);
+         @include retina { 
+       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/homepage5-desktop@2x.jpg);
+    }
+}
 }
 
 .details-restaurant__description {
     width: 259px;
     margin-left: auto;
+    margin-bottom: 48px;
     @media screen and (min-width: 1024px) {
         width: 610px;
         margin-left: 231px;
@@ -85,11 +92,23 @@ letter-spacing: 0.02em;
     }
 }
 
-.details-restaurant__btn {
+.details-restaurant__swiper-wrapper {
+    margin-left: 25px;
+}
+
+.details-restaurant__btns {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    align-items: center;
+    @media screen and (min-width:1024px) {
+        align-items: flex-start;
+    }
+}
+
+.details-restaurant__btn {
+    width: 236px;
 }
 
 .details-restaurant__slider {
@@ -101,4 +120,19 @@ width: 662px;
 width: 875px;
     }
     
+}
+
+.details-restaurant__slider-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 32px;
+    justify-content: flex-end;
+    &.about-restaurant__btn {
+left: 286px !important;
+    }
+}
+
+.details-restaurant__slider-button {
+fill: white;
 }

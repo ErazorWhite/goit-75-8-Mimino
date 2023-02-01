@@ -9,14 +9,14 @@
         <div class="slider details-restaurant__slider" data-slider="team-slider">
         <div class="swiper">
   <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
+  <div class="swiper-wrapper details-restaurant__swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
         <picture>
                     <source srcset="./images/homepage/homepage8-desktop.jpg 1x,./images/homepage/homepage8-desktop@2x.jpg 2x" media="(min-width:1280px)"/>
                     <source srcset="./images/homepage/homepage8-tablet.jpg 1x,./images/homepage/homepage8-tablet@2x.jpg 2x" media="(min-width:1024px)"/>
                     <source srcset="./images/homepage/homepage8-mobile.jpg 1x,./images/homepage/homepage8-mobile@2x.jpg 2x" media="(min-width:414px)"/>
-                    <img src="./images/homepage/homepage8-mobile.jpg" alt="">
+                 <img src="./images/homepage/homepage8-mobile.jpg" alt="">
                 </picture>
     </div>
         <div class="swiper-slide">
@@ -40,23 +40,25 @@
 
 
   <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev">
+  <div class="swiper-btns details-restaurant__slider-buttons">
+  <div class="swiper-button-prev details-restaurant__slider-button swiper-btn">
     <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-arrow-left"></use>
                 </svg>
   </div>
-  <div class="swiper-button-next">
+  <div class="swiper-button-next details-restaurant__slider-button swiper-btn">
     <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
+  </div>
   </div>
 
 </div>
 </div>
 
-        <div class="details-restaurant__btn">
-            <button type="button"></button>
-            <button type="button"></button>
+        <div class="details-restaurant__btns">
+            <button class="btn details-restaurant__btn" type="button">Забронювати столик</button>
+            <button class="btn details-restaurant__btn" type="button">Переглянути меню</button>
         </div>
     </div>
-</section>
+</section> 
