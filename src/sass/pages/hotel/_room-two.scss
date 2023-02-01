@@ -91,6 +91,7 @@
             margin-right: 540px;
             font-size: 16px;
             font-weight: 700;
+                width: 400px;
         }
         @include for-desktop-up {
             margin-bottom: 188px;
@@ -157,7 +158,7 @@
         width: 98px;
         
         @include for-tablet-up {
-        margin-left: 335px;
+        margin-left: 330px;
         bottom: 70px;
            
     }
@@ -203,6 +204,7 @@
     &__room {
         display: flex;
         flex-direction: column-reverse;
+        overflow: auto;
         
         @include for-tablet-up {
               flex-direction: row-reverse;
