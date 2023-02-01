@@ -10,12 +10,13 @@
           veniam consequat sunt nostrud amet.
         </li>
       </ul>
+
       <picture class="kitchen__foto">
         <source
           srcset="
             /src/images/restaurant/restaurant1-mobile.jpg  1x,
-            /src/images/restaurant/restaurant1-mobile@2x.jpg 2x
-          "
+            /src/images/restaurant/restaurant1-mobile@2x.jpg 2x 
+          " width="244" height="322"
           media="min-width: 320px"
           type="image/jpg"
         />
@@ -23,7 +24,7 @@
           srcset="
             /src/images/restaurant/restaurant1-tablet.jpg 1x,
             /src/images/restaurant/restaurant1-tablet@2x.jpg 2x
-          "
+          " width="400" height="524"
           media="min-width: 1024px"
           type="image/jpg"
         />
@@ -31,7 +32,7 @@
           srcset="
             /src/images/restaurant/restaurant1-desktop.jpg 1x,
             /src/images/restaurant/restaurant1-desktop@2x.jpg 2x
-          "
+          " width="460" height="574"
           media="min-width: 1280px"
           type="image/jpg"
         />
@@ -55,7 +56,7 @@
             <source
               srcset="
                 /src/images/restaurant/restaurant2-mobile.jpg    1x,
-                /src/images/restaurant/restaurant2-mobile@2x.jpg 2x               "
+                /src/images/restaurant/restaurant2-mobile@2x.jpg 2x " width="244" height="322"              "
               media="(min-width: 320px)"
               type="image/jpg" 
             />
@@ -64,7 +65,7 @@
               srcset="
                 /src/images/restaurant/restaurant2-tablet.jpg    1x,
                 /src/images/restaurant/restaurant2-tablet@2x.jpg 2x
-              "
+              " width="400" height="524"
               media="(min-width: 1024px)"
               type="image/jpg"
             />
@@ -73,7 +74,7 @@
               srcset="
                 /src/images/restaurant/restaurant2-desktop.jpg    1x,
                 /src/images/restaurant/restaurant2-desktop@2x.jpg 2x
-              "
+              "  width="460" height="574"
               media="(min-width: 1280px)"
               type="image/jpg"
             />
@@ -82,7 +83,7 @@
               srcset="
                 /src/images/restaurant/restaurant2-mobile.jpg    1x,
                 /src/images/restaurant/restaurant2-mobile@2x.jpg 2x
-              "
+              " 
               src="/src/images/restaurant/restaurant2-mobile.jpg"
               alt="kitchen_cook"
             />
@@ -96,73 +97,77 @@
       </ul>
     </div>
 
-  <section class="section slider-section" data-slider="team-slider">
-    <div class="container-slider">
-      <h2 class="section-title slider-section__title"></h2>
-      <div class="swiper">
-        <ul class="swiper-wrapper">
-          <!-- слайд 1 ресторан -->
+    <!-- sliders -->
+
+
+ 
+      <div class="slider" data-slider="team-slider">
+        <div class="swiper">
+            <ul class="swiper-wrapper class-swiper--kitchen">
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
                 <source
                   srcset="
-                    /src/images/restaurant/restaurant4-desktop.jpg    1x,
-                    /src/images/restaurant/restaurant4-desktop@2x.jpg 2x"
+                    /src/images/sliders/restaurant3-desktop.jpg    1x,
+                    /src/images/sliders/restaurant3-desktop@2x.jpg 2x
+                    "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg" />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
-                    /src/images/restaurant/restaurant4-tablet.jpg    1x,
-                    /src/images/restaurant/restaurant4-tablet@2x.jpg 2x "
+                    /src/images/sliders/restaurant3-tablet.jpg    1x,
+                    /src/images/sliders/restaurant3-tablet@2x.jpg 2x 
+                    " width="194" height="194"
                   media="(min-width: 1024px)"
                   type="image/jpg"/>
               <img
-                class="images__list"
+                class="swiper-inner"
                 srcset="
-                  /src/images/restaurant/restaurant4-mobile.jpg    1x,
-                  /src/images/restaurant/restaurant4-mobile@2x.jpg 2x "  media="(max-width: 1023px)"
-                src="/src/images/restaurant/restaurant4-mobile.jpg"
+                  /src/images/sliders/restaurant3-mobile.jpg    1x,
+                  /src/images/sliders/restaurant3-mobile@2x.jpg 2x 
+                  " width="245" height="245"  
+                  media="(max-width: 1023px)"
+                src="/src/images/sliders/restaurant3-mobile.jpg"
                 alt="kitchen_cook"
               />
-              <!-- </picture> -->
+              </picture>
             </div>
           </li>
-          <!-- слайд 2 ресторан -->
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
                 <source
                   srcset="
-                    /src/images/restaurant/restaurant3-desktop.jpg    1x,
-                    /src/images/restaurant/restaurant3-desktop@2x.jpg 2x
-                  "
+                    /src/images/sliders/restaurant4-desktop.jpg    1x,
+                    /src/images/sliders/restaurant4-desktop@2x.jpg 2x
+                  " width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
-                    /src/images/restaurant/restaurant3-tablet.jpg    1x,
-                    /src/images/restaurant/restaurant3-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                    /src/images/sliders/restaurant4-tablet.jpg    1x,
+                    /src/images/sliders/restaurant4-tablet@2x.jpg 2x
+                  " width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
               <img
-                class="images__list"
+                class="swiper-inner"
                 srcset="
-                  /src/images/restaurant/restaurant3-mobile.jpg    1x,
-                  /src/images/restaurant/restaurant3-mobile@2x.jpg 2x
-                "  media="(max-width: 1023px)"
-                src="/src/images/restaurant/restaurant3-mobile.jpg"
+                  /src/images/sliders/restaurant4-mobile.jpg    1x,
+                  /src/images/sliders/restaurant4-mobile@2x.jpg 2x
+                " width="245" height="245"  
+                media="(max-width: 1023px)"
+                src="/src/images/sliders/restaurant4-mobile.jpg"
                 alt="kitchen_cook"
               />
-              <!-- </picture> -->
+              </picture>
             </div>
-          </li>
-          <!-- слайд 1 слайдер -->
+          </li>          
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -170,32 +175,32 @@
                   srcset="
                     /src/images/sliders/slider1-desktop.jpg    1x,
                     /src/images/sliders/slider1-desktop@2x.jpg 2x
-                  "
+                  " width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider1-tablet.jpg    1x,
                     /src/images/sliders/slider1-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  " width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider1-mobile.jpg    1x,
                     /src/images/sliders/slider1-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
-                  src="/src/images/restaurant/restaurant3-mobile.jpg"
+                  " width="245" height="245"  
+                  media="(max-width: 1023px)"
+                  src="/src/images/sliders/sliders3-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 2 слайдер-->
+          </li>         
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -203,65 +208,66 @@
                   srcset="
                     /src/images/sliders/slider2-desktop.jpg    1x,
                     /src/images/sliders/slider2-desktop@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
-                  media="(min-width: 1280px)"
+                  " width="254" height="254"  
+                    media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider2-tablet.jpg    1x,
                     /src/images/sliders/slider2-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  " width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider2-mobile.jpg    1x,
                     /src/images/sliders/slider2-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
-                  src="/src/images/restaurant/restaurant3-mobile.jpg"
+                  " width="245" height="245"  
+                  media="(max-width: 1023px)"
+                  src="/src/images/sliders/slider2-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 3 слайдер -->
-          <li class="swiper-slide">
+          </li>         
+           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
                 <source
                   srcset="
                     /src/images/sliders/slider3-desktop.jpg    1x,
                     /src/images/sliders/slider3-desktop@2x.jpg 2x
-                  "
+                  " width="194" height="194"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider3-tablet.jpg    1x,
                     /src/images/sliders/slider3-tablet@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
-                  media="(min-width: 1280px)"
+                  "  width="194" height="194" 
+                   media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
-                    /src/images/sliders/slider3-mobile.jpg    1x,
-                    /src/images/sliders/slider3-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
-                  src="/src/images/restaurant/restaurant3-mobile.jpg"
+                    /src/images/sliders/slider3-mobile.jpg   1x,
+                    /src/images/sliders/slider-mobile@2x.jpg 2x
+                  " width="245" height="245"  
+                  media="(max-width: 1023px)"
+                  src="/src/images/sliders/slider3-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 4 слайдер-->
+          </li>      
+
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -269,65 +275,63 @@
                   srcset="
                     /src/images/sliders/slider4-desktop.jpg    1x,
                     /src/images/sliders/slider4-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254" 
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider4-tablet.jpg    1x,
                     /src/images/sliders/slider4-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194" 
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider4-mobile.jpg    1x,
                     /src/images/sliders/slider4-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  " width="245" height="245"  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider4-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 5 слайдер-->
+          </li>         
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
                 <source
                   srcset="
-                    /src/images/sliders/slider15-desktop.jpg    1x,
-                    /src/images/sliders/slider15-desktop@2x.jpg 2x
-                  "
+                    /src/images/sliders/slider5-desktop.jpg    1x,
+                    /src/images/sliders/slider5-desktop@2x.jpg 2x
+                  " width="254" height="254" 
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
-                    /src/images/sliders/slider15-tablet.jpg    1x,
-                    /src/images/sliders/slider15-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                    /src/images/sliders/slider5-tablet.jpg    1x,
+                    /src/images/sliders/slider5-tablet@2x.jpg 2x
+                  " width="194" height="194" 
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
-                    /src/images/sliders/slider15-mobile.jpg    1x,
-                    /src/images/sliders/slider15-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
-                  src="/src/images/sliders/slider15-mobile.jpg"
+                    /src/images/sliders/slider5-mobile.jpg    1x,
+                    /src/images/sliders/slider5-mobile@2x.jpg 2x
+                  " width="245" height="245"  media="(max-width: 1023px)"
+                  src="/src/images/sliders/slider5-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 6 слайдер-->
+          </li>         
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -335,32 +339,31 @@
                   srcset="
                     /src/images/sliders/slider6-desktop.jpg    1x,
                     /src/images/sliders/slider6-desktop@2x.jpg 2x
-                  "
+                  " width="254 " height="254" 
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider6-tablet.jpg    1x,
                     /src/images/sliders/slider6-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  " width="194" height="194" 
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider6-mobile.jpg    1x,
                     /src/images/sliders/slider6-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  " width="245" height="245"  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider6-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 7 слайдер-->
+          </li>         
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -368,32 +371,31 @@
                   srcset="
                     /src/images/sliders/slider7-desktop.jpg    1x,
                     /src/images/sliders/slider7-desktop@2x.jpg 2x
-                  "
+                  " width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider7-tablet.jpg    1x,
                     /src/images/sliders/slider7-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  " width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider7-mobile.jpg    1x,
                     /src/images/sliders/slider7-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  " width="245" height="245"  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider7-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 8 слайдер-->
+          </li>         
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -401,32 +403,32 @@
                   srcset="
                     /src/images/sliders/slider8-desktop.jpg    1x,
                     /src/images/sliders/slider8-desktop@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  " width="254" height="254" 
+                  media="(min-width: 1280px)" 
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider8-tablet.jpg    1x,
                     /src/images/sliders/slider8-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  " width="194" height="194"
+                  media="(min-width: 1024px)" 
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider8-mobile.jpg    1x,
                     /src/images/sliders/slider8-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  " width="245" height="245"  
+                  media="(max-width: 1023px)" 
                   src="/src/images/sliders/slider8-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 9 слайдер-->
+          </li>         
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -434,32 +436,32 @@
                   srcset="
                     /src/images/sliders/slider9-desktop.jpg    1x,
                     /src/images/sliders/slider9-desktop@2x.jpg 2x
-                  "
+                  " width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider9-tablet.jpg    1x,
                     /src/images/sliders/slider9-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  " width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider9-mobile.jpg    1x,
                     /src/images/sliders/slider9-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  " width="245" height="245"  
+                  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider9-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 10 слайдер-->
+          </li>          
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -467,32 +469,32 @@
                   srcset="
                     /src/images/sliders/slider10-desktop.jpg    1x,
                     /src/images/sliders/slider10-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider10-tablet.jpg    1x,
                     /src/images/sliders/slider10-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider10-mobile.jpg    1x,
                     /src/images/sliders/slider10-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  "width="245" height="245"  
+                  media="(max-width: 1023px)"
                   src="/src/images//sliders/slider10-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
           </li>
-          <!-- слайд 11 слайдер -->
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -500,32 +502,32 @@
                   srcset="
                     /src/images/sliders/slider11-desktop.jpg    1x,
                     /src/images/sliders/slider11-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider11-tablet.jpg    1x,
                     /src/images/sliders/slider11-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider11-mobile.jpg    1x,
                     /src/images/sliders/slider11-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  "width="245" height="245"  
+                  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider11-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 12 слайдер-->
+          </li>          
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -533,32 +535,32 @@
                   srcset="
                     /src/images/sliders/slider12-desktop.jpg    1x,
                     /src/images/sliders/slider12-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider12-tablet.jpg    1x,
                     /src/images/sliders/slider12-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider12-mobile.jpg    1x,
                     /src/images/sliders/slider12-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  "width="245" height="245"  
+                  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider12-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
           </li>
-          <!-- слайд 13 слайдер -->
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -566,32 +568,32 @@
                   srcset="
                     /src/images/sliders/slider13-desktop.jpg    1x,
                     /src/images/sliders/slider13-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider13-tablet.jpg    1x,
                     /src/images/sliders/slider13-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider13-mobile.jpg    1x,
                     /src/images/sliders/slider13-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  "width="245" height="245"  
+                  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider13-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 14 слайдер-->
+          </li>          
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -599,32 +601,32 @@
                   srcset="
                     /src/images/sliders/slider14-desktop.jpg    1x,
                     /src/images/sliders/slider14-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider14-tablet.jpg    1x,
                     /src/images/sliders/slider14-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider14-mobile.jpg    1x,
                     /src/images/sliders/slider14-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  " width="245" height="245" 
+                  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider14-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 15 слайдер-->
+          </li>          
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -632,32 +634,32 @@
                   srcset="
                     /src/images/sliders/slider15-desktop.jpg    1x,
                     /src/images/sliders/slider15-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider15-tablet.jpg    1x,
                     /src/images/sliders/slider15-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider15-mobile.jpg    1x,
                     /src/images/sliders/slider15-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  "width="245" height="245"  
+                  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider15-mobile.jpg"
                   alt="kitchen_cook"
                 />
               </picture>
             </div>
-          </li>
-          <!-- слайд 16 слайдер-->
+          </li>          
           <li class="swiper-slide">
             <div class="swiper-inner">
               <picture class="kitchen__list">
@@ -665,25 +667,26 @@
                   srcset="
                     /src/images/sliders/slider16-desktop.jpg    1x,
                     /src/images/sliders/slider16-desktop@2x.jpg 2x
-                  "
+                  "width="254" height="254"
                   media="(min-width: 1280px)"
                   type="image/jpg"
                 />
                 <source
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider16-tablet.jpg    1x,
                     /src/images/sliders/slider16-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
+                  "width="194" height="194"
+                  media="(min-width: 1024px)"
                   type="image/jpg"
                 />
                 <img
-                  class="images__list"
+                  class="swiper-inner"
                   srcset="
                     /src/images/sliders/slider16-mobile.jpg    1x,
                     /src/images/sliders/slider16-mobile@2x.jpg 2x
-                  "  media="(max-width: 1023px)"
+                  "width="245" height="245"  
+                  media="(max-width: 1023px)"
                   src="/src/images/sliders/slider16-mobile.jpg"
                   alt="kitchen_cook"
                 />
@@ -691,14 +694,10 @@
             </div>
           </li>
         </ul>
-  
-        <!-- коментуємо чи видаляемо якщо не потрібно -->
-        <!-- <ul class="swiper-pagination"></ul> -->
-        <!-- коментуємо чи видаляемо якщо не потрібно -->
-  
-        <!-- коментуємо чи видаляемо якщо не потрібно -->
-        <div class="swiper-btns">
-          <button type="button" class="swiper-btn swiper-button-prev">
+      </div>
+
+      <div class="swiper-btns">
+          <button type="button" class="swiper-btn swiper-button-prev  swiper-button-prev--kitchen">
             <svg
               class="menu-switch__icon"
               width="32"
@@ -711,7 +710,9 @@
               ></use>
             </svg>
           </button>
-          <button type="button" class="swiper-btn swiper-button-next">
+          <button type="button" class="swiper-btn swiper-button-next swiper-button-next--kitchen {
+            right: 79px;
+        }">
             <svg
               class="menu-switch__icon"
               width="32"
@@ -725,41 +726,11 @@
             </svg>
           </button>
         </div>
-        <!-- коментуємо чи видаляемо якщо не потрібно -->
-      </div>
+     </div>
     <!-- </div> -->
-  </section>
+
 </div>
+
 </section>
-<!-- <div class="kitchen__slider">
-      <<picture class="kitchen__list">
-         <source srcset="
-             /src/images/restaurant/restaurant4-desktop.jpg 1x, 
-             /src/images/restaurant/restaurant4-desktop@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg">
-         <source class="images__list" srcset="
-             /src/images/restaurant/restaurant4-tablet.jpg 1x, 
-             /src/images/restaurant/restaurant4-tablet@2x.jpg 2x" media="(min-width: 1024px)" type="image/jpg">
-     
-         <img class="images__list" srcset="
-             /src/images/restaurant/restaurant4-mobile.jpg 1x, 
-             /src/images/restaurant/restaurant4-mobile@2x.jpg 2x" 
-             src="/src/images/restaurant/restaurant4-mobile.jpg" alt="kitchen_cook">
-     </picture>
 
-     <picture class="kitchen__list">
-        <source srcset="
-            /src/images/restaurant/restaurant3-desktop.jpg 1x, 
-            /src/images/restaurant/restaurant3-desktop@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg">
-        <source class="images__list" srcset="
-            /src/images/restaurant/restaurant3-tablet.jpg 1x, 
-            /src/images/restaurant/restaurant3-tablet@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg">
-    
-        <img class="images__list" srcset="
-            /src/images/restaurant/restaurant3-mobile.jpg 1x, 
-            /src/images/restaurant/restaurant3-mobile@2x.jpg 2x" 
-            src="/src/images/restaurant/restaurant3-mobile.jpg" alt="kitchen_cook">
-    </picture> -->
-<!-- </div> -->
-
-<!-- слайдер -->
 

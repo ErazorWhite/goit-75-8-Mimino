@@ -199,116 +199,35 @@
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 }
 
-// слайдер
+.swiper-button-prev {
+    left: auto;
 
-.container-slider {
-    @media screen and (max-width: 1023px) {
-        width: auto;
-        // max-width: 414px;
-        margin-left: auto;
-        margin-right: auto;
-        // padding: 0 15px;
+    &--kitchen {
+        right: 81px;
     }
 }
 
-.slider-section {
-    @media screen and (max-width: 1023px) {
-        padding: 0px 0px 0px 0px;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        padding: 0px 0px 0px 0px;
-    }
+.swiper-button-next {
+    left: auto;
 
-    @media screen and (min-width: 1280px) {
-        padding: 0px 0px 0px 0px;
+    &--kitchen {
+        right: 0px;
     }
 }
 
-.swiper {
-    z-index: 1;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-    overflow: hidden;
+.kitchen__list {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.class-swiper--kitchen {
+
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        margin-left: 489px;
+       margin-left: 489px;
     }
+    
     @media screen and (min-width: 1280px) {
         margin-left: 562px;
-    }
-    &-btns {
-        display: flex;
-        height: 32px;
-        margin-top: 20px;
-        margin-left: 100px;
-        display: block;
-        position: relative;
-
-        @media screen and (min-width: 1024px) and (max-width: 1279px) {
-            margin-top: 32px;
-            margin-bottom: 32px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            margin-top: 40px;
-            margin-bottom: 32px;
-        }
-    }
-
-    &-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // justify-content: flex-start;
-        width: 430px;
-        height: 100%;
-        // color: #fff;
-        font-size: 32px;
-        background-color: inherit;
-        transition: ease-in-out 0.5s;
-
-        margin-left: 0;
-        margin-right: 20px;
-        padding-left: 0;
-
-        &.swiper-slide-next {
-            // краще виставляти у %
-            // зараз 17.3%  дорівнює 200px
-            // width: 330px !important;
-            width: 100% !important;
-        }
-    }
-
-    &-slide-active {
-        width: 100%;
-        // margin-right: 20px;
-    }
-
-    &-button-next {
-        right: 79px;
-    }
-
-    &-wrapper {
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        box-sizing: content-box;
-        transition-property: transform;
-        display: flex;
-        position: relative;
-        justify-content: flex-start;
-    }
+     }
 }
 
-.swiper element.style {
-    // width: 139.5px;
-    margin-right: 30px;
-}
 
-img {
-    min-width: 245px;
-    height: auto;
-    display: block;
-}
