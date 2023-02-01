@@ -1,18 +1,31 @@
 .room-two {
-    max-width: 414px;
+    
     padding-top: 32px;
     padding-bottom: 32px;
      position: relative;
 
     @media screen and (min-width: 1024px) {
-        max-width: 1024px;
+        
         padding-top: 64px;
         padding-bottom: 40px;
-    
     }
     @media screen and (min-width: 1280px) {
         padding-top: 72px;
-        max-width: 1280px;
+    }
+    &__container {
+          margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 414px;
+   
+    @media screen and (min-width: 1024px) {
+       max-width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+       max-width: 1280px;
+    }
     }
    
 
@@ -77,13 +90,13 @@
         color: #7A7A7A;
          @media screen and (min-width: 1024px) {
             margin-bottom: 174px;
-            margin-right: 491px;
+            margin-right: 540px;
             font-size: 16px;
             font-weight: 700;
         }
         @media screen and (min-width: 1280px) {
             margin-bottom: 188px;
-            margin-right: 710px;
+            margin-right: 795px;
         }
     }
 
