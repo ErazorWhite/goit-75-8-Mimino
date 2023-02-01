@@ -76,6 +76,7 @@
     }
 
     &__description {
+        padding-right: 80px;
         font-family: Montserrat;
         font-weight: 400;
         font-size: 10px;
@@ -87,16 +88,18 @@
     }
 
     &__weight {
+        width: 56px;
         font-family: Montserrat;
         font-weight: 300;
         font-size: 14px;
         line-height: 1.21;
         letter-spacing: 0.02em;
         color: #000000;
-        text-align: center;
+        text-align: left;
     }
 
     &__price {
+        width: 63px;
         font-family: Montserrat;
         font-weight: 700;
         font-size: 14px;
