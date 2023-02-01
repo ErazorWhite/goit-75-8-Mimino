@@ -1,68 +1,76 @@
 .btn {
-    border: 2px solid #ffffff;
+  min-width: 232px;
+  min-height: 48px;
+
+  @include desctiption-block($brandColor, 700, 16px, 1.25);
+
+  border: 2px solid $primaryWhite;
+  border-radius: 25px;
+  background-color: $btnBg;
+  cursor: pointer;
+
+  transition: border-color 250ms $cubic, background-color 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $primaryWhite;
+    border-color: $brandColor;
+  }
+
+  &--dark {
+    min-width: 236px;
+    background-color: $primaryDark;
+
+    transition: border-color 250ms $cubic, background-color 250ms;
+  }
+
+  &-booking-big {
+    min-width: 384px;
+    min-height: 64px;
+
+    @include desctiption-block($primaryWhite, 500, 20px, 1.2);
+
+    background-color: $primaryDark;
+    border: 1px solid $brandColor;
     border-radius: 25px;
-    background: rgba(0, 0, 0, 0.4);
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #f3c653;
-    min-width: 258px;
-    min-height: 48px;
+    cursor: pointer;
+
+    transition: color 250ms $cubic, background-color 250ms;
 
     &:hover,
     &:focus {
-        background: #ffffff;
-        border: 2px solid #f3c653;
+      background-color: $brandColor;
+      color: $primaryDark;
     }
 
-    &--black {
-        background: #000000;
-        min-width: 236px;
+    @media (min-width: $bp-tablet) {
+      min-width: 434px;
+      min-height: 65px;
     }
-    &--make-reserv {
-        background: #000000;
-        border: 1px solid #f3c653;
-        min-width: 298px;
-        min-height: 24px;
-        color: #ffffff;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+  }
 
-        &:hover,
-        &:focus {
-            background: #f3c653;
-            color: #000000;
-        }
-        @media screen and (min-width: 768px) {
-            min-width: 434px;
-            min-height: 65px;
-        }
+  &-modal {
+    min-width: 384px;
+    min-height: 64px;
+
+    @include desctiption-block($primaryWhite, 500, 20px, 1.2);
+
+    background-color: $primaryDark;
+    border: 1px solid $brandColor;
+    border-radius: 2px;
+    cursor: pointer;
+
+    transition: color 250ms $cubic, background-color 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: $brandColor;
+      color: $primaryDark;
     }
-    &--reserv-modal {
-        min-width: 384px;
-        min-height: 64px;
-        background: #000000;
-        border: 1px solid #f3c653;
-        border-radius: 2px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        color: #ffffff;
-        &:hover,
-        &:focus {
-            background: #f3c653;
-            color: #000000;
-        }
-        @media screen and (min-width: 768px) {
-            min-width: 592px;
-            min-height: 64px;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 1.2;
-        }
+
+    @media (min-width: $bp-tablet) {
+      min-width: 592px;
+      font-size: 24px;
     }
+  }
 }
