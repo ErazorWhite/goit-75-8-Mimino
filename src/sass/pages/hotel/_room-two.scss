@@ -123,10 +123,9 @@
         
         }
         @include for-desktop-up {
-        margin-top: 72px;
-           
+        margin-top: 72px;    
     }
-        }
+}
    
     &__button {
         font-family: 'Montserrat';
@@ -143,27 +142,24 @@
         text-align: center;
         background-color: $primaryDark;
         border-radius: 25px;
+        transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
     }  
 
 &__icons {
         position: relative;
         width: 100%;
         height: 32px;
-        
         margin-top: 40px;
         bottom: 200px;
-        
         display: flex;
         gap: 32px;
         width: 98px;
-        
-        @include for-tablet-up {
-        margin-left: 330px;
-        bottom: 70px;
-           
+            @include for-tablet-up {
+            margin-left: 330px;
+            bottom: 70px; 
     }
-        @include for-desktop-up {
-        margin-left: 455px;
+            @include for-desktop-up {
+            margin-left: 455px;
            
     }
 
@@ -180,7 +176,13 @@
     background-color: transparent;
     width: 32px;
     height: 32px;
+    transition: fill 250ms $cubic;
+    fill: $primaryDark;
 
+    &:hover,
+    &:focus {
+        fill: $brandColor;
+    }
     }
 
     // &__absolut {
@@ -190,14 +192,14 @@
     &__swiper {
         gap: 16px;
         margin-bottom: 72px;
-    margin-left: -130px;
-    overflow: hidden;
-     display: flex;
-   @include for-tablet-up {
+        margin-left: -130px;
+        overflow: hidden;
         display: flex;
-        gap: 40px;
-        position: relative;
-        margin-left: 0;
+            @include for-tablet-up {
+            display: flex;
+            gap: 40px;
+            position: relative;
+            margin-left: 0;
     }
         
     }
@@ -205,12 +207,10 @@
         display: flex;
         flex-direction: column-reverse;
         overflow: auto;
-        
-        @include for-tablet-up {
-              flex-direction: row-reverse;
-              justify-content: space-between;
+            @include for-tablet-up {
+            flex-direction: row-reverse;
+            justify-content: space-between;
         }
-      
     }
     &__photo {
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
