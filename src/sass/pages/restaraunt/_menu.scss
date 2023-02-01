@@ -146,6 +146,12 @@
             gap: 144px;
         }
     }
+
+    &__column:not(:last-child) {
+        @media (max-width: 1023px) {
+            margin-bottom: 16px;
+        }
+    }
 }
 
 .order-table {
