@@ -4,12 +4,12 @@
     padding-bottom: 32px;
      position: relative;
 
-    @media screen and (min-width: 1024px) {
+    @include for-tablet-up {
         
         padding-top: 64px;
         padding-bottom: 40px;
     }
-    @media screen and (min-width: 1280px) {
+    @include for-desktop-up {
         padding-top: 72px;
     }
     &__container {
@@ -19,11 +19,11 @@
         padding-right: 15px;
         max-width: 414px;
    
-    @media screen and (min-width: 1024px) {
+    @include for-tablet-up {
        max-width: 1024px;
     }
 
-    @media screen and (min-width: 1280px) {
+   @include for-desktop-up {
        max-width: 1280px;
     }
     }
@@ -38,11 +38,11 @@
         font-size: 40px;
         line-height: 1.08;
         letter-spacing: 0.3em;
-         @media screen and (min-width: 1024px) {
+        @include for-tablet-up {
             margin-bottom: 62px;
             font-size: 64px;
     }
-     @media screen and (min-width: 1280px) {
+     @include for-desktop-up {
             margin-bottom: 72px;
            
         }
@@ -54,7 +54,7 @@
         font-size: 20px;
         line-height: 1.16;
         margin-bottom: 8px;
-         @media screen and (min-width: 1024px) {
+         @include for-tablet-up {
             margin-bottom: 4px;
             font-size: 32px;
         }
@@ -68,33 +68,31 @@
         line-height: 1.17;
         letter-spacing: 0.05em;
         margin-bottom: 12px;
-        @media screen and (min-width: 1024px) {
+        @include for-tablet-up {
             margin-bottom: 16px;
             font-size: 30px;
             line-height: 1.14;
         }
-         @media screen and (min-width: 1280px) {
+         @include for-desktop-up {
             margin-bottom: 24px;
            
          }
     }
     
     &__text {
-        font-family: 'Montserrat';
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
+        @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
+        
+        
         margin-bottom: 32px;
         margin-right: 141px;
-        color: #7A7A7A;
-         @media screen and (min-width: 1024px) {
+        
+         @include for-tablet-up {
             margin-bottom: 174px;
             margin-right: 540px;
             font-size: 16px;
             font-weight: 700;
         }
-        @media screen and (min-width: 1280px) {
+        @include for-desktop-up {
             margin-bottom: 188px;
             margin-right: 795px;
         }
@@ -105,12 +103,12 @@
         border-radius: 2px;
         margin-bottom: 32px;
         margin-left: auto;
-         @media screen and (min-width: 1024px) {
+         @include for-tablet-up {
             position: absolute;
             top: -32px;
             right: 112px;
         }
-        @media screen and (min-width: 1280px) {
+        @include for-desktop-up {
             right: 180px;
         }
     }
@@ -119,11 +117,11 @@
         flex-direction: column;
         align-items: center;
         gap: 16px;
-        @media screen and (min-width: 1024px) {
+        @include for-tablet-up {
         margin-top: 41px;
         
         }
-        @media screen and (min-width: 1280px) {
+        @include for-desktop-up {
         margin-top: 72px;
            
     }
@@ -158,12 +156,12 @@
         gap: 32px;
         width: 98px;
         
-        @media screen and (min-width: 1024px) {
+        @include for-tablet-up {
         margin-left: 335px;
         bottom: 70px;
            
     }
-        @media screen and (min-width: 1280px) {
+        @include for-desktop-up {
         margin-left: 455px;
            
     }
@@ -184,17 +182,17 @@
 
     }
 
-    &__absolut {
-        max-width: 1280px;
+    // &__absolut {
+    //     max-width: 1280px;
         
-    }
+    // }
     &__swiper {
         gap: 16px;
         margin-bottom: 72px;
     margin-left: -130px;
     overflow: hidden;
      display: flex;
-    @media screen and (min-width: 1024px) {
+   @include for-tablet-up {
         display: flex;
         gap: 40px;
         position: relative;
@@ -206,7 +204,7 @@
         display: flex;
         flex-direction: column-reverse;
         
-        @media screen and (min-width: 1024px) {
+        @include for-tablet-up {
               flex-direction: row-reverse;
               justify-content: space-between;
         }

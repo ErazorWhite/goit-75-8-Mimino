@@ -34,7 +34,7 @@
         text-align: right;
         text-transform: uppercase;
         margin-bottom: 32px;
-        color: #494848;
+        color: $sectionLogoColor;
         font-family: 'Film P3', sans-serif;
         font-weight: 700;
         font-size: 40px;
@@ -54,7 +54,7 @@
     }
 
     &__subtitle {
-        color: #B4B4B4;
+        color: $cornerTextColor;
         text-align: right;
         font-weight: 400;
         font-size: 20px;
@@ -94,15 +94,11 @@
     }
     
     &__text {
-        font-family: 'Montserrat';
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
+        @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
         margin-bottom: 32px;
-        margin-right: 59px;
+        margin-right: 58px;
         margin-left: 83px;
-        color: #7A7A7A;
+
         @media screen and (min-width: 1024px) {
             width: 400px;
             margin-bottom: 169px;
@@ -144,7 +140,7 @@
     }
     &__button {
         font-family: 'Montserrat';
-        color: #F3C653;
+        color: $brandColor;
         border: 2px solid $secondaryLight;
         width: 246px;
         height: 46px;
@@ -183,6 +179,7 @@
         }
 }
     &__icon {
+        
     letter-spacing: .02em;
     cursor: pointer;
     text-align: center;
@@ -218,8 +215,8 @@
         position: relative;
     }
     &__room {
-  display: flex;
-  flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
 
         @media screen and (min-width: 1024px) {
             display: flex;
