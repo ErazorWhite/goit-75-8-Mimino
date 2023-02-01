@@ -1,0 +1,68 @@
+.btn {
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    min-width: 258px;
+    min-height: 48px;
+
+    &:hover,
+    &:focus {
+        background: #ffffff;
+        border: 2px solid #f3c653;
+    }
+
+    &--black {
+        background: #000000;
+        min-width: 236px;
+    }
+    &--make-reserv {
+        background: #000000;
+        border: 1px solid #f3c653;
+        min-width: 298px;
+        min-height: 24px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+
+        &:hover,
+        &:focus {
+            background: #f3c653;
+            color: #000000;
+        }
+        @media screen and (min-width: 768px) {
+            min-width: 434px;
+            min-height: 65px;
+        }
+    }
+    &--reserv-modal {
+        min-width: 384px;
+        min-height: 64px;
+        background: #000000;
+        border: 1px solid #f3c653;
+        border-radius: 2px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #ffffff;
+        &:hover,
+        &:focus {
+            background: #f3c653;
+            color: #000000;
+        }
+        @media screen and (min-width: 768px) {
+            min-width: 592px;
+            min-height: 64px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    }
+}
