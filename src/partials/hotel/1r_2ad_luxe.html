@@ -41,12 +41,10 @@
           100%; loading="lazy"/>
         </picture>
       </div>
-      <div class="lux__slider cardset__item" data-slider="team-slider">
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
+      <div class="lux__slider slider-container cardset__item">
+        <div class="swiper" data-slider="team-slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
               <picture class="slider__image">
                 <source
                   media="(min-width: 1280px)"
@@ -75,8 +73,8 @@
                 <img src="./images/sliders/slider1-desktop.jpg" alt="Фото
                 номеру" width: 100%; loading="lazy"/>
               </picture>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <picture class="slider__image">
                 <source
                   media="(min-width: 1280px)"
@@ -105,8 +103,8 @@
                 <img src="./images/sliders/slider2-desktop.jpg" alt="Фото
                 номеру" width: 100%; loading="lazy"/>
               </picture>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <picture class="slider__image">
                 <source
                   media="(min-width: 1280px)"
@@ -135,8 +133,8 @@
                 <img src="./images/sliders/slider3-desktop.jpg" alt="Фото
                 номеру" width: 100%; loading="lazy"/>
               </picture>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <picture class="slider__image">
                 <source
                   media="(min-width: 1280px)"
@@ -165,32 +163,33 @@
                 <img src="./images/sliders/slider4-desktop.jpg" alt="Фото
                 номеру" width: 100%; loading="lazy"/>
               </picture>
+            </li>
+          </ul>
+          <div class="swiper-buttons__thumb swiper-btns">
+            <div class="swiper-button-prev swiper-button swiper-btn">
+              <svg class="swiper__icon">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
             </div>
-
-            <!-- If we need navigation buttons -->
-
-            <!-- If we need scrollbar
-            <div class="swiper-scrollbar"></div> -->
-          </div>
-        </div>
-        <div class="swiper-buttons__thumb">
-          <div class="swiper-button-prev swiper-button">
-            <svg class="swiper__icon">
-              <use href="./images/icons.svg#icon-arrow-left"></use>
-            </svg>
-          </div>
-          <div class="swiper-button-next swiper-button">
-            <svg class="swiper__icon">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
+            <div class="swiper-button-next swiper-button swiper-btn">
+              <svg class="swiper__icon">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
       <div class="lux__buttons cardset__item">
         <form class="button__form" action="./room.html">
-          <button class="details-btn">Детальніше</button>
+          <button class="details-btn btn btn--black">Детальніше</button>
         </form>
-        <button class="price-btn" type="button">Переглянути ціни</button>
+        <button
+          class="price-btn btn btn--black js-open-modal"
+          data-modal="3"
+          type="button"
+        >
+          Переглянути ціни
+        </button>
       </div>
     </div>
   </div>
