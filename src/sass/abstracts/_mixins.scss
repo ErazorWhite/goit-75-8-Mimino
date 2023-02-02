@@ -1,0 +1,9 @@
+@mixin desctiption-block($color-value, $font-weight, $font-size, $line-height) {
+  font-family: 'Montserrat';
+  letter-spacing: 0.02em;
+
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-value;
+  font-weight: $font-weight;
+}

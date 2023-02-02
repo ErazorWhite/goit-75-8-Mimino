@@ -1,0 +1,145 @@
+.about-hotel {
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+    @include for-tablet-up {
+        padding-top: 120px;
+        padding-bottom: 32px;
+    }
+
+    &__container {
+        @extend .container;
+        @include for-tablet-up {
+            margin-bottom: -224px;
+        }
+        @include for-desktop-up {
+            margin-bottom: -384px;
+        }
+    }
+
+    &__label {
+        font-size: 20px;
+        line-height: 1.15;
+        margin-bottom: 6px;
+        text-align: end;
+
+        color: $cornerTextColor;
+
+        @include for-tablet-up {
+            font-size: 32px;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__logo {
+        font-family: "Film P3";
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;
+        margin-bottom: 16px;
+        text-align: end;
+
+        color: $sectionLogoColor;
+
+        @include for-tablet-up {
+            margin-bottom: 24px;
+            font-size: 64px;
+        }
+    }
+}
+
+.apartments {
+    &__text-box {
+        max-width: 419px;
+        @include for-desktop-up {
+            min-width: 488px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 28px;
+        margin-left: auto;
+        width: 242px;
+
+        @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
+
+        @include for-tablet-up {
+            margin-left: unset;
+            margin-bottom: unset;
+            font-size: 16px;
+            min-width: 419px;
+        }
+        @include for-desktop-up {
+            min-width: 488px;
+        }
+    }
+
+    &__thumb {
+        align-items: center;
+        color: $brandAccent;
+        margin-bottom: 32px;
+
+        @include for-tablet-up {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            gap: 46px;
+            margin-bottom: unset;
+        }
+        @include for-desktop-up {
+            gap: 67px;
+        }
+    }
+
+    &__picture {
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        min-width: 244px;
+        @include for-tablet-up {
+            width: 400px;
+            transform: translateY(-168px);
+        }
+        @include for-desktop-up {
+            width: 460px;
+        }
+    }
+}
+
+.relaxation {
+    &__description {
+        @include desctiption-block($brandAccent, 600, 12px, 1.25);
+
+        @include for-tablet-up {
+            font-size: 16px;
+            max-width: 312px;
+        }
+    }
+
+    &__thumb {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 21px;
+        margin-bottom: 32px;
+        color: $brandAccent;
+
+        @include for-tablet-up {
+            align-items: start;
+            gap: 48px;
+        }
+        @include for-desktop-up {
+            gap: 45px;
+        }
+    }
+
+    &__picture {
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        min-width: 200px;
+        @include for-tablet-up {
+            width: 400px;
+            transform: translateY(-224px);
+        }
+        @include for-desktop-up {
+            width: 460px;
+        }
+    }
+}

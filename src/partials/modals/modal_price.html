@@ -1,0 +1,62 @@
+<div class="modal" data-modal="3">
+  <button class="modal__close-btn js-modal-close" type="button">
+    <svg width="24" height="24">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal__title">ЦІНИ НА НОМЕР</h3>
+  <form name="modal-book-price-form">
+    <div class="book-price-form">
+      <div class="book-price-form__item book-price-form__item--changed">
+        <select
+          name="room-type"
+          class="book-price-form__input book-price-form--no-frame js-select"
+          id="room-type"
+        >
+          <option value="Двохмісний">Двохмісний</option>
+          <option value="Одномісний">Одномісний</option>
+          <option value="Напів Люкс">Напів Люкс</option>
+          <option value="Люкс">Люкс</option>
+          <option value="Президентський">Президентський</option>
+        </select>
+        <label
+          class="book-price-form__label book-price-form__label--changed"
+          for="room-type"
+          >Категорія номеру</label
+        >
+      </div>
+      <ul class="book-price-form__box">
+        <li class="book-price-form__item">
+          <input
+            class="book-price-form__input"
+            id="night-stay"
+            type="text"
+            name="guest-name"
+            placeholder="1"
+            pattern="^[ 0-9]+$"
+            title="Кількість ночей впишіть цифрами."
+          />
+          <div class="book-price-form__icon-arrow"></div>
+          <label class="book-price-form__label" for="night-stay"
+            >Кількість ночей</label
+          >
+        </li>
+
+        <li class="book-price-form__item">
+          <input
+            class="book-price-form__input"
+            id="booking-price"
+            type="text"
+            name="booking-price"
+            placeholder="1000"
+            pattern="^[ 0-9]+$"
+            title="Вартість проживання обрахована автоматично."
+          />
+          <label class="book-price-form__label" for="booking-price">грн</label>
+        </li>
+      </ul>
+    </div>
+    <button class="btn-modal" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+  </form>
+</div>
+<div class="backdrop js-backdrop-modal"></div>
