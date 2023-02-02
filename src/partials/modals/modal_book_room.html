@@ -1,0 +1,99 @@
+<div class="modal" data-modal="1">
+  <button class="modal__close-btn js-modal-close" type="button">
+    <svg width="24" height="24">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal__title">ЗАБРОНЮВАТИ НОМЕР</h3>
+  <form name="modal-book-room-form">
+    <div class="book-room-form">
+      <ul class="book-room-form__box">
+        <li class="book-room-form__item">
+          <input
+            class="book-room-form__input"
+            id="guest-name"
+            type="text"
+            name="guest-name"
+            placeholder="Ваше ім’я"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
+            title="Ім’я не может бути меншим за 2 та не більше ніж 20 символів."
+          />
+          <label class="book-room-form__label" for="guest-name"
+            >На кого забронювати номер?</label
+          >
+        </li>
+        <li class="book-room-form__item">
+          <input
+            class="book-room-form__input js-inputmask"
+            id="guest-tel"
+            type="tel"
+            name="guest-tel"
+            placeholder="+38 (___) ___-__-__"
+            title="Контактний номер має бути українського мобільного оператора та складатись із 10 цифр"
+          />
+          <label class="book-room-form__label" for="guest-tel"
+            >Номер телефону</label
+          >
+        </li>
+      </ul>
+
+      <div class="book-room-form__item">
+        <select
+          name="room-type"
+          class="book-room-form__input book-room-form__input--right-side js-select"
+          id="room-type"
+        >
+          <option value="Двохмісний">Двохмісний</option>
+          <option value="Одномісний">Одномісний</option>
+          <option value="Напів Люкс">Напів Люкс</option>
+          <option value="Люкс">Люкс</option>
+          <option value="Президентський">Президентський</option>
+        </select>
+        <div class="book-room-form__icon-arrow"></div>
+        <label
+          class="book-room-form__label book-room-form__label--right-side"
+          for="room-type"
+          >Категорія номеру</label
+        >
+      </div>
+      <ul class="book-room-form__box">
+        <li class="book-room-form__item">
+          <select
+            name="check-in"
+            class="book-room-form__input js-select"
+            id="check-in"
+          >
+            <option value="Сьогодні">Сьогодні</option>
+            <option value="Завтра">Завтра</option>
+            <option value="Після завтра">Після завтра</option>
+            <option value="Наступної суботи">Наступної суботи</option>
+            <option value="Наступної неділі">Наступної неділі</option>
+          </select>
+          <div class="book-room-form__icon-arrow"></div>
+          <label class="book-room-form__label" for="check-in"
+            >Дата заїзду</label
+          >
+        </li>
+        <li class="book-room-form__item">
+          <select
+            name="check-out"
+            class="book-room-form__input js-select"
+            id="check-out"
+          >
+            <option value="Сьогодні">Сьогодні</option>
+            <option value="Завтра">Завтра</option>
+            <option value="Після завтра">Після завтра</option>
+            <option value="Наступної суботи">Наступної суботи</option>
+            <option value="Наступної неділі">Наступної неділі</option>
+          </select>
+          <div class="book-room-form__icon-arrow"></div>
+          <label class="book-room-form__label" for="check-out"
+            >Дата виїзду</label
+          >
+        </li>
+      </ul>
+    </div>
+    <button class="btn-modal" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+  </form>
+</div>
+<div class="backdrop js-backdrop-modal"></div>
