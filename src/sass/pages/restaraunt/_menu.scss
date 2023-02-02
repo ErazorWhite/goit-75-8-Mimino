@@ -179,7 +179,8 @@ cursor: pointer;
     margin-left: 874px;
 }
 
-&:hover {
+&:hover,
+&:focus {
     background: #FFFFFF;
     color: #F3C653;
     border: 2px solid #F3C653;
