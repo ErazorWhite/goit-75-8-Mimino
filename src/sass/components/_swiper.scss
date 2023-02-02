@@ -1,11 +1,10 @@
 .slider-container {
   @extend .container;
   @include for-phone-only {
-    // На мобильной версии у слайдера нет паддингов
+    // На мобильной версии у слайдера может не быть падингов
     padding: unset;
   }
   @include for-desktop-up {
-    // padding-left: 6;
   }
 }
 
@@ -68,6 +67,10 @@
   height: 32px;
 }
 
+.swiper-icon--white {
+  fill: $primaryLight;
+}
+
 .button {
   border: 1px solid transparent;
   font-weight: 700;
@@ -85,14 +88,14 @@
     @extend .button;
     left: 15px;
     &::after {
-      content: '';
+      content: "";
     }
   }
   &-next {
     @extend .button;
     left: 79px;
     &::after {
-      content: '';
+      content: "";
     }
   }
 }

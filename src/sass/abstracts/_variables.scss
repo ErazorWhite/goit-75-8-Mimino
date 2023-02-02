@@ -1,19 +1,23 @@
 // Colors
-$primaryLight: #FFFDEE;
-$secondaryLight: #F0ECD6;
+$primaryLight: #fffdee;
+$secondaryLight: #f0ecd6;
+$primaryWhite: #ffffff;
 
 $primaryDark: #000000;
-$secondaryDark: #0E0C07;
+$secondaryDark: #0e0c07;
 
-$cornerTextColor: #B4B4B4;
+$cornerTextColor: #b4b4b4;
+$cornerTextColorSecondary: #bababa;
+
 $sectionLogoColor: #494848;
-$sectionDescriptionColor: #7A7A7A;
+$sectionDescriptionColor: #7a7a7a;
+$modulTextColor: #808080;
 
-$brandColor: #F3C653;
+$brandColor: #f3c653;
 $brandAccent: #c79002;
 
 $backdropBg: rgba(0, 0, 0, 0.2);
+$btnBg: rgba(0, 0, 0, 0.4);
 
 // Animation
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
-

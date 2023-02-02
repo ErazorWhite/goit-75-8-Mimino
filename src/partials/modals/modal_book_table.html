@@ -1,0 +1,79 @@
+<div class="modal" data-modal="2">
+  <button class="modal__close-btn js-modal-close" type="button">
+    <svg width="24" height="24">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</h3>
+  <form name="modal-book-table-form">
+    <div class="book-table-form">
+      <ul class="book-table-form__box">
+        <li class="book-table-form__item">
+          <input
+            class="book-table-form__input"
+            id="guest-name"
+            type="text"
+            name="guest-name"
+            placeholder="Ваше ім’я"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
+            title="Ім’я не может бути меншим за 2 та не більше ніж 20 символів."
+          />
+          <label class="book-table-form__label" for="guest-name"
+            >На кого забронювати столик?</label
+          >
+        </li>
+        <li class="book-table-form__item">
+          <input
+            class="book-table-form__input js-inputmask"
+            id="guest-tel"
+            type="tel"
+            name="guest-tel"
+            placeholder="+38 (___) ___-__-__"
+            title="Контактний номер має бути українського мобільного оператора та складатись із 10 цифр"
+          />
+          <label class="book-table-form__label" for="guest-tel"
+            >Номер телефону</label
+          >
+        </li>
+      </ul>
+      <ul class="book-table-form__box">
+        <li class="book-table-form__item">
+          <select
+            name="guests-count"
+            class="book-table-form__input js-select"
+            id="guests-count"
+          >
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <div class="book-table-form__icon-arrow"></div>
+          <label class="book-table-form__label" for="guests-count"
+            >Столик на яку кількість осіб?</label
+          >
+        </li>
+        <li class="book-table-form__item">
+          <select
+            name="date-check-in"
+            class="book-table-form__input js-select"
+            id="date-check-in"
+          >
+            <option value="Сьогодні">Сьогодні</option>
+            <option value="Завтра">Завтра</option>
+            <option value="Після завтра">Після завтра</option>
+            <option value="Наступної суботи">Наступної суботи</option>
+            <option value="Наступної неділі">Наступної неділі</option>
+          </select>
+          <div class="book-table-form__icon-arrow"></div>
+          <label class="book-table-form__label select" for="date-check-in"
+            >На яку дату бронювати?</label
+          >
+        </li>
+      </ul>
+    </div>
+    <button class="btn-modal" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+  </form>
+</div>
+<div class="backdrop js-backdrop-modal"></div>
