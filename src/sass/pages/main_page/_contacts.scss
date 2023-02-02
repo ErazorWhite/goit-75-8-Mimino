@@ -1,0 +1,278 @@
+.visually--hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.contact {
+
+    &__container {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 36px;
+        padding-bottom: 32px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 413px) {
+            max-width: 413px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+            max-width: 1279px;
+            padding-left: 47px;
+            padding-right: 47px;
+            padding-top: 56px;
+            padding-bottom: 44px;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 1280px;
+            padding-left: 85px;
+            padding-right: 85px;
+            padding-top: 56px;
+            padding-bottom: 73px;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        margin-right: 114px;
+        &--hotel {
+            margin-right: 0px;
+        }
+    }
+
+    &__brand {
+        font-family: "Film P3";
+        font-style: normal;
+        color: $sectionLogoColor;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        line-height: 1.07;
+        @media screen and (max-width: 1023px) {
+            font-size: 40px;
+
+            margin-bottom: 12px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 60px;
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+        color: $sectionDescriptionColor;
+
+        @media screen and (min-width: 414px) and (max-width: 1023px) {
+            line-height: 1.66;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+            margin-bottom: 52px;
+            line-height: 1.25;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 40px;
+            line-height: 1.2;
+        }
+    }
+
+    /* серый1 */
+
+    &__block {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 16px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &--hotel {
+        justify-content: space-between;
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background: $primaryLight;
+
+        border: 0.5px solid $brandColor;
+        border-radius: 2px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8px 7px 8px;
+        height: 40px;
+
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $sectionLogoColor;
+        background-color: #ffffff;
+
+        &--hotel {
+            &:nth-child(2) {
+                padding-left: 0;
+            }
+        }
+
+        &--hotel {
+            &:nth-child(1) {
+                padding-right: 12px;
+            }
+        }
+
+        &--map {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            padding-right: 33px;
+            font-size: 16px;
+            line-height: 1.25;
+        }
+    }
+
+    &__name {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: $brandAccent;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__icon {
+        fill: $brandAccent;
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+
+    &__maps {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 414px) and (max-width: 1023px) {
+            width: 100%;
+            height: 220px;
+        }
+        @media screen and (min-width: 1024px) {
+            min-width: 535px;
+            height: 412px;
+        }
+        @media screen and (min-width: 1280px) {
+            min-width: 634px;
+        }
+    }
+    &__item--map {
+        display: flex;
+        width: 260px;
+        height: 76px;
+        background: $primaryLight;
+
+        border: 0.5px solid $brandColor;
+        border-radius: 2px;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-right: 0px;
+        justify-content: space-around;
+
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 32px;
+            width: 260px;
+            height: 76px;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+            margin-bottom: 0px;
+            width: 285px;
+            height: 56px;
+        }
+    }
+
+    &__list--maps {
+        display: flex;
+
+        @media screen and (min-width: 414px) and (max-width: 1023px) {
+            justify-content: flex-end;
+        }
+
+        @media screen and (min-width: 1024px) {
+            justify-content: flex-start;
+        }
+    }
+}
+
+.address {
+    display: flex;
+    @media screen and (max-width: 1023px) {
+        max-width: 1023px;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1024px) {
+        max-width: 1279px;
+        flex-direction: row;
+    }
+
+    &__list {
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+            margin-right: 100px;
+            width: 294px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 368px;
+            margin-right: 108px;
+        }
+    }
+}

@@ -1,20 +1,18 @@
 // Fonts
-@import './fonts/stylesheet.css';
+@import "./fonts/stylesheet.css";
 
 // modern-normalize
-@import './common';
+@import "./common";
 
 // Utilities & Base
-@import './abstracts/_main';
-@import './base/_main';
-@import './components/_main';
-@import './layout/_main';
+@import "./abstracts/_main";
+@import "./base/_main";
+@import "./components/_main";
+@import "./layout/_main";
 
 // Pages
-@import './pages/hotel/_main';
-@import './pages/main_page/_main';
-@import './pages/restaraunt/_main';
-@import './pages/room/_main';
-@import './pages/restaraunt/about_kitchen';
-
-
+@import "./pages/hotel/_main";
+@import "./pages/main_page/_main";
+@import "./pages/restaraunt/_main";
+@import "./pages/room/_main";
+@import "./pages/restaraunt/about_kitchen";
