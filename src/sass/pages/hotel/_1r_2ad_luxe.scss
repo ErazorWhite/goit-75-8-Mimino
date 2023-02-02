@@ -129,17 +129,17 @@
   }
 }
 .lux__slider {
-  height: 246px;
-  @media screen and (max-width: calc($bp-mobile - 0.5px)) {
-    width: 284px;
-  }
+  // height: 246px;
+  // @media screen and (max-width: calc($bp-mobile - 0.5px)) {
+  //   width: 284px;
+  // }
   @media screen and (max-width: calc($bp-tablet - 0.5px)) {
     margin-bottom: 72px;
   }
   @media screen and (min-width: $bp-tablet) {
     margin-top: 48px;
-    width: 438px;
-    height: 258px;
+    // width: 438px;
+    // height: 258px;
   }
 }
 .lux__buttons {
