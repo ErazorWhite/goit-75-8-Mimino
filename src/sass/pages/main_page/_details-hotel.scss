@@ -115,6 +115,21 @@
         }
     }
 
+    &__btn-prices {
+        @extend %link;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 236px;
+    }
+
+    &__button-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    // Swiper
+
     &__slider-containder {
         @include for-tablet-up {
             max-width: 1024px;
