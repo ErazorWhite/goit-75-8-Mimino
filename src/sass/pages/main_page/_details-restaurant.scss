@@ -1,4 +1,5 @@
 .details-restaurant {
+    position: relative;
     padding-top: 24px;
     padding-bottom: 40px;
     width: 100%;
@@ -104,6 +105,13 @@ letter-spacing: 0.02em;
     align-items: center;
     @media screen and (min-width:1024px) {
         align-items: flex-start;
+        position: absolute;
+        left: 47px;
+        bottom: 96px;
+    }
+    @media screen and (min-width:1280px) {
+        left: 85px;
+        bottom: 94px;
     }
 }
 
@@ -113,6 +121,7 @@ letter-spacing: 0.02em;
 
 .details-restaurant__slider {
     width: 330px;
+    margin-left: auto  !important;
         @media screen  and (min-width: 1024px) {
 width: 662px;
         }
