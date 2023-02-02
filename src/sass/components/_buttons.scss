@@ -1,0 +1,83 @@
+.btn {
+  min-width: 232px;
+  min-height: 48px;
+  padding: 14px 35px;
+
+  @include desctiption-block($brandColor, 700, 16px, 1.25);
+
+  border: 2px solid $primaryWhite;
+  border-radius: 25px;
+  background-color: $btnBg;
+  cursor: pointer;
+
+  transition: border-color 250ms $cubic, background-color 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $primaryWhite;
+    border-color: $brandColor;
+  }
+
+  &--dark {
+    min-width: 236px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: $primaryDark;
+
+    transition: border-color 250ms $cubic, background-color 250ms;
+  }
+
+  &-booking-big {
+    min-width: 384px;
+    min-height: 64px;
+    padding: 20px 43px;
+
+    @include desctiption-block($primaryWhite, 500, 20px, 1.2);
+
+    background-color: $primaryDark;
+    border: 1px solid $brandColor;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: color 250ms $cubic, background-color 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: $brandColor;
+      color: $primaryDark;
+    }
+
+    @media (min-width: $bp-tablet) {
+      min-width: 434px;
+      min-height: 65px;
+      padding: 18px 38px;
+    }
+  }
+
+  &-modal {
+    min-width: 384px;
+    min-height: 64px;
+    padding: 20px 43px;
+
+    @include desctiption-block($primaryWhite, 500, 20px, 1.2);
+
+    background-color: $primaryDark;
+    border: 1px solid $brandColor;
+    border-radius: 2px;
+    cursor: pointer;
+
+    transition: color 250ms $cubic, background-color 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: $brandColor;
+      color: $primaryDark;
+    }
+
+    @media (min-width: $bp-tablet) {
+      min-width: 592px;
+      font-size: 24px;
+      padding: 18px 117px;
+    }
+  }
+}
