@@ -6,10 +6,11 @@
            <p class="details-restaurant__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
         </div>
 
+        <div class="slider-container">
         <div class="slider details-restaurant__slider" data-slider="team-slider">
         <div class="swiper">
   <!-- Additional required wrapper -->
-  <div class="swiper-wrapper details-restaurant__swiper-wrapper">
+  <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
         <picture>
@@ -19,18 +20,18 @@
                  <img src="./images/homepage/homepage8-mobile.jpg" alt="">
                 </picture>
     </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide  second-slide">
         <picture>
-                    <source srcset="./images/homepage/homepage3-desktop.jpg 1x,./images/homepage/homepage3-desktop@2x.jpg 2x" media="(min-width:1280px)"/>
-                    <source srcset="./images/homepage/homepage3-tablet.jpg 1x,./images/homepage/homepage3-tablet@2x.jpg 2x" media="(min-width:1024px)"/>
+                    <source srcset="./images/homepage/homepage7-desktop.jpg 1x,./images/homepage/homepage7-desktop@2x.jpg 2x" media="(min-width:1280px)"/>
+                    <source srcset="./images/homepage/homepage7-tablet.jpg 1x,./images/homepage/homepage7-tablet@2x.jpg 2x" media="(min-width:1024px)"/>
                     <source srcset="./images/homepage/homepage4-mobile.jpg 1x,./images/homepage/homepage4-mobile@2x.jpg 2x" media="(min-width:414px)"/>
                     <img src="./images/homepage/homepage4-mobile.jpg" alt="">
                 </picture>
     </div>
-    <div class="swiper-slide">
+    <div class="swiper-slide  third-slide">
         <picture>
-                    <source srcset="./images/homepage/homepage4-desktop.jpg 1x,./images/homepage/homepage4-desktop@2x.jpg 2x" media="(min-width:1280px)"/>
-                    <source srcset="./images/homepage/homepage4-tablet.jpg 1x,./images/homepage/homepage4-tablet@2x.jpg 2x" media="(min-width:1024px)"/>
+                    <source srcset="./images/homepage/homepage6-desktop.jpg 1x,./images/homepage/homepage6-desktop@2x.jpg 2x" media="(min-width:1280px)"/>
+                    <source srcset="./images/homepage/homepage6-tablet.jpg 1x,./images/homepage/homepage6-tablet@2x.jpg 2x" media="(min-width:1024px)"/>
                     <source srcset="./images/homepage/homepage4-mobile.jpg 1x,./images/homepage/homepage4-mobile@2x.jpg 2x" media="(min-width:414px)"/>
                     <img src="./images/homepage/homepage4-mobile.jpg" alt="">
                 </picture>
@@ -39,13 +40,13 @@
   </div>
 
   <!-- If we need navigation buttons -->
-  <div class="swiper-btns details-restaurant__slider-buttons">
-  <div class="swiper-button-prev details-restaurant__slider-button swiper-btn">
+  <div class="swiper-btns">
+  <div class="swiper-button-prev swiper-btn details-restaurant__slider-button">
     <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-arrow-left"></use>
                 </svg>
   </div>
-  <div class="swiper-button-next details-restaurant__slider-button swiper-btn">
+  <div class="swiper-button-next swiper-btn details-restaurant__slider-button">
     <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
@@ -54,10 +55,11 @@
 
 </div>
 </div>
+</div>
 
         <div class="details-restaurant__btns">
-            <button class="btn details-restaurant__btn" type="button">Забронювати столик</button>
-            <button class="btn details-restaurant__btn" type="button">Переглянути меню</button>
+            <button class="btn details-restaurant__btn js-open-modal"  data-modal="2" type="button">Забронювати столик</button>
+            <button class="btn details-restaurant__btn" href="../restaraunt/menu.html" type="button">Переглянути меню</button>
         </div>
     </div>
 </section>

@@ -103,6 +103,7 @@ letter-spacing: 0.02em;
     justify-content: center;
     gap: 16px;
     align-items: center;
+    padding: unset;
     @media screen and (min-width:1024px) {
         align-items: flex-start;
         position: absolute;
@@ -117,18 +118,38 @@ letter-spacing: 0.02em;
 
 .details-restaurant__btn {
     width: 236px;
+     padding: unset;
 }
 
-.details-restaurant__slider {
-    width: 330px;
-    margin-left: auto  !important;
-        @media screen  and (min-width: 1024px) {
-width: 662px;
-        }
-    @media screen  and (min-width: 1280px) {
-width: 875px;
+.details-restaurant .details-restaurant__slider {
+    @media screen  and (min-width: 414px) {
+width: 330px;
+    margin-left: 69px;
     }
     
+        @media screen  and (min-width: 1024px) {
+width: 662px !important;
+max-width: unset;
+margin-left: 220px;
+        }
+    @media screen  and (min-width: 1280px) {
+        margin-left: 200px;
+width: 875px !important;
+    }
+    
+}
+
+.swiper-wrapper .second-slide,
+.swiper-wrapper .third-slide {
+    @media screen  and (min-width: 1024px) {
+        width: 162px !important;
+    }
+}
+
+.swiper-wrapper .third-slide {
+   @media screen  and (min-width: 1280px) {
+    width: 254px;
+   } 
 }
 
 .details-restaurant__slider-buttons {

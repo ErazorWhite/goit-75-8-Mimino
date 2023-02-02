@@ -1,5 +1,4 @@
 .about-restaurant {
-    position: relative;
     padding-top: 16px;
     padding-bottom: 20px;
     @media screen and (min-width: 1024px) {
@@ -9,7 +8,11 @@
     }
     @media screen and (min-width: 1280px) {
        
-    }   
+    } 
+    }
+
+    .about-restaurant__container {
+        position: relative;
     }
 
 
@@ -72,13 +75,13 @@ border-color: transparent;
     z-index: 1;
     @media screen and (min-width: 1024px) {
         width: 400px;
-    top: -32px;
+    top: -152px;
     right: 112px;
     position: absolute;
     }
      @media screen and (min-width: 1280px) {
         width: 460px;
-        top: -33px;
+        top: -153px;
         right: 180px;
     }
 }
@@ -113,56 +116,33 @@ border-radius: 2px;
 }
 
 .about-restaurant__slider {
-    width: 330px;
-    margin-left: auto  !important;
     @media screen and (min-width: 1024px) {
-        width: 662px;
+     margin-left: 440px;  
+    margin-top: -65px; 
+    width: 428px;
     }
     @media screen and (min-width: 1280px) {
+        margin-top: -107px;
+        margin-left: 415px;
         width: 548px;
     }
 }
 
-.about-restaurant__swiper-wrapper {
-    max-width: 330px;
+
+.right-btn {
+   left: unset;
+   right: 0; 
 }
 
-// .about-restaurant__swiper {
-//     max-width: 330px;
-//     margin-left: auto;
-// }
-
-// .about-restaurant__swiper-wrapper {
-//     display: flex;
-//     align-items: center;
-//     gap: 25px;
-//     .about-restaurant__second {
-//         max-width: 60px !important;
-//         overflow: hidden !important;
-//     }
-// }
-
-// .about-restaurant__second picture{
-//     object-fit: cover;
-//     display: block;
-//     height: 245px;
-//     width: 245px;
-//     & img{
-//         object-fit: cover;
-//         width: 245px;
-//     }
-// }
-
-// .about-restaurant__swiper-slide {
-//     width: 245px;
-// }
-
-.about-restaurant__buttons {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    justify-content: flex-end;
-    &.about-restaurant__btn {
-left: 286px !important;
+.left-btn {
+    @media screen and (min-width: 414px) {
+        left: 288px;
     }
+    @media screen and (min-width: 1024px) {
+left: 332px;
+    }
+    @media screen and (min-width: 1280px) {
+left: 452px;
+    }
+    
 }
