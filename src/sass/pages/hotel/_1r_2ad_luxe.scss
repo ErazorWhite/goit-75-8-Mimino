@@ -1,5 +1,5 @@
-@import '../../components/buttons';
-@import '../../components/swiper';
+@import "../../components/buttons";
+@import "../../components/swiper";
 
 .section__lux {
   padding-top: 32px;
@@ -25,6 +25,7 @@
     @media screen and (min-width: $bp-tablet) {
       margin: 0;
       width: 50%;
+      margin-bottom: 37px;
     }
   }
 }
@@ -43,7 +44,7 @@
     }
   }
   &__brand-name {
-    font-family: 'Film P3';
+    font-family: "Film P3";
     text-transform: uppercase;
     margin-bottom: 32px;
     font-weight: 700;
@@ -81,7 +82,7 @@
   &__text {
     margin-bottom: 32px;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
@@ -153,11 +154,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 112px;
     @media screen and (min-width: $bp-tablet) {
       margin-top: 112px;
       align-items: end;
     }
+    @include for-tablet-up {
+      margin-top: 0;
+    }
+  }
+  &__swiper-btns {
+    background-color: red;    
   }
 }
 .button__form {
@@ -184,4 +190,10 @@
   fill: currentColor;
   width: 100%;
   height: 100%;
+}
+
+.lux__slider-container {
+  @include for-tablet-up {
+    display: flex;
+  }
 }

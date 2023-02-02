@@ -13,184 +13,77 @@
       </div>
       <div class="lux__photo cardset__item">
         <picture class="lux__image">
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+          <source media="(min-width: 1280px)" srcset="
               ./images/hotel/hotel1-desktop.jpg    1x,
               ./images/hotel/hotel1-desktop@2x.jpg 2x
-            "
-            type="image/jpeg"
-          />
-          <source
-            media="(min-width: 1024px)"
-            srcset="
+            " type="image/jpeg" />
+          <source media="(min-width: 1024px)" srcset="
               ./images/hotel/hotel1-tablet.jpg    1x,
               ./images/hotel/hotel1-tablet@2x.jpg 2x
-            "
-            type="image/jpeg"
-          />
-          <source
-            media="(min-width: 414px)"
-            srcset="
+            " type="image/jpeg" />
+          <source media="(min-width: 414px)" srcset="
               ./images/hotel/hotel1-mobile.jpg    1x,
               ./images/hotel/hotel1-mobile@2x.jpg 2x
-            "
-            type="image/jpeg"
-          />
-          <img src="./images/hotel/hotel1-desktop.jpg" alt="Фото номеру" width:
-          100%; loading="lazy"/>
+            " type="image/jpeg" />
+          <img src="./images/hotel/hotel1-desktop.jpg" alt="Фото номеру" width="460" loading="lazy" />
         </picture>
       </div>
-      <div class="lux__slider slider-container cardset__item">
-        <div class="swiper" data-slider="team-slider">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <picture class="slider__image">
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/sliders/slider1-desktop.jpg    1x,
-                    ./images/sliders/slider1-desktop@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ./images/sliders/slider1-tablet.jpg    1x,
-                    ./images/sliders/slider1-tablet@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 414px)"
-                  srcset="
-                    ./images/sliders/slider1-mobile.jpg    1x,
-                    ./images/sliders/slider1-mobile@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <img src="./images/sliders/slider1-desktop.jpg" alt="Фото
-                номеру" width: 100%; loading="lazy"/>
-              </picture>
-            </li>
-            <li class="swiper-slide">
-              <picture class="slider__image">
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/sliders/slider2-desktop.jpg    1x,
-                    ./images/sliders/slider2-desktop@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ./images/sliders/slider2-tablet.jpg    1x,
-                    ./images/sliders/slider2-tablet@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 414px)"
-                  srcset="
-                    ./images/sliders/slider2-mobile.jpg    1x,
-                    ./images/sliders/slider2-mobile@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <img src="./images/sliders/slider2-desktop.jpg" alt="Фото
-                номеру" width: 100%; loading="lazy"/>
-              </picture>
-            </li>
-            <li class="swiper-slide">
-              <picture class="slider__image">
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/sliders/slider3-desktop.jpg    1x,
-                    ./images/sliders/slider3-desktop@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ./images/sliders/slider3-tablet.jpg    1x,
-                    ./images/sliders/slider3-tablet@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 414px)"
-                  srcset="
-                    ./images/sliders/slider3-mobile.jpg    1x,
-                    ./images/sliders/slider3-mobile@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <img src="./images/sliders/slider3-desktop.jpg" alt="Фото
-                номеру" width: 100%; loading="lazy"/>
-              </picture>
-            </li>
-            <li class="swiper-slide">
-              <picture class="slider__image">
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/sliders/slider4-desktop.jpg    1x,
-                    ./images/sliders/slider4-desktop@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ./images/sliders/slider4-tablet.jpg    1x,
-                    ./images/sliders/slider4-tablet@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <source
-                  media="(min-width: 414px)"
-                  srcset="
-                    ./images/sliders/slider4-mobile.jpg    1x,
-                    ./images/sliders/slider4-mobile@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                />
-                <img src="./images/sliders/slider4-desktop.jpg" alt="Фото
-                номеру" width: 100%; loading="lazy"/>
-              </picture>
-            </li>
-          </ul>
-          <div class="swiper-buttons__thumb swiper-btns">
-            <div class="swiper-button-prev swiper-button swiper-btn">
-              <svg class="swiper__icon">
-                <use href="./images/icons.svg#icon-arrow-left"></use>
-              </svg>
-            </div>
-            <div class="swiper-button-next swiper-button swiper-btn">
-              <svg class="swiper__icon">
-                <use href="./images/icons.svg#icon-arrow-right"></use>
-              </svg>
+      <!-- Slider container -->
+      <div class="slider-container lux__slider-container">
+        <div class="slider" data-slider="team-slider">
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img srcset="/src/images/homepage/homepage11-tablet.jpg 1xv,
+                             /src/images/homepage/homepage11-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+              <li class="swiper-slide">
+                <img srcset="/src/images/homepage/homepage12-tablet.jpg 1x,
+                             /src/images/homepage/homepage12-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+              <li class="swiper-slide">
+                <img srcset="/src/images/hotel/hotel3-tablet.jpg 1x,
+                             /src/images/hotel/hotel3-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+              <li class="swiper-slide">
+                <img srcset="/src/images/homepage/homepage16-tablet.jpg 1x,
+                             /src/images/homepage/homepage16-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+            </ul>
+            <div class="swiper-btns">
+              <button type="button" class="swiper-btn swiper-button-prev">
+                <svg class="swiper-icon" width="32" height="32">
+                  <use href="/src/images/icons.svg#icon-arrow-left"></use>
+                </svg></button>
+              <button type="button" class="swiper-btn swiper-button-next">
+                <svg class="swiper-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg></button>
             </div>
           </div>
         </div>
+        <div class="lux__buttons cardset__item">
+          <form class="button__form" action="./room.html">
+            <button class="details-btn btn btn--dark">Детальніше</button>
+          </form>
+          <button class="price-btn btn btn--dark js-open-modal" data-modal="3" type="button">
+            Переглянути ціни
+          </button>
+        </div>
       </div>
-      <div class="lux__buttons cardset__item">
-        <form class="button__form" action="./room.html">
-          <button class="details-btn btn btn--black">Детальніше</button>
-        </form>
-        <button
-          class="price-btn btn btn--black js-open-modal"
-          data-modal="3"
-          type="button"
-        >
-          Переглянути ціни
-        </button>
-      </div>
+
     </div>
   </div>
 </section>
