@@ -1,5 +1,6 @@
 <section class="section">
   <div class="kitchen">
+    <h2 class="section__title visually-hidden">Кухня МИМИНО</h2>
     <div class="kitchen__block">
       <ul class="kitchen__opus">
         <li class="kitchen__span">Amet minim mollit non</li>
@@ -12,39 +13,31 @@
       </ul>
 
       <picture class="kitchen__foto">
-        <source
-          srcset="
-            /src/images/restaurant/restaurant1-mobile.jpg  1x,
-            /src/images/restaurant/restaurant1-mobile@2x.jpg 2x 
-          " width="244" height="322"
-          media="min-width: 320px"
+        <!-- <source  srcset="/src/images/restaurant/restaurant1-mobile.jpg  1x, 
+            /src/images/restaurant/restaurant1-mobile@2x.jpg 2x" 
+           
+          media="(min-width: 320px)" width="244" height="322"
+          type="image/jpg"
+        /> -->
+  <source srcset="/src/images/restaurant/restaurant1-desktop.jpg 1x,
+            /src/images/restaurant/restaurant1-desktop@2x.jpg 2x" 
+           
+          media="(min-width: 1280px)" width="460" height="574"
           type="image/jpg"
         />
-        <source
-          srcset="
-            /src/images/restaurant/restaurant1-tablet.jpg 1x,
-            /src/images/restaurant/restaurant1-tablet@2x.jpg 2x
-          " width="400" height="524"
-          media="min-width: 1024px"
-          type="image/jpg"
-        />
-        <source
-          srcset="
-            /src/images/restaurant/restaurant1-desktop.jpg 1x,
-            /src/images/restaurant/restaurant1-desktop@2x.jpg 2x
-          " width="460" height="574"
-          media="min-width: 1280px"
+        <source srcset="/src/images/restaurant/restaurant1-tablet.jpg 1x,
+            /src/images/restaurant/restaurant1-tablet@2x.jpg 2x" 
+            
+          media="(min-width: 1024px)" width="400" height="524"
           type="image/jpg"
         />
 
-        <img
-          class="images"
-          srcset="
-            /src/images/restaurant/restaurant1-mobile.jpg    1x,
-            /src/images/restaurant/restaurant1-mobile@2x.jpg 2x
-          "
+        <img 
+
+          srcset="/src/images/restaurant/restaurant1-mobile.jpg  1x,
+            /src/images/restaurant/restaurant1-mobile@2x.jpg 2x "
           src="/src/images/restaurant/restaurant1-mobile.jpg"
-          alt="kitchen_cook"
+          alt="kitchen_cook" class="images"
         />
       </picture>
     </div>
@@ -53,34 +46,35 @@
       <ul class="kitchen__beef">
         <li class="kitchen__foto kitchen__foto--beff">
           <picture>
-            <source
+            <!-- <source
               srcset="
                 /src/images/restaurant/restaurant2-mobile.jpg    1x,
                 /src/images/restaurant/restaurant2-mobile@2x.jpg 2x " 
-                width="200" height="278"              "
-              media="(min-width: 320px)"
+                   
+              media="(min-width: 320px)"  width="200" height="278"         
               type="image/jpg" 
+            /> -->
+    <source
+               srcset="
+                /src/images/restaurant/restaurant2-desktop.jpg    1x,
+                /src/images/restaurant/restaurant2-desktop@2x.jpg 2x
+              "  
+              media="(min-width: 1280px)" width="460" height="574"
+              type="image/jpg"
             />
+
+
             <source
-              class="foto"
               srcset="
                 /src/images/restaurant/restaurant2-tablet.jpg    1x,
                 /src/images/restaurant/restaurant2-tablet@2x.jpg 2x
-              " width="350" height="500"
-              media="(min-width: 1024px)"
+              "
+              media="(min-width: 1024px)" width="350" height="500"
               type="image/jpg"
             />
-            <source
-              class="foto"
-              srcset="
-                /src/images/restaurant/restaurant2-desktop.jpg    1x,
-                /src/images/restaurant/restaurant2-desktop@2x.jpg 2x
-              "  width="460" height="574"
-              media="(min-width: 1280px)"
-              type="image/jpg"
-            />
+        
             <img
-              class="images"
+              class="kitchen__images"
               srcset="
                 /src/images/restaurant/restaurant2-mobile.jpg    1x,
                 /src/images/restaurant/restaurant2-mobile@2x.jpg 2x

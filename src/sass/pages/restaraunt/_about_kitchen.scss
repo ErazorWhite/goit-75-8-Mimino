@@ -1,13 +1,26 @@
+.section{
+    // @media screen and (min-width: 1024px) {
+    //     padding-bottom: 23px;
+    // }
+}
+
 .kitchen {
     @extend.container;
+    @media screen and (max-width: 1023px) {
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 23px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 32px;
+    }
+
     &__block {
         display: flex;
-        @media screen and (min-width: 1280px) {
-            // display: flex;
-        }
-        @media screen and (min-width: 1024px) {
-            // display: flex;
-        }
+     
         @media screen and (max-width: 1023px) {
             // display: flex;
             flex-wrap: wrap;
@@ -17,6 +30,8 @@
             display: flex;
             @media screen and (min-width: 1024px) {
                 // display: flex;
+                margin-top: -32px;
+
             }
         }
     }
@@ -101,8 +116,8 @@
         @media screen and (min-width: 1280px) {
             width: 518px;
             height: 60px;
-            margin-top: 24px;
-            margin-bottom: 162px;
+            // margin-top: 24px;
+            // margin-bottom: 162px;
         }
 
         &--beef {
@@ -110,8 +125,8 @@
                 color: $brandAccent;
                 list-style: none;
                 margin-left: 32px;
-                width: 163px;
-                height: 120px;
+                width: 312px;
+                height: 122px;
             }
             @media screen and (min-width: 1024px) and (max-width: 1279px) {
                 color: $brandAccent;
@@ -178,8 +193,13 @@
         display: flex;
         // margin-top: 162px;
         align-items: center;
-
         @media screen and (max-width: 1023px) {
+            // margin-top: 28px;
+            margin-bottom: 32px;
+        }
+
+
+        @media screen and (min-width: 1024px) {
             // margin-top: 28px;
             // margin-bottom: 52px;
         }
@@ -190,7 +210,7 @@
     }
 }
 
-.images {
+.kitchen__images {
     // width: 400px;
     // height: 524px;
     left: 0px;
@@ -199,13 +219,48 @@
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 }
 
+.slider {
+
+    @media screen and (max-width: 1023px) {
+     
+         margin-left: 69px;
+         
+     }
+
+    @media screen and (min-width: 1024px) {
+       margin-top: -28px;
+        margin-left: 491px;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 562px;
+        margin-top: -151px;
+     }
+}
+
 .swiper-button-prev {
     left: auto;
 
     &--kitchen {
-        right: 81px;
+        right: 61px;
     }
 }
+
+.swiper {
+    height: auto;
+    @media screen and (min-width: 1024px) {
+      
+        // margin-left: 400px;
+    }
+  
+}
+ 
+.swiper {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+// 
 
 .swiper-button-next {
     left: auto;
@@ -222,12 +277,10 @@
 .class-swiper--kitchen {
 
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
-       margin-left: 489px;
+    //    margin-left: 489px;
     }
     
-    @media screen and (min-width: 1280px) {
-        margin-left: 562px;
-     }
+  
 }
 
 

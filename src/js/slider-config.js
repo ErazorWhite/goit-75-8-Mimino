@@ -16,8 +16,8 @@ function swiperSlider() {
                 //     delay: 3000,
                 //     disableOnInteraction: false,
                 // },
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 2,
+                spaceBetween: 25,
                 // pagination: {
                 //     el: pagination,
                 //     clickable: true,
@@ -50,17 +50,17 @@ function swiperSlider() {
                 breakpoints: {
                     // when window width is >= 320px
                     320: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
+                        slidesPerView: 1.7,
+                        spaceBetween: 25
                     },
                     // when window width is >= 480px
-                    768: {
+                    1024: {
                         slidesPerView: 2,
-                        spaceBetween: 30
+                        spaceBetween: 40
                     },
                     // when window width is >= 640px
-                    1200: {
-                        slidesPerView: 3,
+                    1280: {
+                        slidesPerView: 2,
                         spaceBetween: 40
                     }
                 }
