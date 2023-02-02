@@ -190,7 +190,7 @@
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 }
 
-.slider {
+.slider__kitchen {
     @media screen and (max-width: 1023px) {
         margin-left: 69px;
     }
@@ -206,7 +206,7 @@
     }
 }
 
-.swiper-button-prev {
+.swiper-button-prev__kitchen {
     left: auto;
 
     &--kitchen {
@@ -214,22 +214,21 @@
     }
 }
 
-.swiper {
-    height: auto;
-}
-
-.swiper {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.swiper-button-next {
+.swiper-button-next__kitchen {
     left: auto;
 
     &--kitchen {
         right: 0px;
     }
 }
+
+
+.swiper__kitchen {
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 
 .kitchen__list {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
