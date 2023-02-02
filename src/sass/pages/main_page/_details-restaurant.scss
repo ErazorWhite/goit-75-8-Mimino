@@ -102,6 +102,7 @@ letter-spacing: 0.02em;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    margin-top: 32px;
     align-items: center;
     padding: unset;
     @media screen and (min-width:1024px) {
@@ -113,6 +114,12 @@ letter-spacing: 0.02em;
     @media screen and (min-width:1280px) {
         left: 85px;
         bottom: 94px;
+    }
+    & a {
+        text-decoration: none;
+        text-align: center;
+        padding-top: 14px;
+    padding-bottom: 14px;
     }
 }
 
