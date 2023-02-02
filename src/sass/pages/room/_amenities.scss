@@ -1,0 +1,130 @@
+.amenities {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: $primaryLight;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.15;
+    }
+    &__container {
+        @extend .container;
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-right: 198px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__list {
+        @extend %list;
+        margin-top: 32px;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+    }
+    &__part {
+        margin-top: 16px;
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+        }
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            flex-direction: row;
+            gap: 159px;
+        }
+    }
+    &__paragraph {
+        @include desctiption-block($sectionDescriptionColor, 700, 16px, 1.25);
+    
+        @media screen and (min-width: 1024px) {
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            
+            &--current {
+            width: 757px;
+            }
+        }
+    }
+    &__box {
+        margin-top: 32px;
+        @media screen and (min-width: 1024px) {
+            margin-left: auto;
+            margin-top: 40px;
+        }
+    }
+    &__button {
+        padding: 0;
+        height: 64px;
+        
+        @media screen and (max-width: 1023px) {
+            max-width: 384px;
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 434px;
+            font-size: 24px;
+            line-height: 1.20;
+        }
+    }
+    &__link {
+        @extend %link;
+        position: relative;
+        @include desctiption-block($brandAccent, 500, 16px, 1.25);
+        display: flex;
+        margin-top: 20px;
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: $cubic;
+    
+        &:hover,
+        &:focus,
+        &:hover .amenities__icon,
+        &:focus .amenities__icon  {
+            color: $brandColor;
+            fill: $brandColor;
+        }
+    
+        @media screen and (max-width: 1023px) {
+            justify-content: center;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-top: 32px;
+        }
+    }
+    &__icon {
+        fill: $brandAccent;
+        margin-left: 13px;
+        
+        @media screen and (min-width: 414px) {
+            display: flex;
+            justify-content: flex-end;
+        }
+        @media screen and (min-width: 1024px) {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+        }
+    }
+}
