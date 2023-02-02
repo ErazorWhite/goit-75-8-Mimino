@@ -1,0 +1,112 @@
+.book-price-form {
+  margin-bottom: 40px;
+
+  @media (min-width: $bp-tablet) {
+    display: block;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    position: relative;
+
+    @media (min-width: $bp-tablet) {
+      margin-bottom: 0;
+      min-width: 288px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--changed {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__box {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-left: 12px;
+
+    @include desctiption-block($brandAccent, 500, 14px, 1.21);
+
+    @media (min-width: $bp-tablet) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    &--changed {
+      margin-left: 0;
+    }
+  }
+
+  &__input {
+    position: relative;
+    z-index: 2;
+
+    height: 54px;
+    width: 100%;
+    padding: 16px 12px;
+    margin-bottom: 8px;
+
+    background-color: inherit;
+    border: 1px solid $brandAccent;
+    border-radius: 2px;
+
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    @include desctiption-block($modulTextColor, 700, 20px, 1.15);
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 0.05em;
+
+    @media (min-width: $bp-tablet) {
+      height: 64px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+
+      font-size: 24px;
+      line-height: 1.16;
+    }
+  }
+
+  &__icon-arrow::before {
+    visibility: hidden;
+
+    @media (min-width: $bp-tablet) {
+      visibility: visible;
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 20%;
+      right: 20px;
+      z-index: 1;
+
+      background-image: url(../images/icon-arrow-down.svg);
+    }
+  }
+
+  &--no-frame {
+    border: none;
+    padding: 0;
+    margin-bottom: 28px;
+    font-size: 24px;
+    height: auto;
+  }
+}
