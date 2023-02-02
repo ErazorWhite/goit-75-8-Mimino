@@ -1,11 +1,10 @@
 .slider-container {
     @extend .container;
     @include for-phone-only {
-        // На мобильной версии у слайдера нет паддингов
+        // На мобильной версии у слайдера может не быть падингов
         padding: unset;
     }
     @include for-desktop-up {
-        // padding-left: 6;
     }
 }
 
@@ -53,6 +52,10 @@
 .swiper-btn {
     width: 32px;
     height: 32px;
+}
+
+.swiper-icon--white {
+    fill: $primaryLight;
 }
 
 .button {
