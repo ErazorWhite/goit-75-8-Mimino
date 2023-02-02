@@ -10,27 +10,45 @@
                     Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <img srcset="/src/images/homepage/homepage9-mobile.jpg 244w,
-             /src/images/homepage/homepage9-mobile@2x.jpg 488w
-             /src/images/homepage/homepage9-tablet.jpg 400w,
-             /src/images/homepage/homepage9-tablet@2x.jpg 800w,
-             /src/images/homepage/homepage9-desktop.jpg 460w,
-             /src/images/homepage/homepage9-desktop@2x.jpg 920w" 
-             sizes="(max-width: 414px) 244px,
-                 (max-width: 1024px) 400px,
-                 (max-width: 1280px) 460px" src="/src/images/homepage/homepage9-mobile.jpg"
-                alt="Номер готелю с двомісним ліжком" class="apartments__picture" width="244" height="322">
+
+            <picture>
+                <source
+                    srcset="/src/images/homepage/homepage9-desktop.jpg 1x, /src/images/homepage/homepage9-desktop@2x.jpg 2x"
+                    media="(min-width: 1280px)">
+                <source
+                    srcset="/src/images/homepage/homepage9-tablet.jpg 1x, /src/images/homepage/homepage9-tablet@2x.jpg 2x"
+                    media="(min-width: 1024px)">
+                <source
+                    srcset="/src/images/homepage/homepage9-mobile.jpg 1x, /src/images/homepage/homepage9-mobile@2x.jpg 2x"
+                    media="(max-width: 1023px)">
+                <img src="/src/images/homepage/homepage9-desktop.jpg" alt="Номер готелю с двомісним ліжком"
+                    class="apartments__picture" width="244">
+            </picture>
+
         </div>
         <div class="relaxation__thumb">
             <p class="relaxation__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                 sint. Velit
                 officia consequat duis enim velit
                 mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <img srcset="/src/images/homepage/homepage10-mobile.jpg 1x,
+            <!-- <img srcset="/src/images/homepage/homepage10-mobile.jpg 1x,
              /src/images/homepage/homepage10-mobile@2x.jpg 2x" sizes="(min-width: 1280px) 460px,
                  (min-width: 1024px) 400px,
                  (min-width: 320px) 245, 100vw" alt="Зона відпочинку з каміном" class="relaxation__picture" width="200"
-                height="278">
+                height="278"> -->
+            <picture>
+                <source
+                    srcset="./images/homepage/homepage10-desktop.jpg 1x, ./images/homepage/homepage10-desktop@2x.jpg 2x"
+                    media="(min-width: 1280px)">
+                <source
+                    srcset="./images/homepage/homepage10-tablet.jpg 1x, ./images/homepage/homepage10-tablet@2x.jpg 2x"
+                    media="(min-width: 1024px)">
+                <source
+                    srcset="./images/homepage/homepage10-mobile.jpg 1x, ./images/homepage/homepage10-mobile@2x.jpg 2x"
+                    media="(max-width: 1023px)">
+                <img src="./images/homepage/homepage10-desktop.jpg" alt="Зона відпочинку з каміном"
+                    class="relaxation__picture" width="200" height="278">
+            </picture>
         </div>
     </div>
 
