@@ -28,9 +28,10 @@
   }
 
   &-booking-big {
-    min-width: 384px;
-    min-height: 64px;
-    padding: 20px 43px;
+    max-width: 434px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     @include desctiption-block($primaryWhite, 500, 20px, 1.2);
 
@@ -48,15 +49,15 @@
     }
 
     @media (min-width: $bp-tablet) {
-      min-width: 434px;
-      min-height: 65px;
-      padding: 18px 38px;
+      padding-top: 18px;
+      padding-bottom: 18px;
     }
   }
 
   &-modal {
-    min-width: 384px;
+    max-width: 592px;
     min-height: 64px;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -76,7 +77,6 @@
     }
 
     @media (min-width: $bp-tablet) {
-      min-width: 592px;
       font-size: 24px;
       padding-top: 18px;
       padding-bottom: 18px;
