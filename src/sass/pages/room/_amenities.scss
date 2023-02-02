@@ -73,14 +73,15 @@
         }
     }
     &__button {
-        background-color: $primaryDark;
-        border: 1px solid $brandColor;
-        @include desctiption-block(#FFFFFF, 500, 20px, 1.2);
-        border-radius: 25px;
-        height: 64px;
-        transition-property: background-color, color;
-        transition-duration: 250ms;
-        transition-timing-function: $cubic;
+        padding: 0;
+        // background-color: $primaryDark;
+        // border: 1px solid $brandColor;
+        // @include desctiption-block(#FFFFFF, 500, 20px, 1.2);
+        // border-radius: 25px;
+        // height: 64px;
+        // transition-property: background-color, color;
+        // transition-duration: 250ms;
+        // transition-timing-function: $cubic;
     
         &:hover,
         &:focus {
@@ -90,6 +91,7 @@
         
         @media screen and (max-width: 1023px) {
             max-width: 384px;
+            // min-width: auto;
             width: 100%;
         }
         @media screen and (min-width: 1024px) {
