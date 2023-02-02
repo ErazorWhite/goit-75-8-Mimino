@@ -169,6 +169,7 @@ font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 color: #F3C653;
+cursor: pointer;
 
 @media (min-width: 1024px) {
     margin-left: 694px;   
@@ -176,5 +177,11 @@ color: #F3C653;
 
 @media (min-width: 1280px) {
     margin-left: 874px;
+}
+
+&:hover {
+    background: #FFFFFF;
+    color: #F3C653;
+    border: 2px solid #F3C653;
 }
 }
