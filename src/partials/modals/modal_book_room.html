@@ -6,8 +6,8 @@
   </button>
   <h3 class="modal__title">ЗАБРОНЮВАТИ НОМЕР</h3>
   <form name="modal-book-room-form">
-    <ul class="book-room-form">
-      <div class="book-room-form__box">
+    <div class="book-room-form">
+      <ul class="book-room-form__box">
         <li class="book-room-form__item">
           <input
             class="book-room-form__input"
@@ -35,9 +35,9 @@
             >Номер телефону</label
           >
         </li>
-      </div>
+      </ul>
 
-      <li class="book-room-form__item">
+      <div class="book-room-form__item">
         <select
           name="room-type"
           class="book-room-form__input book-room-form__input--right-side js-select"
@@ -55,8 +55,8 @@
           for="room-type"
           >Категорія номеру</label
         >
-      </li>
-      <div class="book-room-form__box">
+      </div>
+      <ul class="book-room-form__box">
         <li class="book-room-form__item">
           <select
             name="check-in"
@@ -91,8 +91,8 @@
             >Дата виїзду</label
           >
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
     <button class="btn-modal" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
   </form>
 </div>

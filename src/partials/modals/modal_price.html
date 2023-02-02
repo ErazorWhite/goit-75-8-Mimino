@@ -6,8 +6,8 @@
   </button>
   <h3 class="modal__title">ЦІНИ НА НОМЕР</h3>
   <form name="modal-book-price-form">
-    <ul class="book-price-form">
-      <li class="book-price-form__item book-price-form__item--changed">
+    <div class="book-price-form">
+      <div class="book-price-form__item book-price-form__item--changed">
         <select
           name="room-type"
           class="book-price-form__input book-price-form--no-frame js-select"
@@ -24,8 +24,8 @@
           for="room-type"
           >Категорія номеру</label
         >
-      </li>
-      <div class="book-price-form__box">
+      </div>
+      <ul class="book-price-form__box">
         <li class="book-price-form__item">
           <input
             class="book-price-form__input"
@@ -54,8 +54,8 @@
           />
           <label class="book-price-form__label" for="booking-price">грн</label>
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
     <button class="btn-modal" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
   </form>
 </div>
