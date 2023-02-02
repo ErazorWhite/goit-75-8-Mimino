@@ -93,6 +93,7 @@
 
     &__picture {
         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        min-width: 244px;
         @include for-tablet-up {
             width: 400px;
             transform: translateY(-168px);
@@ -132,6 +133,7 @@
 
     &__picture {
         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        min-width: 200px;
         @include for-tablet-up {
             width: 400px;
             transform: translateY(-224px);
