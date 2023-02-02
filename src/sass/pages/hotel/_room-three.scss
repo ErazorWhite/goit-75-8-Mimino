@@ -11,7 +11,6 @@
 
     @media screen and (min-width: 1280px) {
         padding-top: 72px;
-       
     }
     &__container {
         margin-left: auto;
@@ -49,11 +48,8 @@
         }
         @media screen and (min-width: 1280px) {
             margin-bottom: 72px;
-            
         }
     }
-
-
     &__subtitle {
         color: $cornerTextColor;
         text-align: right;
@@ -66,9 +62,7 @@
             margin-bottom: 4px;
             font-size: 32px;
         }
-       
     }
-
     &__title {
         font-family: 'Times New Roman';
         font-weight: 700;
@@ -80,7 +74,6 @@
 
         @media screen and (min-width: 1024px) {
             margin-bottom: 16px;
-            // margin-right: 105px;
             font-size: 30px;
             line-height: 1.14;
             margin-left: 510px;
@@ -115,16 +108,14 @@
     &__image-interior {
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
-        margin-bottom: 32px;
+        
         @media screen and (min-width: 1024px) {
             position: absolute;
             top: -100px;
             left: 112px;
-            margin-bottom: 48px;
         }
         @media screen and (min-width: 1280px) {
             left: 180px;
-            
         }
     }
     &__buttons {
@@ -179,11 +170,9 @@
 }
         @media screen and (min-width: 1280px) {
             margin-left: 560px;
-       
         }
 }
-    &__icon {
-        
+    &__icon { 
     letter-spacing: .02em;
     cursor: pointer;
     text-align: center;
@@ -205,8 +194,7 @@
     }
 
     &__absolut {
-        max-width: 1280px;
-        
+        max-width: 1280px; 
     }
     &__swiper {
     gap: 16px;
@@ -221,9 +209,6 @@
         margin-bottom: 0;
         margin-left: 0;
         }
-        
-        
-        position: relative;
     }
     &__room {
     display: flex;
