@@ -1,9 +1,70 @@
-<section>
-    <button type="button" class="btn">
-        Забронювати номер
-    </button>
-    
-    <button type="button" class="btn">
-        Переглянути ціни
-    </button>
+<section class="details-hotel">
+    <div class="details-hotel__container">
+        <h3 class="details-hotel__logo">MIMIHO</h3>
+        <p class="details-hotel__label">Готель</p>
+        <p class="details-hotel__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit
+            mollit.</p>
+    </div>
+
+    <div class="slider-container slider-container--pl40 details-hotel__slider-containder">
+        <div class="details-hotel__slider slider" data-slider="hotel-details-slider">
+            <div class="swiper">
+                <ul class="swiper-wrapper details-hotel__swiper-wrapper">
+                    <li class="swiper-slide details-hotel__swiper-slide">
+                        <img srcset="/src/images/homepage/homepage16-tablet.jpg 1xv,
+                                    /src/images/homepage/homepage16-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                    (min-width: 1024px) 194px,
+                                    (min-width: 320px) 245, 100vw" alt="Фотографія ресторану"
+                            class="swiper-inner details-hotel__swiper-inner" width="245" height="245">
+                    </li>
+                    <li class="swiper-slide details-hotel__swiper-slide">
+                        <img srcset="/src/images/homepage/homepage14-tablet.jpg 1x,
+                                    /src/images/homepage/homepage14-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                    (min-width: 1024px) 194px,
+                                    (min-width: 320px) 245, 100vw" alt="Фотографія ресторану"
+                            class="swiper-inner details-hotel__swiper-inner" width="245" height="245">
+                    </li>
+                    <li class="swiper-slide details-hotel__swiper-slide">
+                        <img srcset="/src/images/homepage/homepage4-tablet.jpg 1x,
+                                    /src/images/homepage/homepage4-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                    (min-width: 1024px) 194px,
+                                    (min-width: 320px) 245, 100vw" alt="Фотографія ресторану"
+                            class="swiper-inner details-hotel__swiper-inner" width="245" height="245">
+                    </li>
+                    <li class="swiper-slide details-hotel__swiper-slide">
+                        <img srcset="/src/images/homepage/homepage15-tablet.jpg 1x,
+                                    /src/images/homepage/homepage15-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                    (min-width: 1024px) 194px,
+                                    (min-width: 320px) 245, 100vw" alt="Фотографія ресторану"
+                            class="swiper-inner details-hotel__swiper-inner" width="245" height="245">
+                    </li>
+                </ul>
+                <ul class="swiper-btns details-hotel__swiper-btns">
+                    <li><button type="button"
+                            class="swiper-btn dedails-hotel__swiper-btn swiper-button-prev details-hotel__swiper-button-prev">
+                            <svg class="swiper-icon swiper-icon--white" width="32" height="32">
+                                <use href="/src/images/icons.svg#icon-arrow-left"></use>
+                            </svg></button></li>
+                    <li><button type="button" class="swiper-btn swiper-button-next details-hotel__swiper-button-next">
+                            <svg class="swiper-icon swiper-icon--white" width="32" height="32">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg></button></li>
+                </ul>
+            </div>
+
+        </div>
+        <ul class="details-hotel__buttons">
+            <li>
+                <button type="button" class="btn details-hotel__btn-reserve js-open-modal" data-modal="2">
+                    Забронювати номер
+                </button>
+            </li>
+            <li>
+                <button type="button" class="btn details-hotel__btn-prices js-open-modal" data-modal="3">
+                    Переглянути ціни
+                </button>
+            </li>
+        </ul>
+    </div>
 </section>

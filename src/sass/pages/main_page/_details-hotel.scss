@@ -1,0 +1,173 @@
+.details-hotel {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include for-phone-only {
+        background-image: linear-gradient(0, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+            url("../images/homepage/homepage13-mobile.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(0, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+                url("../images/homepage/homepage13-mobile@2x.jpg");
+        }
+    }
+
+    @include for-tablet-up {
+        padding-top: 48px;
+
+        background-image: linear-gradient(0, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%),
+            url("../images/homepage/homepage13-tablet.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(0, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%),
+                url("../images/homepage/homepage13-tablet@2x.jpg");
+        }
+    }
+
+    @include for-desktop-up {
+        background-image: linear-gradient(0, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
+            url("../images/homepage/homepage13-desktop.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(0, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
+                url("../images/homepage/homepage13-desktop@2x.jpg");
+        }
+    }
+
+    &__container {
+        @extend .container;
+        @include for-tablet-up {
+            margin-left: auto;
+            margin-right: auto;
+            width: 579px;
+        }
+    }
+
+    &__text-box {
+        width: 100%;
+        padding-left: 128px;
+    }
+
+    &__logo {
+        margin-bottom: 12px;
+        text-align: center;
+
+        font-family: "Film P3";
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;
+
+        color: $primaryLight;
+
+        @include for-tablet-up {
+            margin-bottom: 16px;
+            text-align: right;
+            font-size: 64px;
+        }
+    }
+
+    &__label {
+        margin-bottom: 20px;
+        margin-left: 40px;
+        text-align: center;
+
+        font-family: "Montserrat";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.15;
+
+        color: $primaryLight;
+
+        @include for-tablet-up {
+            font-size: 32px;
+            text-align: right;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__description {
+        margin-left: 17px;
+        margin-bottom: 48px;
+        max-width: 242px;
+
+        @include desctiption-block($cornerTextColorSecondary, 600, 12px, 1.25);
+
+        @include for-tablet-up {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            font-size: 16px;
+            min-width: 549px;
+        }
+        @include for-desktop-up {
+            min-width: 488px;
+        }
+    }
+
+    &__slider-containder {
+        @include for-tablet-up {
+            max-width: 1024px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__slider {
+        padding-right: 40px;
+        margin-bottom: 32px;
+        @include for-tablet-up {
+            margin-right: unset;
+            padding-right: unset;
+            margin-bottom: unset;
+            max-width: 662px;
+        }
+    }
+
+    &__swiper-wrapper {
+        margin-bottom: 16px;
+    }
+
+    &__swiper-slide {
+        // min-width: 274px !important;
+        min-height: 270px !important;
+        overflow: hidden !important;
+    }
+
+    &__swiper-button-prev,
+    &__swiper-button-next {
+        left: unset;
+        right: unset;
+    }
+
+    &__swiper-btns {
+        @extend %list;
+        display: flex;
+        gap: 62px;
+        padding-right: 40px;
+        justify-content: end;
+    }
+
+    &__buttons {
+        @extend %list;
+        text-align: center;
+        width: 100%;
+        @include for-tablet-up {
+            margin-left: 32px;
+            max-width: 236px;
+        }
+    }
+
+    &__btn-reserve {
+        margin-bottom: 16px;
+    }
+
+    &__btn-reserve,
+    &__btn-prices {
+        min-width: 238px;
+    }
+}
