@@ -4,7 +4,7 @@
     padding-bottom: 32px;
     position: relative;
 
-     @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
         padding-top: 66px;
         padding-bottom: 40px;
     }
@@ -19,16 +19,16 @@
         padding-right: 15px;
         width: 414px;
         position: relative;
-   
-    @media screen and (min-width: 1024px) {
-       width: 1024px;
-       padding: 0 47px 0 47px;
-    }
 
-    @media screen and (min-width: 1280px) {
-       width: 1280px;
-       padding: 0 85px 0 85px;
-    }
+        @media screen and (min-width: 1024px) {
+            width: 1024px;
+            padding: 0 47px 0 47px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 1280px;
+            padding: 0 85px 0 85px;
+        }
     }
 
     &__logo {
@@ -36,7 +36,7 @@
         text-transform: uppercase;
         margin-bottom: 32px;
         color: $sectionLogoColor;
-        font-family: 'Film P3', sans-serif;
+        font-family: "Film P3", sans-serif;
         font-weight: 700;
         font-size: 40px;
         line-height: 1.08;
@@ -64,7 +64,7 @@
         }
     }
     &__title {
-        font-family: 'Times New Roman';
+        font-family: "Times New Roman";
         font-weight: 700;
         font-size: 24px;
         line-height: 1.17;
@@ -79,13 +79,13 @@
             margin-left: 510px;
             text-align: left;
         }
-         @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1280px) {
             margin-bottom: 24px;
             font-size: 36px;
             margin-left: 600px;
-         }
+        }
     }
-    
+
     &__text {
         @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
         margin-bottom: 32px;
@@ -103,16 +103,16 @@
             margin-bottom: 188px;
             margin-right: 110px;
             margin-left: 600px;
-         }
+        }
     }
     &__image-interior {
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
         margin-bottom: 32px;
-        
+
         @media screen and (min-width: 1024px) {
             position: absolute;
-            top: -100px;
+            top: -80px;
             left: 112px;
         }
         @media screen and (min-width: 1280px) {
@@ -125,15 +125,14 @@
         align-items: center;
         gap: 16px;
         @media screen and (min-width: 1024px) {
-        margin-top: 41px;  
-             
-    }
+            margin-top: 41px;
+        }
         @media screen and (min-width: 1280px) {
-        margin-top: 72px; 
+            margin-top: 72px;
         }
     }
     &__button {
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         color: $brandColor;
         border: 2px solid $secondaryLight;
         width: 246px;
@@ -149,14 +148,14 @@
         border-radius: 25px;
         text-decoration: none;
         padding: 14px 0 14px 0;
-    }  
+    }
     &__icons {
         position: relative;
         gap: 32px;
         display: flex;
         left: 280px;
         bottom: 158px;
-        width: 98px; 
+        width: 98px;
         @media screen and (min-width: 1024px) {
             margin-left: 500px;
             position: relative;
@@ -168,52 +167,52 @@
             width: 98px;
             left: 0;
             bottom: 0;
-}
+        }
         @media screen and (min-width: 1280px) {
             margin-left: 560px;
         }
-}
-    &__icon { 
-    letter-spacing: .02em;
-    cursor: pointer;
-    text-align: center;
-    border: 1px solid #0000;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25;
-    background-color: transparent;
-    width: 32px;
-    height: 32px;
-    transition: fill 250ms $cubic;
-    fill: $primaryDark;
-
-    &:hover,
-    &:focus {
-        fill: $brandColor;
     }
+    &__icon {
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid #0000;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.25;
+        background-color: transparent;
+        width: 32px;
+        height: 32px;
+        transition: fill 250ms $cubic;
+        fill: $primaryDark;
+
+        &:hover,
+        &:focus {
+            fill: $brandColor;
+        }
     }
 
     &__absolut {
-        max-width: 1280px; 
+        max-width: 1280px;
     }
     &__swiper {
-    gap: 16px;
-    display: flex;
-    margin-bottom: 72px;
-    margin-left: 120px;
-    overflow: hidden;
-        @media screen and (min-width: 1024px) {
+        gap: 16px;
         display: flex;
-        gap: 40px;
-        position: relative;
-        margin-bottom: 0;
-        margin-left: 0;
+        margin-bottom: 72px;
+        margin-left: 120px;
+        overflow: hidden;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            gap: 40px;
+            position: relative;
+            margin-bottom: 0;
+            margin-left: 0;
         }
     }
     &__room {
-    display: flex;
-    flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
 
         @media screen and (min-width: 1024px) {
             display: flex;
@@ -233,4 +232,4 @@
 }
 .o {
     letter-spacing: normal;
-}   
+}
