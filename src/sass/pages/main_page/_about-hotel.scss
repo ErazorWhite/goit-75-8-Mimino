@@ -97,6 +97,7 @@
         @include for-tablet-up {
             width: 400px;
             transform: translateY(-130px);
+
         }
         @include for-desktop-up {
             width: 460px;

@@ -1,0 +1,89 @@
+<section class="section__lux">
+  <div class="container">
+    <div class="cardset">
+      <div class="lux__text-block cardset__item">
+        <p class="lux__upper-text">Amet minim mollit non</p>
+        <p class="lux__brand-name">Mimiho</p>
+        <h2 class="lux__title">ДВОМІСНИЙ НОМЕР люкс</h2>
+        <p class="lux__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <div class="lux__photo cardset__item">
+        <picture class="lux__image">
+          <source media="(min-width: 1280px)" srcset="
+              ./images/hotel/hotel1-desktop.jpg    1x,
+              ./images/hotel/hotel1-desktop@2x.jpg 2x
+            " type="image/jpeg" />
+          <source media="(min-width: 1024px)" srcset="
+              ./images/hotel/hotel1-tablet.jpg    1x,
+              ./images/hotel/hotel1-tablet@2x.jpg 2x
+            " type="image/jpeg" />
+          <source media="(min-width: 414px)" srcset="
+              ./images/hotel/hotel1-mobile.jpg    1x,
+              ./images/hotel/hotel1-mobile@2x.jpg 2x
+            " type="image/jpeg" />
+          <img src="./images/hotel/hotel1-desktop.jpg" alt="Фото номеру" width="460" loading="lazy" />
+        </picture>
+      </div>
+      <!-- Slider container -->
+      <div class="slider-container lux__slider-container">
+        <div class="slider" data-slider="team-slider">
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img srcset="/src/images/homepage/homepage11-tablet.jpg 1xv,
+                             /src/images/homepage/homepage11-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+              <li class="swiper-slide">
+                <img srcset="/src/images/homepage/homepage12-tablet.jpg 1x,
+                             /src/images/homepage/homepage12-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+              <li class="swiper-slide">
+                <img srcset="/src/images/hotel/hotel3-tablet.jpg 1x,
+                             /src/images/hotel/hotel3-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+              <li class="swiper-slide">
+                <img srcset="/src/images/homepage/homepage16-tablet.jpg 1x,
+                             /src/images/homepage/homepage16-tablet@2x.jpg 2x" sizes="(min-width: 1280px) 254px,
+                                 (min-width: 1024px) 194px,
+                                 (min-width: 320px) 245, 100vw" alt="Фотографія приміщення готелю" class="swiper-inner"
+                  width="245" height="245">
+              </li>
+            </ul>
+            <div class="swiper-btns">
+              <button type="button" class="swiper-btn swiper-button-prev">
+                <svg class="swiper-icon" width="32" height="32">
+                  <use href="/src/images/icons.svg#icon-arrow-left"></use>
+                </svg></button>
+              <button type="button" class="swiper-btn swiper-button-next">
+                <svg class="swiper-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="lux__buttons cardset__item">
+          <form class="button__form" action="./room.html">
+            <button class="details-btn btn btn--dark">Детальніше</button>
+          </form>
+          <button class="price-btn btn btn--dark js-open-modal" data-modal="3" type="button">
+            Переглянути ціни
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

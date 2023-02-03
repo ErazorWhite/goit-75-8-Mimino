@@ -2,7 +2,7 @@
     width: 100%;
     padding-top: 24px;
     padding-bottom: 40px;
-    max-width: 1600px;
+    max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
 
@@ -114,6 +114,21 @@
             min-width: 595px;
         }
     }
+
+    &__btn-prices {
+        @extend %link;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 236px;
+    }
+
+    &__button-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    // Swiper
 
     &__slider-containder {
         @include for-tablet-up {
