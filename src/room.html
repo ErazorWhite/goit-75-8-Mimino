@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Міміно</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-    <link rel="icon" href="/src/images/favicon.iso" />
-  </head>
 
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Міміно</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+  <link rel="icon" href="/src/images/favicon.iso" />
+</head>
 
-    <!-- Room -->
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
 
-    <!-- Header(загальний для всіх сторінок) -->
-    <include src="./partials/header.html"></include>
+  <!-- Room -->
 
-    <main>
-      <!-- Hero -->
-      <include src="./partials/room/hero.html"></include>
-      <!-- Amenities -->
-      <include src="./partials/room/amenities.html"></include>
-    </main>
+  <!-- Header(загальний для всіх сторінок) -->
+  <include src="./partials/header.html"></include>
 
-    <!-- Book Room Modal window -->
-    <include src="./partials/modals/modal_book_room.html"></include>
-    <!-- Price Modal window -->
-    <include src="./partials/modals/modal_price.html"></include>
+  <main>
+    <!-- Hero -->
+    <include src="./partials/room/hero.html"></include>
+    <!-- Amenities -->
+    <include src="./partials/room/amenities.html"></include>
+  </main>
 
-    <!-- Footer(загальний для всіх сторінок) -->
-    <include src="./partials/footer.html"></include>
-  </body>
+  <!-- Book Room Modal window -->
+  <include src="./partials/modals/modal_book_room.html"></include>
+  <!-- Price Modal window -->
+  <include src="./partials/modals/modal_price.html"></include>
+
+  <!-- Footer(загальний для всіх сторінок) -->
+  <include src="./partials/footer.html"></include>
+
+  <script src="./js/vendors/swiper-bundle.min.js"></script>
+
+</body>
+
 </html>
