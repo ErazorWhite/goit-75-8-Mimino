@@ -1,0 +1,35 @@
+// .hero-room {
+//     min-width: 414px;
+//     min-height: 740px;
+//     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-mobile.jpg');
+  
+//     @media (min-width: $bp-tablet) {
+//         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-tablet.jpg');
+//     }
+//     @media (min-width: $bp-desktop) {
+//         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-desktop.jpg');
+//     }
+  
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+  
+//     margin-left: auto;
+//     margin-right: auto;
+//     text-align: center;
+//   }
+  
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//       .hero-restaraunt {
+//         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-mobile@2x.jpg');
+  
+//         @media (min-width: $bp-tablet) {
+//             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-tablet@2x.jpg');
+//         }
+//         @media (min-width: $bp-desktop) {
+//             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-desktop@2x.jpg');
+//         }
+//       }
+//     }

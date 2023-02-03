@@ -1,101 +1,140 @@
-.hero__list {
-  margin-bottom: 0;
+.hero-restaurant {
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/restaurant/hero-restaurant-mobile.jpg");
+
+  @media (min-width: $bp-tablet) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/restaurant/hero-restaurant-tablet.jpg");
+  }
+  @media (min-width: $bp-desktop) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/restaurant/hero-restaurant-desktop.jpg");
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-.hero__title {
-  font-family: 'Film P3';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 1.07;
-  letter-spacing: 0.3em;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 24px;
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-restaurant {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/restaurant/hero-restaurant-mobile@2x.jpg");
 
-  @media screen and (max-width: 345px) {
-    font-size: 80px;
-  }
-}
-
-.hero__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 40px;
-
-  @media screen and (max-width: 345px) {
-    font-size: 10px;
-  }
-}
-
-.hero__second-title {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.15;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  margin-bottom: 113px;
-
-  @media screen and (max-width: 345px) {
-    font-size: 22px;
-  }
-}
-
-.hero__button {
-  display: flex;
-  margin-bottom: 58px;
-
-  @media screen and (max-width: 1023px) {
-    display: flex;
-  }
-
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 0;
-    margin-left: auto;
-  }
-}
-
-.button__tap {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  cursor: pointer;
-
-  width: 236px;
-  height: 48px;
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  background: none;
-  margin-bottom: 24px;
-
-  &:hover,
-  &:focus {
-    background: #ffffff;
-    border: 2px solid #f3c653;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-right: 40px;
-    background: #000000;
-    margin-bottom: 65px;
-
-    &:last-child {
-      margin-right: 0;
+    @media (min-width: $bp-tablet) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../images/restaurant/hero-restaurant-tablet@2x.jpg");
+    }
+    @media (min-width: $bp-desktop) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../images/restaurant/hero-restaurant-desktop@2x.jpg");
     }
   }
 }
+
+// .hero__list {
+//   margin-bottom: 0;
+//   text-align: center;
+// }
+
+// .hero__title {
+//   font-family: 'Film P3';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 96px;
+//   line-height: 1.07;
+//   letter-spacing: 0.3em;
+//   color: #ffffff;
+//   text-align: center;
+//   padding-top: 181px;
+//   margin-bottom: 24px;
+
+//   @media screen and (max-width: 345px) {
+//     font-size: 80px;
+//   }
+// }
+
+// .hero__text {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   color: #ffffff;
+//   margin-top: 0;
+//   margin-bottom: 40px;
+
+//   @media screen and (max-width: 345px) {
+//     font-size: 10px;
+//   }
+// }
+
+// .hero__second-title {
+//   font-family: 'Times New Roman';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 32px;
+//   line-height: 1.15;
+//   letter-spacing: 0.05em;
+//   color: #ffffff;
+//   margin-bottom: 113px;
+
+//   @media screen and (max-width: 345px) {
+//     font-size: 22px;
+//   }
+// }
+
+// .hero__button {
+//   display: flex;
+//   margin-bottom: 58px;
+
+//   @media screen and (max-width: 1023px) {
+//     display: flex;
+//   }
+
+//   @media screen and (min-width: 1024px) {
+//     display: flex;
+//     justify-content: end;
+//     margin-bottom: 0;
+//     margin-left: auto;
+//   }
+// }
+
+// .button__tap {
+//   font-family: 'Montserrat';
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   color: #f3c653;
+//   cursor: pointer;
+
+//   width: 236px;
+//   height: 48px;
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
+//   background: none;
+//   margin-bottom: 24px;
+
+//   &:hover,
+//   &:focus {
+//     background: #ffffff;
+//     border: 2px solid #f3c653;
+//   }
+
+//   @media screen and (min-width: 1024px) {
+//     margin-right: 40px;
+//     background: #000000;
+//     margin-bottom: 65px;
+
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+// }
