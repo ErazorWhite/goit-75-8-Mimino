@@ -1,12 +1,15 @@
 .hero-restaurant {
   width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/restaurant/hero-restaurant-mobile.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/restaurant/hero-restaurant-mobile.jpg");
 
   @media (min-width: $bp-tablet) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/restaurant/hero-restaurant-tablet.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/restaurant/hero-restaurant-tablet.jpg");
   }
   @media (min-width: $bp-desktop) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/restaurant/hero-restaurant-desktop.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/restaurant/hero-restaurant-desktop.jpg");
   }
 
   background-repeat: no-repeat;
@@ -18,21 +21,21 @@
   text-align: center;
 }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .hero-restaurant {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/restaurant/hero-restaurant-mobile@2x.jpg');
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-restaurant {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/restaurant/hero-restaurant-mobile@2x.jpg");
 
-      @media (min-width: $bp-tablet) {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/restaurant/hero-restaurant-tablet@2x.jpg');
-      }
-      @media (min-width: $bp-desktop) {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/restaurant/hero-restaurant-desktop@2x.jpg');
+    @media (min-width: $bp-tablet) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../images/restaurant/hero-restaurant-tablet@2x.jpg");
+    }
+    @media (min-width: $bp-desktop) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../images/restaurant/hero-restaurant-desktop@2x.jpg");
     }
   }
-
-
+}
 
 // .hero__list {
 //   margin-bottom: 0;
