@@ -4,33 +4,31 @@
     @media screen and (min-width: 1024px) {
         padding-top: 120px;
         padding-bottom: 32px;
-        
     }
     @media screen and (min-width: 1280px) {
-       
-    } 
     }
+}
 
-    .about-restaurant__container {
-        position: relative;
-    }
-
+.about-restaurant__container {
+    position: relative;
+}
 
 .about-restaurant__pre-title {
-     @include desctiption-block($cornerTextColor, 400, 20px, 1.15);
-     font-family: 'Times New Roman';
-     @media screen and (min-width: 1024px) {
+    @include desctiption-block($cornerTextColor, 400, 20px, 1.15);
+    font-family: "Times New Roman";
+    @media screen and (min-width: 1024px) {
         font-size: 32px;
         margin-bottom: 4px;
-     }
+    }
 }
 
 .logo-min {
+    letter-spacing: 0.3em;
     font-family: "Film P3";
     font-size: 40px;
     @media screen and (min-width: 1024px) {
-      font-size: 69px;  
-      margin-bottom: 24px;
+        font-size: 69px;
+        margin-bottom: 24px;
     }
 }
 
@@ -45,7 +43,7 @@
         width: 439px;
         gap: 0;
         margin-bottom: 142px;
-    };
+    }
     @media screen and (min-width: 1280px) {
         width: 518px;
     }
@@ -54,17 +52,17 @@
 .about-restaurant__description-text {
     letter-spacing: 0.02em;
     @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
-    @media screen  and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
         @include desctiption-block($sectionDescriptionColor, 600, 16px, 1.25);
     }
 }
 
 .about-restaurant__image-thumb {
     overflow: hidden;
- background-color: #DADADA;
-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-border-radius: 2px;
-border-color: transparent;
+    background-color: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    border-color: transparent;
 }
 
 .about-restaurant__image {
@@ -75,11 +73,11 @@ border-color: transparent;
     z-index: 1;
     @media screen and (min-width: 1024px) {
         width: 400px;
-    top: -152px;
-    right: 112px;
-    position: absolute;
+        top: -152px;
+        right: 112px;
+        position: absolute;
     }
-     @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
         width: 460px;
         top: -153px;
         right: 180px;
@@ -96,17 +94,17 @@ border-color: transparent;
     }
     & img {
         width: 200px;
-        background: #DADADA;
-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-border-radius: 2px;
-@media screen and (min-width: 1024px) {
-    width: 350px;
-}
+        background: #dadada;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        @media screen and (min-width: 1024px) {
+            width: 350px;
+        }
     }
 }
 
 .about-restaurant__details-text {
-    width: 163px; 
+    width: 163px;
     letter-spacing: 0.02em;
     @include desctiption-block($brandAccent, 600, 12px, 1.25);
     @media screen and (min-width: 1024px) {
@@ -117,9 +115,9 @@ border-radius: 2px;
 
 .about-restaurant__slider {
     @media screen and (min-width: 1024px) {
-     margin-left: 440px;  
-    margin-top: -65px; 
-    width: 428px;
+        margin-left: 440px;
+        margin-top: -65px;
+        width: 428px;
     }
     @media screen and (min-width: 1280px) {
         margin-top: -107px;
@@ -128,10 +126,9 @@ border-radius: 2px;
     }
 }
 
-
 .right-btn {
-   left: unset;
-   right: 0; 
+    left: unset;
+    right: 0;
 }
 
 .left-btn {
@@ -139,10 +136,9 @@ border-radius: 2px;
         left: 288px;
     }
     @media screen and (min-width: 1024px) {
-left: 332px;
+        left: 332px;
     }
     @media screen and (min-width: 1280px) {
-left: 452px;
+        left: 452px;
     }
-    
 }
