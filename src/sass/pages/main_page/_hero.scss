@@ -1,12 +1,15 @@
 .hero-main_page {
   width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-mobile.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/homepage/hero-homepage-mobile.jpg");
 
   @media (min-width: $bp-tablet) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-tablet.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/homepage/hero-homepage-tablet.jpg");
   }
   @media (min-width: $bp-desktop) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-desktop.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/homepage/hero-homepage-desktop.jpg");
   }
 
   background-repeat: no-repeat;
@@ -18,32 +21,33 @@
   text-align: center;
 }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .hero-main_page {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-mobile@2x.jpg');
-
-      @media (min-width: $bp-tablet) {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-tablet@2x.jpg');
-      }
-      @media (min-width: $bp-desktop) {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-desktop@2x.jpg');
-      }
-    }
-  }
-
-  .hero-main__container {
-    padding-top: 181px;
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-main_page {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/homepage/hero-homepage-mobile@2x.jpg");
 
     @media (min-width: $bp-tablet) {
-        padding-top: 188px;
-      }
-
-     @media (min-width: $bp-desktop) {
-    padding-top: 164px;
-      }
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../images/homepage/hero-homepage-tablet@2x.jpg");
+    }
+    @media (min-width: $bp-desktop) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../images/homepage/hero-homepage-desktop@2x.jpg");
+    }
   }
+}
+
+.hero-main__container {
+  padding-top: 181px;
+
+  @media (min-width: $bp-tablet) {
+    padding-top: 188px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 164px;
+  }
+}
 
 .hero__list {
   margin-bottom: 0;
@@ -51,7 +55,7 @@
 }
 
 .hero__title {
-  font-family: 'Film P3';
+  font-family: "Film P3";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -60,7 +64,7 @@
   color: #ffffff;
   text-align: center;
   // padding-top: 181px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 345px) {
     font-size: 80px;
@@ -69,6 +73,7 @@
   @media (min-width: $bp-tablet) {
     // padding-top: 188px;
     margin-bottom: 16px;
+    font-size: 128px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -79,7 +84,7 @@
 
 .hero__text {
   margin-bottom: 40px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -97,7 +102,7 @@
 }
 
 .hero__second-title {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -114,12 +119,11 @@
     margin-bottom: 145px;
     font-size: 36px;
   }
-
 }
 
 .hero__button {
-padding-bottom: 103px;
-gap: 24px;
+  padding-bottom: 103px;
+  gap: 24px;
 
   @media screen and (max-width: 1023px) {
     display: inline-flex;
@@ -138,7 +142,7 @@ gap: 24px;
 }
 
 .button__tap {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -192,7 +196,7 @@ gap: 24px;
     width: 285px;
     top: unset;
     padding: 8px 8px 8px 10px;
-   }
+  }
 }
 
 .hero__address-list {
@@ -202,7 +206,7 @@ gap: 24px;
   gap: 8px;
   @media (min-width: $bp-tablet) {
     gap: 10px;
-   }
+  }
 }
 
 .hero__social-link-list {
@@ -213,12 +217,12 @@ gap: 24px;
   bottom: 20px;
 
   @media (min-width: $bp-tablet) {
-   left: 47px;
-   bottom: 15px;
+    left: 47px;
+    bottom: 15px;
   }
 
   @media (min-width: $bp-desktop) {
-   display: none;
+    display: none;
   }
 }
 .hero__icon {
@@ -226,7 +230,7 @@ gap: 24px;
 }
 
 .hero__address-point {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -234,10 +238,9 @@ gap: 24px;
   letter-spacing: 0.01em;
   text-decoration: none;
 
-
-  color: #E5E5E5;
+  color: #e5e5e5;
 
   @media (min-width: $bp-tablet) {
     font-size: 16px;
-   }
+  }
 }

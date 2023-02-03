@@ -12,7 +12,7 @@
     background-position: center;
 
     @include for-phone-only {
-        padding-top: 64px;
+        // padding-top: 64px;
         background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
             url("../images/hotel/hero-hotel-mobile.jpg");
 
@@ -22,7 +22,7 @@
         }
     }
     @include for-tablet-up {
-        padding-top: 110px;
+        // padding-top: 110px;
 
         background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
             url("../images/hotel/hero-hotel-tablet.jpg");
@@ -47,14 +47,14 @@
     &__container {
         @extend .container;
         position: relative;
-        padding-top: 500px;
-        padding-bottom: 20px;
+        padding-top: 484px;
+        padding-bottom: 40px;
     }
 
     &__address {
         position: absolute;
         right: 15px;
-        top: 0px;
+        top: 64px;
         width: 210px;
         padding: 8px 3px 9px 6px;
 
@@ -115,16 +115,18 @@
     }
 
     &__description {
-        margin-bottom: 118px;
+        margin-bottom: 79px;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 12px;
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: $primaryLight;
-        width: 400px;
+        width: 325px;
         @include for-tablet-up {
             font-size: 16px;
+            width: 400px;
+            margin-bottom: 61px;
         }
     }
 
@@ -142,7 +144,7 @@
     &__btn-prices {
         position: absolute;
         right: 47px;
-        bottom: 22px;
+        bottom: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -150,6 +152,9 @@
         margin-left: 94px;
         width: 232px;
         padding: 0;
+        @include for-tablet-up {
+            bottom: 62px;
+        }
     }
 
     .room-hero__socials {
