@@ -1,0 +1,141 @@
+.room-hero {
+    width: 100%;
+    padding-bottom: 40px;
+    min-width: 320px;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include for-phone-only {
+        padding-top: 64px;
+        background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
+            url("../images/hotel/hero-hotel-mobile.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
+                url("../images/hotel/hero-hotel-mobile@2x.jpg");
+        }
+    }
+    @include for-tablet-up {
+        padding-top: 110px;
+
+        background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
+            url("../images/hotel/hero-hotel-tablet.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
+                url("../images/hotel/hero-hotel-tablet@2x.jpg");
+        }
+    }
+    @include for-desktop-up {
+        padding-top: 147px;
+
+        background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
+            url("../images/hotel/hero-hotel-desktop.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 24.17%, rgba(0, 0, 0, 0) 100%),
+                url("../images/hotel/hero-hotel-desktop@2x.jpg");
+        }
+    }
+
+    &__container {
+        @extend .container;
+        position: relative;
+        padding-top: 500px;
+    }
+
+    &__address {
+        position: absolute;
+        right: 15px;
+        top: 0px;
+        width: 210px;
+        padding: 8px 3px 9px 6px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+
+        @media (min-width: $bp-tablet) {
+            left: 47px;
+            bottom: 64px;
+            width: 285px;
+            top: unset;
+            padding: 8px 8px 8px 10px;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            text-align: start;
+            gap: 8px;
+            @media (min-width: $bp-tablet) {
+                gap: 10px;
+            }
+        }
+
+        &-point {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.01em;
+            text-decoration: none;
+
+            color: #e5e5e5;
+
+            @media (min-width: $bp-tablet) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__icon {
+        fill: $brandColor;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        font-family: "Times New Roman";
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: 0.05em;
+        color: $primaryLight;
+    }
+
+    &__description {
+        margin-bottom: 30px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $primaryLight;
+    }
+
+    &__btn-prices {
+        text-align: center;
+        display: block;
+        @extend %link;
+        margin-left: 94px;
+        width: 232px;
+    }
+
+    .room-hero__socials {
+        display: flex;
+        position: absolute;
+        gap: 20px;
+        left: 15px;
+        bottom: -15px;
+
+        @media (min-width: $bp-tablet) {
+            left: 47px;
+            bottom: 15px;
+        }
+    }
+}
