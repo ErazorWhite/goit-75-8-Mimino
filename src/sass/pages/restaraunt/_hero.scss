@@ -21,6 +21,36 @@
   text-align: center;
 }
 
+.restaurant {
+  &__hero-title {
+    font-family: "Film P3";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #ffffff;
+    text-align: center;
+    // padding-top: 181px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 345px) {
+      font-size: 80px;
+    }
+
+    @media (min-width: $bp-tablet) {
+      // padding-top: 188px;
+      margin-bottom: 16px;
+      font-size: 128px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      // padding-top: 164px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-restaurant {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
