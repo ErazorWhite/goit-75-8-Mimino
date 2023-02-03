@@ -1,80 +1,135 @@
-.hero__list {
-  margin-bottom: 0;
+.hero-hotel {
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/hotel/hero-hotel-mobile.jpg');
+
+  @media (min-width: $bp-tablet) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/hotel/hero-hotel-tablet.jpg');
+  }
+  @media (min-width: $bp-desktop) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/hotel/hero-hotel-desktop.jpg');
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-.hero__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-hotel  {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/hotel/hero-hotel-mobile@2x.jpg');
 
-.hero__second-title {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.15;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  margin-bottom: 113px;
-
-  @media screen and (max-width: 345px) {
-    font-size: 22px;
-  }
-}
-
-.hero__button {
-  margin-bottom: 58px;
-
-  @media screen and (max-width: 1023px) {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 0;
-    margin-left: auto;
-  }
-}
-
-.button__tap {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  cursor: pointer;
-
-  width: 236px;
-  height: 48px;
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  background: none;
-  margin-bottom: 24px;
-
-  &:hover,
-  &:focus {
-    background: #ffffff;
-    border: 2px solid #f3c653;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-right: 40px;
-    background: #000000;
-    margin-bottom: 65px;
-
-    &:last-child {
-      margin-right: 0;
+      @media (min-width: $bp-tablet) {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/hotel/hero-hotel-tablet@2x.jpg');
+      }
+      @media (min-width: $bp-desktop) {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/hotel/hero-hotel-desktop@2x.jpg');
+      }
     }
+
+    .hero__text-hotel {
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 178px;
+
+        @media (min-width: $bp-tablet) {
+        margin-bottom: 226px;
+        }
+        @media (min-width: $bp-desktop) {
+        margin-bottom: 249px;
+        }
   }
+  
+  
+
+// .hero__list {
+//   margin-bottom: 0;
+//   text-align: center;
+// }
+
+// .hero__text {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 20px;
+//   line-height: 1.2;
+//   letter-spacing: 0.02em;
+//   color: #ffffff;
+// }
+
+// .hero__second-title {
+//   font-family: 'Times New Roman';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 32px;
+//   line-height: 1.15;
+//   letter-spacing: 0.05em;
+//   color: #ffffff;
+//   margin-bottom: 113px;
+
+//   @media screen and (max-width: 345px) {
+//     font-size: 22px;
+//   }
+// }
+
+// .hero__button {
+//   margin-bottom: 58px;
+
+//   @media screen and (max-width: 1023px) {
+//     display: inline-flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//   }
+
+//   @media screen and (min-width: 1024px) {
+//     display: flex;
+//     justify-content: end;
+//     margin-bottom: 0;
+//     margin-left: auto;
+//   }
+// }
+
+// .button__tap {
+//   font-family: 'Montserrat';
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   color: #f3c653;
+//   cursor: pointer;
+
+//   width: 236px;
+//   height: 48px;
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
+//   background: none;
+//   margin-bottom: 24px;
+
+//   &:hover,
+//   &:focus {
+//     background: #ffffff;
+//     border: 2px solid #f3c653;
+//   }
+
+//   @media screen and (min-width: 1024px) {
+//     margin-right: 40px;
+//     background: #000000;
+//     margin-bottom: 65px;
+
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
 }

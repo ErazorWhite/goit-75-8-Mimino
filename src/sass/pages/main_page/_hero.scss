@@ -1,9 +1,84 @@
+.hero-main_page {
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-mobile.jpg');
+
+  @media (min-width: $bp-tablet) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-tablet.jpg');
+  }
+  @media (min-width: $bp-desktop) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-desktop.jpg');
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-main_page {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-mobile@2x.jpg');
+
+      @media (min-width: $bp-tablet) {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-tablet@2x.jpg');
+      }
+      @media (min-width: $bp-desktop) {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/homepage/hero-homepage-desktop@2x.jpg');
+      }
+    }
+  }
+
+  .hero-main__container {
+    padding-top: 181px;
+
+    @media (min-width: $bp-tablet) {
+        padding-top: 188px;
+      }
+
+     @media (min-width: $bp-desktop) {
+    padding-top: 164px;
+      }
+  }
+
 .hero__list {
   margin-bottom: 0;
   text-align: center;
 }
 
+.hero__title {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-align: center;
+  // padding-top: 181px;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 345px) {
+    font-size: 80px;
+  }
+
+  @media (min-width: $bp-tablet) {
+    // padding-top: 188px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    // padding-top: 164px;
+    margin-bottom: 32px;
+  }
+}
+
 .hero__text {
+  margin-bottom: 40px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -11,6 +86,14 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #ffffff;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 64px;
+  }
 }
 
 .hero__second-title {
@@ -26,10 +109,17 @@
   @media screen and (max-width: 345px) {
     font-size: 22px;
   }
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 145px;
+    font-size: 36px;
+  }
+
 }
 
 .hero__button {
-  margin-bottom: 58px;
+padding-bottom: 103px;
+gap: 24px;
 
   @media screen and (max-width: 1023px) {
     display: inline-flex;
@@ -43,6 +133,7 @@
     justify-content: end;
     margin-bottom: 0;
     margin-left: auto;
+    padding-bottom: 0;
   }
 }
 
@@ -60,7 +151,7 @@
   border: 2px solid #ffffff;
   border-radius: 25px;
   background: none;
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
 
   &:hover,
   &:focus {
@@ -68,13 +159,81 @@
     border: 2px solid #f3c653;
   }
 
-  @media screen and (min-width: 1024px) {
-    margin-right: 40px;
+  @media (min-width: $bp-tablet) {
+    gap: 40px;
     background: #000000;
-    margin-bottom: 65px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    margin-bottom: 64px;
   }
+
+  @media (min-width: $bp-desktop) {
+    gap: 60px;
+    margin-bottom: 65px;
+  }
+}
+
+.hero-main__container {
+  @extend .container;
+  position: relative;
+}
+
+.hero__address {
+  position: absolute;
+  right: 15px;
+  top: 64px;
+  width: 210px;
+  padding: 8px 3px 9px 6px;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  @media (min-width: $bp-tablet) {
+    left: 47px;
+    bottom: 64px;
+    width: 285px;
+    top: unset;
+    padding: 8px 8px 8px 10px;
+   }
+}
+
+.hero__address-list {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 8px;
+  @media (min-width: $bp-tablet) {
+    gap: 10px;
+   }
+}
+
+.hero__social-link-list {
+  display: flex;
+  position: absolute;
+  gap: 20px;
+  left: 15px;
+  bottom: 20px;
+
+  @media (min-width: $bp-tablet) {
+   left: 47px;
+   bottom: 15px;
+  }
+}
+.hero__icon {
+  fill: $brandColor;
+}
+
+.hero__address-point {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+
+
+  color: #E5E5E5;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 16px;
+   }
 }
