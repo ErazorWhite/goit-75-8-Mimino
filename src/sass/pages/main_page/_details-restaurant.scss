@@ -8,43 +8,43 @@
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
-    background-color: #C4C4C4;
-    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-     url(../images/homepage/homepage5-mobile.jpg);
-         @include retina { 
-       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/homepage/homepage5-mobile@2x.jpg);
-    };
-     @media  screen and (min-width: 414px) {
-        width: 414px;
-background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
- url(../images/homepage/homepage5-mobile.jpg);
-         @include retina { 
-       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/homepage/homepage5-mobile@2x.jpg);
-     }
-    };
- @media  screen and (min-width: 1024px) {
-       width: 1024px;
-       opacity: 1.76;
-       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/homepage/homepage5-tablet.jpg);
-         @include retina { 
-       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/homepage/homepage5-tablet@2x.jpg);
+    background-color: #c4c4c4;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/homepage5-mobile.jpg);
+    @include retina {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/homepage/homepage5-mobile@2x.jpg);
     }
-};
- @media  screen and (min-width: 1280px) {
-       width: 1280px;
+    @media screen and (min-width: 414px) {
+        width: 414px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/homepage/homepage5-mobile.jpg);
+        @include retina {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../images/homepage/homepage5-mobile@2x.jpg);
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+        opacity: 1.76;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/homepage/homepage5-tablet.jpg);
+        @include retina {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../images/homepage/homepage5-tablet@2x.jpg);
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
         padding-top: 48px;
         padding-bottom: 40px;
-       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/homepage/homepage5-desktop.jpg);
-         @include retina { 
-       background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/homepage/homepage5-desktop@2x.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/homepage/homepage5-desktop.jpg);
+        @include retina {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../images/homepage/homepage5-desktop@2x.jpg);
+        }
     }
-}
 }
 
 .details-restaurant__description {
@@ -56,10 +56,9 @@ background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.
         margin-left: 231px;
         margin-bottom: 40px;
     }
-     @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
         width: 610px;
         margin-left: 253px;
-
     }
 }
 
@@ -67,28 +66,28 @@ background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.
     font-family: "Film P3";
     font-size: 40px;
     color: white;
-    margin-bottom: 12PX;
-     @media screen and (min-width: 1024px) {
-      font-size: 69px;  
-      margin-bottom: 16px;
+    letter-spacing: 0.3em;
+    margin-bottom: 12px;
+    @media screen and (min-width: 1024px) {
+        font-size: 69px;
+        margin-bottom: 16px;
     }
-
 }
 
 .details-restaurant__title {
-letter-spacing: 0.02em;
-@include desctiption-block(white, 700, 20px, 1.2);
-margin-bottom: 20PX;
-@media screen and (min-width: 1024px) {
-    font-size: 24px;
-    margin-bottom: 8px;
-}
+    letter-spacing: 0.02em;
+    @include desctiption-block(white, 700, 20px, 1.2);
+    margin-bottom: 20px;
+    @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
 }
 
 .details-restaurant__text {
-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
     @include desctiption-block($sectionDescriptionColor, 600, 12px, 1.25);
-    @media screen  and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
         font-size: 16px;
     }
 }
@@ -105,13 +104,13 @@ letter-spacing: 0.02em;
     margin-top: 32px;
     align-items: center;
     padding: unset;
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width: 1024px) {
         align-items: flex-start;
         position: absolute;
         left: 47px;
         bottom: 96px;
     }
-    @media screen and (min-width:1280px) {
+    @media screen and (min-width: 1280px) {
         left: 85px;
         bottom: 94px;
     }
@@ -119,44 +118,43 @@ letter-spacing: 0.02em;
         text-decoration: none;
         text-align: center;
         padding-top: 14px;
-    padding-bottom: 14px;
+        padding-bottom: 14px;
     }
 }
 
 .details-restaurant__btn {
     width: 236px;
-     padding: unset;
+    padding: unset;
 }
 
 .details-restaurant .details-restaurant__slider {
-    @media screen  and (min-width: 414px) {
-width: 330px;
-    margin-left: 69px;
+    @media screen and (min-width: 414px) {
+        width: 330px;
+        margin-left: 69px;
     }
-    
-        @media screen  and (min-width: 1024px) {
-width: 662px !important;
-max-width: unset;
-margin-left: 220px;
-        }
-    @media screen  and (min-width: 1280px) {
+
+    @media screen and (min-width: 1024px) {
+        width: 662px !important;
+        max-width: unset;
+        margin-left: 220px;
+    }
+    @media screen and (min-width: 1280px) {
         margin-left: 200px;
-width: 875px !important;
+        width: 875px !important;
     }
-    
 }
 
 .swiper-wrapper .second-slide,
 .swiper-wrapper .third-slide {
-    @media screen  and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
         width: 162px !important;
     }
 }
 
 .swiper-wrapper .third-slide {
-   @media screen  and (min-width: 1280px) {
-    width: 254px;
-   } 
+    @media screen and (min-width: 1280px) {
+        width: 254px;
+    }
 }
 
 .details-restaurant__slider-buttons {
@@ -166,10 +164,10 @@ width: 875px !important;
     gap: 32px;
     justify-content: flex-end;
     &.about-restaurant__btn {
-left: 286px !important;
+        left: 286px !important;
     }
 }
 
 .details-restaurant__slider-button {
-fill: white;
+    fill: white;
 }
