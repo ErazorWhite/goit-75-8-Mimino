@@ -209,13 +209,24 @@
 .swiper-button-prev__kitchen {
     left: auto;
     right: 61px;
+    transition: fill .25s cubic-bezier(.4,0,.2,1);
+    
+    :hover,
+    :focus {
+        fill: #f3c653;  
+    } 
 }
 
 .swiper-button-next__kitchen {
     left: auto;
-
+    transition: fill .25s cubic-bezier(.4,0,.2,1);
+    :hover,
+    :focus {
+        fill: #f3c653;  
+    } 
     &--kitchen {
         right: 0px;
+        
     }
 }
 
