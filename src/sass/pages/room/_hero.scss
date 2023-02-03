@@ -1,6 +1,6 @@
 .room-hero {
     width: 100%;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     min-width: 320px;
     max-width: 1280px;
     margin-right: auto;
@@ -48,6 +48,7 @@
         @extend .container;
         position: relative;
         padding-top: 500px;
+        padding-bottom: 20px;
     }
 
     &__address {
@@ -60,14 +61,16 @@
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
 
-        @media (min-width: $bp-tablet) {
+        @include for-tablet-up {
             left: 47px;
-            bottom: 64px;
+            bottom: 22px;
             width: 285px;
             top: unset;
             padding: 8px 8px 8px 10px;
         }
-
+        @include for-desktop-up {
+            display: none;
+        }
         &-list {
             display: flex;
             align-items: center;
@@ -106,24 +109,47 @@
         line-height: 1.14;
         letter-spacing: 0.05em;
         color: $primaryLight;
+        @include for-tablet-up {
+            font-size: 36px;
+        }
     }
 
     &__description {
-        margin-bottom: 30px;
+        margin-bottom: 118px;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 12px;
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: $primaryLight;
+        width: 400px;
+        @include for-tablet-up {
+            font-size: 16px;
+        }
+    }
+
+    &__thumb {
+        @include for-tablet-up {
+            display: flex;
+            margin-bottom: 62px;
+        }
+    }
+
+    &__text-box {
+        display: block;
     }
 
     &__btn-prices {
-        text-align: center;
-        display: block;
+        position: absolute;
+        right: 47px;
+        bottom: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @extend %link;
         margin-left: 94px;
         width: 232px;
+        padding: 0;
     }
 
     .room-hero__socials {
@@ -131,11 +157,21 @@
         position: absolute;
         gap: 20px;
         left: 15px;
-        bottom: -15px;
+        bottom: 14px;
 
-        @media (min-width: $bp-tablet) {
-            left: 47px;
-            bottom: 15px;
+        @include for-tablet-up {
+            left: 372px;
+            bottom: 36px;
+        }
+        @include for-desktop-up {
+            display: none;
+        }
+    }
+
+    &__socials-list {
+        @include for-tablet-up {
+            display: flex;
+            gap: 20px;
         }
     }
 }
