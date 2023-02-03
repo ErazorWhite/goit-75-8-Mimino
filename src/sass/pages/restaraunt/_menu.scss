@@ -3,7 +3,7 @@
     padding: 32px 15px;
 
     @media (min-width: 1024px) {
-        background-color: #F0ECD6;
+        background-color: #f0ecd6;
         padding: 58px 48px 152px 47px;
     }
 
@@ -11,26 +11,22 @@
         padding: 58px 85px 156px 85px;
     }
 
-
-
     &__container {
         margin-right: auto;
         margin-left: auto;
 
         @media (min-width: 414px) {
-            width: 414px;
+            max-width: 414px;
         }
 
         @media (min-width: 1024px) {
-            width: 1024px;
+            max-width: 1024px;
         }
 
         @media (min-width: 1280px) {
-            width: 1280px;
+            max-width: 1280px;
         }
-    
     }
-
 
     &__main-title {
         font-size: 32px;
@@ -58,7 +54,6 @@
             font-size: 24px;
             line-height: 1.17;
         }
-
     }
 
     &__dish {
@@ -115,7 +110,6 @@
             font-size: 16px;
             line-height: 1.25;
         }
-
     }
 
     &__table {
@@ -129,7 +123,6 @@
         @media (min-width: 1280px) {
             width: 486px;
         }
-
     }
 
     &__table:not(:last-child) {
@@ -159,30 +152,30 @@
     margin-left: 89px;
 
     background: #000000;
-border: 2px solid #FFFDEE;
-border-radius: 25px;
-width: 236px;
-height: 48px;
-font-family: Montserrat;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: #F3C653;
-cursor: pointer;
+    border: 2px solid #fffdee;
+    border-radius: 25px;
+    width: 236px;
+    height: 48px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    cursor: pointer;
 
-@media (min-width: 1024px) {
-    margin-left: 694px;   
-}
+    @media (min-width: 1024px) {
+        margin-left: 694px;
+    }
 
-@media (min-width: 1280px) {
-    margin-left: 874px;
-}
+    @media (min-width: 1280px) {
+        margin-left: 874px;
+    }
 
-&:hover,
-&:focus {
-    background: #FFFFFF;
-    color: #F3C653;
-    border: 2px solid #F3C653;
-}
+    &:hover,
+    &:focus {
+        background: #ffffff;
+        color: #f3c653;
+        border: 2px solid #f3c653;
+    }
 }
