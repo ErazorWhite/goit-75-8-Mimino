@@ -23,7 +23,7 @@
             display: flex;
 
             @media screen and (min-width: 1024px) {
-             margin-top: -32px;
+                margin-top: -32px;
             }
         }
     }
@@ -86,7 +86,7 @@
 
     &__text {
         font-family: "Montserrat";
-        color:$sectionLogoColor;
+        color: $sectionLogoColor;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.25;
@@ -206,12 +206,9 @@
     }
 }
 
-.swiper-button-prev {
+.swiper-button-prev__kitchen {
     left: auto;
-
-    &__kitchen {
-        right: 61px;
-    }
+    right: 61px;
 }
 
 .swiper-button-next__kitchen {
@@ -222,13 +219,11 @@
     }
 }
 
-
 .swiper__kitchen {
     height: auto;
     margin-left: 0px;
     margin-right: 0px;
 }
-
 
 .kitchen__list {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
