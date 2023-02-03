@@ -1,4 +1,11 @@
 .hero-restaurant {
+  &__menu-link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   width: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("../images/restaurant/hero-restaurant-mobile.jpg");
